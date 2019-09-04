@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data
+tmp
+README_cache
+README_files
+text/manuscript_assa_cache/
+text/manuscript_assa_files/
+R/manuscript_cache/
+R/manuscript_files/
+trained_models/

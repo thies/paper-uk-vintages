@@ -1,0 +1,11 @@
+f1 <- rbind(c(0.61 , 0.75 , 0.82 , 0.82 , 0.77 , 0.64 , 0.59),c(0.73 , 0.87 , 0.90 , 0.90 , 0.86 , 0.81 , 0.77),c(0.54 , 0.72 , 0.78 , 0.78 , 0.70 , 0.58 , 0.51))
+colnames(f1) <- c("Georg.","Early Vic.","Late V./E.","Interw.","Postw.","Cont.","Revival")
+colours <- c("lightblue","darkblue","darkred")
+
+jpeg(filename = "../text/figures/barplot_f1scores.jpg", quality = 100, width=1000, height=500)
+par(mar=c(3,5,1,1))
+par(cex.lab=1.5)
+barplot(f1, ylim=c(0,1.1), beside = TRUE, col=colours, ylab="F1-Score", cex.names=1.5, cex.axis = 1.5)
+box()
+legend("top", bty="n", c("Spatial classifier","Spatial class., high conf. only","Base classifier"), horiz=TRUE, fill=colours, cex=1.5, pt.cex=1)
+dev.off()

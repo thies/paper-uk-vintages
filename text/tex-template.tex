@@ -1,0 +1,82 @@
+% ----------------------------------------------------------------
+% Customization by Leandro C. Coelho -----------------------------
+% ----------------------------------------------------------------
+\documentclass[12pt, twoside, draft]{article}
+
+\newcommand{\citeny}[1]{\citename{#1}~\citeyear{#1}}
+
+% Setup TikZ
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1cm]
+
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage[numbers]{natbib}
+\usepackage{algorithm, algorithmic}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+\usepackage{xfrac}
+\usepackage{relsize}
+\usepackage{mathrsfs}
+\setcounter{secnumdepth}{5}
+\usepackage{lineno}
+
+\usepackage[text={16cm,23cm},centering]{geometry}
+
+\setlength{\parskip}{1.2ex}
+\setlength{\parindent}{0em}
+\clubpenalty = 100
+\widowpenalty = 100
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand*{\red}{\textcolor{red}}
+\newcommand*{\green}{\textcolor{green}}
+\newcommand*{\blue}{\textcolor{blue}}
+
+\begin{document}
+
+\setpagewiselinenumbers
+
+\modulolinenumbers[5]
+\linenumbers
+
+\title{Title of the paper}
+
+\footnotesize\date{\today}
+
+\author{Leandro C.~Coelho and Co-author\\
+\footnotesize Affiliations\\
+\footnotesize \texttt{\{leandro.coelho, co.author\}@email.com} \\ }
+
+\maketitle
+
+\begin{abstract}
+
+Enter your abstract here
+
+\end{abstract}
+{\bf Keywords:} enter, keyword, here.
+
+%\tableofcontents
+
+\section{Introduction}
+
+\section{Title of Section 2}
+
+\subsection{Using a subsection}
+
+\section{Conclusion}
+
+\vspace{1.5cm}
+\noindent \textbf{Acknowledgments}
+
+\noindent \small{This work was partly supported by .}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}S

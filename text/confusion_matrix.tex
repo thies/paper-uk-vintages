@@ -1,0 +1,106 @@
+\begin{table}[!htb]
+	\caption{Confusion matrix for classification based on images of property and its nearest neighbor}
+	\label{tab:confmat}
+	\centering
+\begingroup\footnotesize
+	\emph{}
+\begin{tabular}{lrrrrrrr}
+	\multicolumn{8}{c}{\rule{0pt}{4ex}    \emph{Panel A: Model based on individual building and nearest neighbor} \rule{0pt}{4ex}    }\\
+	\toprule
+	\emph{Predicted} & \multicolumn{7}{c}{\emph{Ground truth}} \\
+	\cmidrule(lr){1-1}
+	\cmidrule(lr){2-8}
+	& Georgian & Early Vic. & Late V./Edw. & Interwar & Postwar & Cont. & Revival \\
+  \midrule
+	Georgian & 284 & 109 & 77 & 38 & 14 & 23 & 22 \\
+	  Early Vic. & 50 & 1755 & 427 & 86 & 86 & 56 & 34 \\
+	  Late V./Edw. & 10 & 172 & 3260 & 213 & 56 & 21 & 29 \\
+	  Interwar & 10 & 46 & 254 & 5884 & 997 & 56 & 54 \\
+	  Postwar & 1 & 17 & 48 & 514 & 3914 & 74 & 40 \\
+	  Cont. & 3 & 50 & 63 & 101 & 333 & 855 & 69 \\
+	  Revival & 3 & 29 & 45 & 139 & 145 & 98 & 501 \\
+		\midrule
+	  Georgian & 79\% & 5\% & 2\% & 1\% & 0\% & 2\% & 3\% \\
+	  Early Vic. & 14\% & 81\% & 10\% & 1\% & 2\% & 5\% & 5\% \\
+	  Late V./Edw. & 3\% & 8\% & 78\% & 3\% & 1\% & 2\% & 4\% \\
+	  Interwar & 3\% & 2\% & 6\% & 84\% & 18\% & 5\% & 7\% \\
+	  Postwar & 0\% & 1\% & 1\% & 7\% & 71\% & 6\% & 5\% \\
+	  Cont. & 1\% & 2\% & 2\% & 1\% & 6\% & 72\% & 9\% \\
+	  Revival & 1\% & 1\% & 1\% & 2\% & 3\% & 8\% & 67\% \\
+		\midrule
+	  Recall & 0.79 & 0.81 & 0.78 & 0.84 & 0.71 & 0.72 & 0.67 \\
+	  Precision & 0.50 & 0.70 & 0.87 & 0.81 & 0.85 & 0.58 & 0.52 \\
+	  $F_1$-score & 0.61 & 0.75 & 0.82 & 0.82 & 0.77 & 0.64 & 0.59 \\
+
+  \bottomrule
+  
+ 	\multicolumn{8}{c}{\rule{0pt}{4ex}    \emph{ Panel B: Model based on individual building and nearest neighbor, high confidence only} \rule{0pt}{4ex}    }\\
+	\toprule
+	\emph{Predicted} & \multicolumn{7}{c}{\emph{Ground truth}} \\
+	\cmidrule(lr){1-1}
+	\cmidrule(lr){2-8}
+	& Georgian & Early Vic. & Late V./Edw. & Interwar & Postwar & Cont. & Revival \\
+  \midrule
+
+Georgian & 122 & 31 & 9 & 4 & 2 & 1 & 5 \\ 
+Early Vic. & 30 & 1,926 & 324 & 19 & 40 & 15 & 7 \\ 
+  Late V./Edw. & 0 & 105 & 2,941 & 68 & 19 & 0 & 9 \\ 
+ Interwar & 6 & 6 & 81 & 3,230 & 369 & 10 & 14 \\ 
+ Postwar & 0 & 3 & 5 & 96 & 1,831 & 9 & 6 \\ 
+ Cont. & 0 & 8 & 7 & 4 & 33 & 236 & 18 \\ 
+ Revival & 3 & 2 & 0 & 14 & 10 & 4 & 154 \\ 
+ \midrule
+ Georgian & 76\% & 2\% & 0\% & 0\% & 0\% & 0\% & 2\% \\ 
+ Early Vic. & 19\% & 93\% & 10\% & 1\% & 2\% & 6\% & 3\% \\ 
+  Late V./Edw. & 0\% & 5\% & 87\% & 2\% & 1\% & 0\% & 4\% \\ 
+ Interwar & 4\% & 0\% & 2\% & 94\% & 16\% & 4\% & 7\% \\ 
+ Postwar & 0\% & 0\% & 0\% & 3\% & 80\% & 3\% & 3\% \\ 
+ Cont. & 0\% & 0\% & 0\% & 0\% & 1\% & 86\% & 9\% \\ 
+Revival & 2\% & 0\% & 0\% & 0\% & 0\% & 2\% & 72\% \\ 
+\midrule
+Recall & 0.76 & 0.93 & 0.87 & 0.94 & 0.79 & 0.86 & 0.72 \\ 
+ Precision & 0.70 & 0.82 & 0.94 & 0.87 & 0.94 & 0.77 & 0.82 \\ 
+$F_1$-score & 0.73 & 0.87 & 0.90 & 0.90 & 0.86 & 0.81 & 0.77 \\ 
+
+
+
+  \bottomrule
+	\multicolumn{8}{c}{\rule{0pt}{4ex}    \emph{Panel C: Model based on individual buildings only} \rule{0pt}{4ex}    }\\
+	\toprule
+	\emph{Predicted} & \multicolumn{7}{c}{\emph{Ground truth}} \\
+	\cmidrule(lr){1-1}
+	\cmidrule(lr){2-8}
+	& Georgian & Early Vic. & Late V./Edw. & Interwar & Postwar & Cont. & Revival \\
+  \midrule
+	Georgian & 267 & 121 & 110 & 46 & 33 & 36 & 17 \\
+	  Early.Vic. & 50 & 1673 & 438 & 112 & 107 & 63 & 52 \\
+	  Late V./Edw. & 19 & 183 & 3099 & 272 & 86 & 33 & 44 \\
+	  Interwar & 12 & 71 & 335 & 5786 & 1419 & 84 & 82 \\
+	  Postwar & 2 & 24 & 56 & 462 & 3364 & 75 & 38 \\
+	  Cont. & 5 & 63 & 82 & 141 & 366 & 778 & 79 \\
+	  Revival & 6 & 43 & 54 & 156 & 170 & 114 & 437 \\
+	\midrule
+	  Georgian & 74\% & 6\% & 3\% & 1\% & 1\% & 3\% & 2\% \\
+	  Early.Vic. & 14\% & 77\% & 10\% & 2\% & 2\% & 5\% & 7\% \\
+	  Late V./Edw. & 5\% & 8\% & 74\% & 4\% & 2\% & 3\% & 6\% \\
+	  Interwar & 3\% & 3\% & 8\% & 83\% & 26\% & 7\% & 11\% \\
+	  Postwar & 1\% & 1\% & 1\% & 7\% & 61\% & 6\% & 5\% \\
+	  Cont. & 1\% & 3\% & 2\% & 2\% & 7\% & 66\% & 11\% \\
+	  Revival & 2\% & 2\% & 1\% & 2\% & 3\% & 10\% & 58\% \\
+		\midrule
+	  Recall & 0.74 & 0.77 & 0.74 & 0.83 & 0.61 & 0.66 & 0.58 \\
+	  Precision & 0.42 & 0.67 & 0.83 & 0.74 & 0.84 & 0.51 & 0.45 \\
+	  $F_1$-score & 0.54 & 0.72 & 0.78 & 0.78 & 0.70 & 0.58 & 0.51 \\
+	 \bottomrule
+\end{tabular}
+
+\begin{minipage}{\textwidth}
+\footnotesize
+	\emph{Notes:} Cross-tabulation of out-of-sample predictions and ground truth.
+	\emph{Recall} is the share of buildings from a ground truth category being predicted correctly (diagonal in mid panel) and \emph{Precision} is the share of buildings predicted to belong to a category that are indeed from that category.
+	$F_1$-scores are the harmonious mean of Precision and Recall: \emph{ $F_1$-score = 2 Recall * Precision / (Recall + Precision).}
+\end{minipage}
+
+
+\endgroup
+\end{table}
