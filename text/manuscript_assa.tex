@@ -109,8 +109,10 @@ into architectural styles, taking into account spatial dependencies of
 building vintages. Third, it investigates whether architectural styles
 influence house prices. For re-sales, the architectural style is a
 significant determinant of transaction prices while no such effect is
-found for new buildings. This indicates that any premia are for
-vintage-related quality characteristics and not for a home's ``beauty''.
+found for new buildings. Additionally, through the comparison of expert
+classification and deep learning methods, we are able to illustrate some
+of the limitations of machine learning methods and provide guidance on
+how to detect and overcome these limitations.
 \end{abstract}
 
 \hypertarget{introduction}{%
@@ -119,7 +121,7 @@ vintage-related quality characteristics and not for a home's ``beauty''.
 \let\svthefootnote\thefootnote
 \let\thefootnote\relax
 
-\footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp and seminar participants at UCL/Bartlett and at the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
+\footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp, Pavel Krivenko and participants at the ASSA/AREUEA 2019 annual meeting and seminars at UCL/Bartlett and the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
 
 \addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
 
@@ -141,21 +143,22 @@ price premia associated with these styles. If aesthetics were as strong
 a force in the built environment as claimed, we should indeed find a
 significant effect on property prices.
 
-This paper will assess architectural aesthetics heads on and analyze the
-visual appearance of residential buildings using street level images.
-Recent work illustrates how street level imagery and machine learning
-classification is an efficient and powerful combination for measuring
-previously unobserved characteristics of the urban environment. Naik et
-al. (2017) describe how neighborhood demographics may impact the
-physical appearance of neighborhoods. Gebru et al. (2017) use classified
-vehicle make and model to predict income, race, education, and voting
-patterns at the precinct level. Glaeser et al. (2018) predict income in
-New York City. Naik, Raskar, and Hidalgo (2016) create a neighborhood
-safety based Streetscore which is shown to be highly correlated with
-neighborhood population density and household income. De Nadai et al.
-(2016) find that greenery and street facing windows contribute to a
-positive appearance of safety while Liu et al. (2017) evaluate the
-quality and upkeep of the built environment along Beijing's streets.
+This paper assesses the value of architectural aesthetics heads on by
+classifying the vintage of residential buildings using street level
+images. Recent work illustrates how street level imagery and machine
+learning classification is an efficient and powerful combination for
+measuring previously unobserved characteristics of the urban
+environment. Naik et al. (2017) describe how neighborhood demographics
+may impact the physical appearance of neighborhoods. Gebru et al. (2017)
+use classified vehicle make and model to predict income, race,
+education, and voting patterns at the precinct level. Glaeser et al.
+(2018) predict income in New York City. Naik, Raskar, and Hidalgo (2016)
+create a neighborhood safety based Streetscore which is shown to be
+highly correlated with neighborhood population density and household
+income. De Nadai et al. (2016) find that greenery and street facing
+windows contribute to a positive appearance of safety while Liu et al.
+(2017) evaluate the quality and upkeep of the built environment along
+Beijing's streets.
 
 Glaeser, Kincaid, and Naik (2018) push the level of observation from the
 block, street, or street-section level to the individual
@@ -189,32 +192,34 @@ prices for the estimated building characteristics. Our work demonstrates
 that utilizing pretrained convolutional neural networks to detect
 complex characteristics such as housing vintages with relatively high
 accuracy comes at low computational costs and is feasible with only
-modestly-sized training data. No supercomputers are needed, a modern
-laptop will do.
+modestly-sized training data. Additionally, we illustrate how machine
+classifications may be sensitive to photo quality by comparing predicted
+vintages to those made by human experts.
 
 \hypertarget{building-vintage-and-property-values}{%
 \subsection{Building vintage and property
 values}\label{building-vintage-and-property-values}}
 
-The aesthetics of different architectural eras make for an easy cocktail
-party conversation topic -- and they also influence market prices. Using
-architectural assessments by human experts, Buitelaar and Schilder
-(2017) find a sizable premium of 5\% for new buildings in the
-Netherlands that refer to traditional styles and a staggering 15\%
-premium for new buildings that closely follow traditional shapes, facade
-composition and details. Their study carefully disentangles the
-architectural style from other unobserved characteristics such as
-building quality, differences in location or year of construction. These
-controls are crucial, as earlier work has established that age and
-vintage variables tend to be highly correlated. Coulson and McMillen
-(2008), for instance, suggest a non-parametric estimator and establish a
-U-shaped age function and distinct price discounts for postwar and
-contemporary vintages (vis-à-vis more historic vintages). Francke and
-Minne (2017) investigate the depreciation of residential real estate in
-the Netherlands and decompose land versus structure values singling out
-the effect of ``physical deterioration, functional obsolescence and and
-vintage effects''. They find that buildings from the 1930s carry a
-strong price premium.
+The aesthetics of different architectural
+vintages\footnote{We use ``style'',``era'' or ``vintage'' interchangeably in this paper.}
+make for an easy cocktail party conversation topic -- and they may also
+influence market prices. Using architectural assessments by human
+experts, Buitelaar and Schilder (2017) find a sizable premium of 5\% for
+new buildings in the Netherlands that refer to traditional styles and a
+staggering 15\% premium for new buildings that closely follow
+traditional shapes, facade composition and details. Their study
+carefully disentangles the architectural style from other unobserved
+characteristics such as building quality, differences in location or
+year of construction. These controls are crucial, as earlier work has
+established that age and vintage variables tend to be highly correlated.
+Coulson and McMillen (2008), for instance, suggest a non-parametric
+estimator and establish a U-shaped age function and distinct price
+discounts for postwar and contemporary vintages (vis-à-vis more historic
+vintages). Francke and Minne (2017) investigate the depreciation of
+residential real estate in the Netherlands and decompose land versus
+structure values singling out the effect of ``physical deterioration,
+functional obsolescence and and vintage effects''. They find that
+buildings from the 1930s carry a strong price premium.
 
 A large scale assessment of buildings' exteriors will allow for an
 analysis of the externalities of architecture. Buildings hardly ever
@@ -238,7 +243,8 @@ observation in any given sample. Google Street View offers a solution to
 this nexus as it captures the images of almost all buildings in many
 cities around the world at high level of accuracy and detail. The
 challenge we address in this paper is to extract and utilize building
-level information from this ubiquitous sensor.
+level information from this ubiquitous sensor, using freely available
+deep learning techniques.
 
 \hypertarget{methodology}{%
 \section{Methodology}\label{methodology}}
@@ -321,7 +327,7 @@ trained for the ImageNet Large Scale Visual Recognition Challenge
 evaluates image classification and object detection algorithms for a
 wide range of objects. The pretrained classifications would allow us to
 identify pets, vehicles or people on the pictures -- assessing
-architectural finesse, however, is beyond the canned classifiers'
+architectural style, however, is beyond the canned classifiers'
 capabilities.
 
 Glaeser, Kincaid, and Naik (2018) rely on an different ILSVRC
@@ -381,7 +387,7 @@ paper so that we can compare the out-of-sample convolutional neural
 network predictions to the ground truth as assigned by the experts. This
 allows us to examine the power and size of the assignment tests. In
 addition having both human and machine classification for a large sample
-of the data allows for a robustness checks on the machine comparisons.
+of the data allows for robustness checks on the machine comparisons.
 
 We create stratified training samples of 600 buildings from each
 category but \emph{Georgian}, which is the least common style in
@@ -429,8 +435,11 @@ misclassification rate.
 Two variables are obtained from the distribution of classifications per
 observation: The ensemble classifier arrives at predictions by majority
 vote. In addition, a confidence measure is computed as the Herfindahl
-index of classifications by ensemble member
-models.\footnote{If, for instance, 20 models classified a building as *Contemporary* but 80 others as *Revival*, the ensemble majority vote is *Revival*. The corresponding Herfindahl score is calculated as $(20/100)^2 + (80/100)^2 = 0.68$.}
+index of classifications by ensemble member models. If, for instance, 20
+models classified a building as \emph{Contemporary} but 80 others as
+\emph{Revival}, the ensemble majority vote is \emph{Revival}. The
+corresponding Herfindahl score is calculated as
+\((20/100)^2 + (80/100)^2 = 0.68\).
 
 We tabulate confusion matrices and evaluate the classification
 performance in terms of recall, precision and \(F_1\)-scores. The next
@@ -520,7 +529,7 @@ Cambridge proper which were recorded between January 1995 and October
 £2,000,000. Linking recently taken images to sales data from 24 years
 assumes that houses have not changed their architectural styles -- which
 seems reasonable. We are not aware of any conversions of just the
-exterior of buildings. Full redevelopments, did occur and we exclude
+exterior of buildings. Full redevelopments did occur and we exclude
 sales for a given address pre-dating any redevelopment. Table
 \ref{tab:sumstats} presents summary statistics for the sample.
 
@@ -584,7 +593,8 @@ being \emph{Georgian} than finding consensus for other vintages. For
 \emph{Contemporary} or \emph{Revival} vintages, individual
 classifications differ most. All off-diagonal elements in the lower
 panel of Table \ref{tab:herftab} are negative, suggesting that, in
-general, the ensemble is not really sure when misclassifying images.
+general, the Herfindahl index is a good predictor of misclassified
+images.
 
 A closer inspection of the misclassified images sheds some light on the
 limits of automatically collected street level imagery. What do
@@ -607,7 +617,7 @@ quality variables. Table \ref{tab:diffimgchar}, Panel A, compares the
 mean values for views obstructed by trees or vehicles for correctly (on
 diagonal) and incorrectly classified images. In most cases, the
 off-diagonal values are positive, showing that more obstacles in the
-view of sight correlate with higher odds of misclassifications.
+view of sight correlate with a higher likelihood of misclassifications.
 Similarly, if more of the image area shows a house (Panel B),
 misclassifications are reduced (negative differences). This effect is
 stronger for windows, which appear to give valuable cues about a house's
@@ -627,9 +637,9 @@ Table \ref{tab:confmat}, Panel B, show. The improvement is most evident
 in the precision rates. For the relatively rare categories of
 \emph{Georgian} and \emph{Revival} about the same number of buildings
 classified as \emph{Georgian/Revival} in Panel A actually belong to a
-different ground truth class -- the precision shoots up to 0.70 for
-\emph{Georgian} and 0.82 for \emph{Revival} when excluding the not so
-confident lower third of predictions in Panel B.
+different ground truth class -- the precision shoots up from 0.50 to
+0.70 for \emph{Georgian} and from 0.52 to 0.82 for \emph{Revival} when
+excluding the not so confident lower third of predictions in Panel B.
 
 The majority of misclassification is concentrated in temporally adjacent
 eras: 10 percent of \emph{Late Victorian/Edwardian} buildings are
@@ -667,12 +677,12 @@ hedonic control variables show the expected signs: Negative coefficients
 for the relative distance to the city center, discounts for terraced
 homes and semi-detached homes relative to detached houses, positive
 elasticities for building floor plate and building volumes and a price
-premium for new buildings compared to second-hand homes, when
-applicable. Year and neighborhood dummies control for time effects and
-local amenities but their coefficients are not reported due to space
-constraints. The combination of location dummies and the distance to the
-city center measure controls for proximity to the city center
-\emph{within} each neighborhood.
+premium for new buildings compared to second-hand homes. Year and
+neighborhood dummies control for time effects and local amenities but
+their coefficients are not reported due to space constraints. The
+combination of location dummies and the distance to the city center
+measure controls for proximity to the city center \emph{within} each
+neighborhood.
 
 \begin{center}
   -- Insert Table \ref{tab:sumstats} and Table \ref{tab:hedreg} about here --
@@ -683,7 +693,7 @@ regression coefficients for ground truth vintages. The base vintage
 \emph{Contemporary} is more expensive than almost all other vintages,
 which show negative coefficients that are significantly different from
 0. A clear pecking order appears: \emph{Georgian} and \emph{Revival}
-buildings are the dearest \((+0.04)\), followed by \emph{Late
+buildings demand the highest premium \((+0.04)\), followed by \emph{Late
 Victorian/Edwardian} \((+0.01)\), \emph{Contemporary} (base),
 \emph{Early Victorian} \((-0.13)\), \emph{Interwar} \((-0.15)\) and
 \emph{Postwar} \((-0.22)\).
@@ -724,9 +734,9 @@ buildings are the least popular neighbors. The difference between
 \emph{Revival} and \emph{Contemporary} neighbors is not statistically
 significant. We fail to find evidence in favor of positive externalities
 from revival architecture. Everything else equal, buildings within
-ensembles of \emph{Contemporary} buildings generally do not achieve
-higher transaction prices than buildings in more historic areas (as
-Table \ref{tab:comb} will confirm later).
+ensembles of \emph{Contemporary} generally do not achieve higher
+transaction prices than buildings in more historic areas (as Table
+\ref{tab:comb} will confirm later).
 
 Table \ref{tab:hedregint} presents the \(\iota\) interaction
 coefficients (Eq. \ref{eq:hed}) for vintage-neighboring vintage
@@ -754,7 +764,7 @@ buildings in a more modern setting.
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 
-The contributions of this paper are threefold: First, it introduced an
+The contributions of this paper are threefold: First, it introduces an
 algorithm that collects pictures of \emph{individual} buildings from
 Google Street View. Earlier work has not achieved this level of detail
 and was, at least in the UK, limited to street sections only. A
