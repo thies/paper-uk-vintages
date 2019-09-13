@@ -7,7 +7,7 @@
 \begin{tabular}{lrrrrrrr}
 	& \multicolumn{7}{c}{\rule{0pt}{4ex}    \emph{Panel A: Model based on individual building and nearest neighbor} \rule{0pt}{4ex}    }\\
 	\toprule
-	\emph{Pred. vintage} & \multicolumn{7}{c}{\emph{Ground truth}} \\
+	\emph{Machine} & \multicolumn{7}{c}{\emph{Architects}} \\
 	\cmidrule(lr){2-8}
 	& Georgian & Early Vic. & Late V./Edw. & Interwar & Postwar & Cont. & Revival \\
   \cmidrule(lr){1-1}
@@ -91,8 +91,8 @@ $F_1$-score & 0.73 & 0.87 & 0.90 & 0.90 & 0.86 & 0.81 & 0.77 \\
 \begin{minipage}{\textwidth}
 \footnotesize
 \vspace{0.25cm}
-	\emph{Notes:} Cross-tabulation of out-of-sample predictions and ground truth.
-	\emph{Recall} is the share of buildings from a ground truth category being predicted correctly (diagonal in mid panel) and \emph{Precision} is the share of buildings predicted to belong to a category that are indeed from that category.
+	\emph{Notes:} Cross-tabulation of out-of-sample predictions by the machine versus the architects' classification.
+	\emph{Recall} is the share of buildings from an architects' category being predicted correctly (diagonal in mid panel) and \emph{Precision} is the share of buildings predicted to belong to a category that are indeed from that category.
 	$F_1$-scores are the harmonious mean of Precision and Recall: \emph{ $F_1$-score = 2 Recall * Precision / (Recall + Precision).}
 \end{minipage}
 

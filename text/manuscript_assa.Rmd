@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning, Building Vintage and Property Values"
+title: "Machine Learning, Building Styles and Property Values"
 author: "Thies Lindenthal* (University of Cambridge) & Erik B. Johnson (University of Alabama)"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 tags: Externalities of architecture, machine learning
@@ -23,27 +23,28 @@ fig_height: 4
 output: 
   pdf_document:
     keep_tex: true
+    number_sections: true
 bibliography: references.bib
-abstract: "This paper first introduces an algorithm that collects pictures of individual buildings from Google Street View. Second, it trains a deep convolutional neural network (CNN) to classify residential buildings into architectural styles, taking into account spatial dependencies of building vintages. Third, it investigates whether architectural styles influence house prices. For re-sales, the architectural style is a significant determinant of transaction prices while no such effect is found for new buildings. Additionally, we are able to provide guidance on how to detect and overcome some of the limitations of machine learning methods through a large-scale comparison of predictions and expert classifications." 
+abstract: "This paper first introduces an algorithm that collects pictures of individual buildings from Google Street View. Second, it trains a deep convolutional neural network (CNN) to classify residential buildings into architectural styles, taking into account spatial dependencies of these styles. Third, it investigates whether architectural styles influence house prices. For re-sales, the architectural style is a significant determinant of transaction prices while no such effect is found for new buildings. Additionally, we are able to provide guidance on how to detect and overcome some of the limitations of machine learning methods through a large-scale comparison of predictions and expert classifications." 
 ---
 
 # Introduction
 \let\svthefootnote\thefootnote
-\let\thefootnote\relax\footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp, Pavel Krivenko and participants at the ASSA/AREUEA 2019 annual meeting and seminars at UCL/Bartlett and the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
+\let\thefootnote\relax\footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Peter Brummund, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp, Pavel Krivenko and participants at the ASSA/AREUEA 2019 annual meeting and seminars at UCL/Bartlett and the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
 \addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
-If new developments were only pleasing to the eye, so Britain's *Building Better, Building Beautiful Commission*, nimbyism would cease and housing supply could finally reach the levels demanded by a growing and more affluent population [@economistlineofbeauty2018]. The inaugural chair of this new governmental commission boldly suggests that we should *``build, as our Georgian and Victorian forebears built* [...]. *All objections to new building would slip away in the sheer relief of the public''* [@scruton2018]. Even Prince Charles, in similar spirit, put forward ten principles for urban growth and architecture that emphasize tradition and aesthetics [@princecharles2014]. When governments and princes occupy themselves with beauty, economists surely may take a closer look as well. In this paper, we aim to identify the architectural styles of residential buildings using computer vision techniques and to empirically search for any transaction price premia associated with these styles. If aesthetics were as strong a force in the built environment as claimed, we should indeed find a significant effect on property prices. 
+If new developments were only pleasing to the eye, so Britain's *Building Better, Building Beautiful Commission* advising Government, nimbyism would cease and housing supply could finally reach the levels demanded by a growing and more affluent population [@economistlineofbeauty2018]. The inaugural chair of this new commission boldly suggested that if we built *``as our Georgian and Victorian forebears built* [...]. *All objections to new building would slip away in the sheer relief of the public''* [@scruton2018]. Even Prince Charles, in similar spirit, put forward ten principles for urban growth and architecture that emphasize tradition and aesthetics [@princecharles2014]. When governments and princes occupy themselves with beauty, economists surely may take a closer look as well. In this paper, we aim to identify the architectural styles of residential buildings using computer vision techniques and to empirically search for any transaction price premia associated with these styles. If aesthetics were as strong a force in the built environment as claimed, we should indeed find a significant effect on property prices. 
 
-This paper assesses the value of architectural aesthetics heads on by classifying the vintage of residential buildings using street level images. Recent work illustrates how street level imagery and machine learning classification is an efficient and powerful combination for measuring previously unobserved characteristics of the urban environment. @Naik2017 describe how neighborhood demographics may impact the physical appearance of neighborhoods. @Gebru2017 use classified vehicle make and model to predict income, race, education, and voting patterns at the precinct level. @Glaeser2016 predict income in New York City. @Naik2016AER create a neighborhood safety based Streetscore which is shown to be highly correlated with neighborhood population density and household income. @Nadai2016 find that greenery and street facing windows contribute to a positive appearance of safety while @Liu2017 evaluate the quality and upkeep of the built environment along Beijing's streets.  
+This paper assesses the value of architectural aesthetics head on by classifying the exterior styles of residential buildings using street level images. Recent work illustrates how street level imagery and machine learning classification is an efficient and powerful combination for measuring previously unobserved characteristics of the urban environment. @Naik2017 describe how neighborhood demographics may impact the physical appearance of neighborhoods. @Gebru2017 use classified vehicle make and model information to predict income, race, education, and voting patterns at the precinct level. @Glaeser2016 predict income in New York City. @Naik2016AER create a neighborhood safety based Streetscore which is shown to be highly correlated with neighborhood population density and household income. @Nadai2016 find that greenery and street facing windows contribute to a positive appearance of safety while @Liu2017 evaluate the quality and upkeep of the built environment along Beijing's streets.  
 
 @GlaeserKincaidNaik2018 push the level of observation from the block, street, or street-section level to the individual \emph{building level}. Utilizing images of buildings' exteriors collected from Google Street View\footnote{\href{https://www.google.co.uk/maps}{https://www.google.co.uk/maps}}, and to a lesser degree interior images from Zillow, they find that looks matter, at least in Boston: A one standard deviation improvement of a building's exterior is associated with an additional USD 70,000 in home value. Intuitively, the link between good looks and value is bi-directional: The appearance of buildings that went through foreclosure deteriorated significantly [@GlaeserKincaidNaik2018].
 
 Zooming in at individual buildings significantly increases the benefits of using mass collected street level imagery in economic research: property characteristics previously deemed "unobservable" can be directly observed in an accurate, objective, automatic and therefore cost effective way. Deriving additional variables from unconventional data sources like 3D airborne laser scanning (or in our case Google Street View) is fundamental since this provides "essential determinants influencing real estate prices [which] are constantly missing and are not accessible in official and mass appraiser databases" [@Helbich2013].
 
-In this paper we suggest a method to collect a large number of images of individual UK buildings from Google Street View, classify the depicted buildings using deep convolutional neural networks, combine the derived information with sales price data and, ultimately, estimate marginal prices for the estimated building characteristics. Our work demonstrates that utilizing pretrained convolutional neural networks to detect complex characteristics such as housing vintages with relatively high accuracy comes at low computational costs and is feasible with only modestly-sized training data. Additionally, we illustrate how machine classifications may be sensitive to photo quality by comparing predicted vintages to those made by human experts.
+In this paper we suggest a method to collect a large number of images of individual UK buildings from Google Street View, classify the depicted buildings using deep convolutional neural networks, combine the derived information with sales price data and, ultimately, estimate marginal prices for the estimated building characteristics. Our work demonstrates that utilizing pretrained convolutional neural networks to detect complex characteristics such as housing appearances with relatively high accuracy comes at low computational costs and is feasible with only modestly-sized training data. Additionally, we illustrate how machine classifications may be sensitive to photo quality by comparing machine classifications to those made by human experts.
 
-## Building vintage and property values
+## Building styles and property values
 
-The aesthetics of different architectural vintages\footnote{We use ``style'',``era'' or ``vintage'' interchangeably in this paper.} make for an easy cocktail party conversation topic -- and they may also influence market prices. Using architectural assessments by human experts, @Buitelaar2017 find a sizable premium of 5\% for new buildings in the Netherlands that refer to traditional styles and a staggering 15\% premium for new buildings that closely follow traditional shapes, facade composition and details. Their study carefully disentangles the architectural style from other unobserved characteristics such as building quality, differences in location or year of construction. These controls are crucial, as earlier work has established that age and vintage variables tend to be highly correlated. @Coulson2008, for instance, suggest a non-parametric estimator and establish a U-shaped age function and distinct price discounts for postwar and contemporary vintages (vis-à-vis more historic vintages). @Francke2017a investigate the depreciation of residential real estate in the Netherlands and decompose land versus structure values singling out the effect of "physical deterioration, functional obsolescence and and vintage effects". They find that buildings from the 1930s carry a strong price premium.
+The aesthetics of different architectural styles make for an easy cocktail party conversation topic -- and they may also influence market prices. Using architectural assessments by human experts, @Buitelaar2017 find a sizable premium of 5\% for new buildings in the Netherlands that refer to traditional styles and a staggering 15\% premium for new buildings that closely follow traditional shapes, facade composition and details. Their study carefully disentangles the architectural style from other unobserved characteristics such as building quality, differences in location, or year of construction. These controls are crucial, as earlier work has established that age and style variables tend to be highly correlated. @Coulson2008, for instance, suggest a non-parametric estimator and establish a U-shaped age function and distinct price discounts for postwar and contemporary styles (vis-à-vis more historic styles). @Francke2017a investigate the depreciation of residential real estate in the Netherlands and decompose land versus structure values singling out the effect of "physical deterioration, functional obsolescence and and vintage effects". They find that buildings from the 1930s carry a strong price premium.
 
 A large scale assessment of buildings' exteriors will allow for an analysis of the externalities of architecture. Buildings hardly ever stand in isolation and @Ahlfeldt2012 investigate the influence a building's architecture exerts on its surroundings. They observe a positive price effect for residential buildings in the direct proximity of iconic homes by Frank Lloyd Wright in Oak Park, Illinois. A building's exterior does not need to be an architectural masterpiece to co-determine the value of other houses close by. Homogeneity of building shapes within street segments does influence property values. A similarly shaped neighboring building is value enhancing while proximity to a wildly different neighboring shape, everything else remaining equal, is detrimental to property values [@Lindenthal2017b].
 
@@ -83,29 +84,31 @@ By combining land registry maps with the snapshot location, we are able to autom
 
 We download all pictures at the highest resolution offered by Google's Street View API\footnote{\href{https://developers.google.com/maps/documentation/streetview/intro}{https://developers.google.com/maps/documentation/streetview/intro}} (640x640 color pixels). We then obtain 2048-dimensional feature vectors for each picture, using the \emph{Inception-v3} deep convolutional neural network [@Szegedy2015]. \emph{Inception-v3} has been trained for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC)\footnote{\url{http://image-net.org/challenges/LSVRC/}}, which evaluates image classification and object detection algorithms for a wide range of objects. The pretrained classifications would allow us to identify pets, vehicles or people on the pictures -- assessing architectural style, however, is beyond the canned classifiers' capabilities.
 
-@GlaeserKincaidNaik2018 rely on an different ILSVRC competitor, \emph{Resnet-101} [@He2016]. They reduce the extracted feature vectors to lower dimensionality (1024 to 100 dimensions) based on principal component analysis (PCA). We follow a different strategy and double the dimensionality by including the feature vector of the building's nearest neighbor. Doubling up allows us to model spatial dependencies in building styles, similar to spatially correlated land cover classifications in @Ghimire2010a.
+@GlaeserKincaidNaik2018 rely on an different ILSVRC competitor, \emph{Resnet-101} [@He2016]. They reduce the extracted feature vectors to lower dimensionality (1024 to 100 dimensions) based on principal component analysis (PCA). We follow a different strategy and double the dimensionality by including the feature vector of the closest building in the sample, which, in most cases, is the direct neighbor. The feature vectors of neighbors have been collected in exactly the same way as those for other buildings in the sample. Doubling up allows us to model spatial dependencies in building styles, similar to spatially correlated land cover classifications in @Ghimire2010a.
 
 
 
 ## Image classification
 
-Cambridge's houses can be classified into seven broad eras: \footnote{We are grateful to colleagues from the Architecture Department at the University of Cambridge to provide these general vintage descriptions.}
+Cambridge's houses can be classified into seven broad styles: \footnote{We are grateful to colleagues from the Architecture Department at the University of Cambridge to provide these general style descriptions.}
 
 * \emph{Georgian} (c1714--1837) houses feature key characteristics such as sash windows, fan lights above doors, the use of stucco on facades, often wrought work grilles, railings etc.\label{def_eras}
 
 * In the \emph{Early Victorian} era (c1837--c1870s), a growing taste for individualized embellishment led to the development of elaborate features such as carved barge boards or finials. The development of sheet glass led to sash windows becoming more affordable, and, increasingly, wider.
 
-* In the \emph{Late Victorian} era (c1870s--1901), bay windows became more and more widespread, and increasingly substantial. Stylistic movements such as the Queen Anne revival style contributed richly ornamental details to the formal repertoire employed by designers. Stained glass became more popular. \emph{Edwardian} architecture (1901-1910) tends to be less ornate than late Victorian architecture.
+* In the \emph{Late Victorian} era (c1870s--1901), bay windows became more and more widespread, and increasingly substantial. Stylistic movements such as the Queen Anne revival style contributed richly ornamental details to the formal repertoire employed by designers. Stained glass became more popular. 
+
+* \emph{Edwardian} architecture (1901-1910) tends to be less ornate than late Victorian architecture.
 
 * The \emph{Interwar} period (1918--1939) saw the cost of building construction fall, amidst a drive to provide better housing for the working classes. New housing types were being favored.
 
-* The \emph{Postwar} (1950-1980) era continued on this path, with an embrace of high-rise as well as low rise housing. Facades vary greatly between brick, tiling, pebbledash and render.
+* The \emph{Postwar} (1950-1980) styles continued on this path, with an embrace of high-rise as well as low rise housing. Facades vary greatly between brick, tiling, pebbledash and render.
 
-* The cut-off year for our \emph{Contemporary} era to begin is 1980. \emph{Revival} are contemporary buildings trying to emulate historic, mostly Victorian, architecture. 
+* The cut-off year for our \emph{Contemporary} era to begin is 1980. \emph{Revival} style-homes are contemporary buildings trying to emulate historic, mostly Victorian, architecture. 
 
-Two final-year architectural students classified a large sub-sample of approximately 25,000 images from our data set of Cambridge houses. This is a much larger sample than needed in our case. In our case, each category requires less than 250 observations to reach saturated training accuracy levels. We greatly exceed this number for the purpose of this paper so that we can compare the out-of-sample convolutional neural network predictions to the ground truth as assigned by the experts. This allows us to examine the power and size of the assignment tests. In addition having both human and machine classification for a large sample of the data allows for robustness checks on the machine comparisons.
+Two final-year architectural students classified a large sub-sample of approximately 25,000 images from our data set of Cambridge houses. This is a much larger sample than needed in our case. In our case, each category requires less than 250 observations to reach saturated training accuracy levels. We greatly exceed this number for the purpose of this paper so that we can compare the out-of-sample convolutional neural network predictions to the architects' classifications. This allows us to examine the power and size of the assignment tests. In addition having both human and machine classification for a large sample of the data allows for robustness checks on the machine comparisons.
 
-We create stratified training samples of 600 buildings from each category but *Georgian*, which is the least common style in Cambridge and for which we can only sample 330 examples. This leaves a sufficiently sized out-of-sample verification data set. 
+We create stratified training samples of 600 buildings from each category but *Georgian*, which is the least common style in Cambridge and for which we can only sample 330 examples. This leaves a sufficiently sized out-of-sample verification data set of 21,000 homes. 
 
 The multinomial classifier model design remains parsimonious, comprising of:
 
@@ -119,34 +122,34 @@ The multinomial classifier model design remains parsimonious, comprising of:
 
 All classifiers are implemented using the Keras/Tensorflow APIs\footnote{Keras: \href{https://keras.io/}{https://keras.io/}, Tensorflow: \href{https://github.com/tensorflow/tensorflow}{https://github.com/tensorflow/tensorflow}}. The computational burden of this rather shallow model design is modest.
 
-For 100 randomly drawn, stratified data sets, we train two models each: The first is based on the building specific feature vectors (2048 dimensions) only while the second also incorporates the feature vector of the nearest neighbor (combined 4096 dimensions). In cases where trees, fences or large vehicles obstruct the view or where the front of a building cannot be classified with high certainty, the image of the nearest neighbor provides a ``second opinion'' that is spatially correlated with the observation of interest. Finally we classify all buildings not used in training or evaluating the model (truly out-of-sample). 
+For 100 randomly drawn data sets, all stratified on style, we train two models each: The first is based on the building specific feature vectors (2048 dimensions) only while the second also incorporates the feature vector of the nearest neighbor (combined 4096 dimensions). In cases where trees, fences or large vehicles obstruct the view or where the front of a building cannot be classified with high certainty, the image of the nearest neighbor provides a ``second opinion'' that is spatially correlated with the observation of interest. Finally we classify all buildings not used in training or evaluating the model (truly out-of-sample). 
 
-When classifying a building picture, each models returns a vector of vintage-scores, each between 0 to 1, that jointly sum up to 1. We select the vintage with the highest score as the best estimate. By not excluding observations where multiple scores are vying for the top rank we retain as many observations as possible but risk a higher misclassification rate.
+When classifying a building picture, each models returns a vector of style-scores, each between 0 to 1, that jointly sum up to 1. We select the style with the highest score as the best estimate. By not excluding observations where multiple scores are vying for the top rank we retain as many observations as possible but risk a higher misclassification rate.
 
 Two variables are obtained from the distribution of classifications per observation: The ensemble classifier arrives at predictions by majority vote. In addition, a confidence measure is computed as the Herfindahl index of classifications by ensemble member models. If, for instance, 20 models classified a building as *Contemporary* but 80 others as *Revival*, the ensemble majority vote is *Revival*. The corresponding Herfindahl score is calculated as $(20/100)^2 + (80/100)^2 = 0.68$.
 
 
-We tabulate confusion matrices and evaluate the classification performance in terms of recall, precision and $F_1$-scores. The next step regresses the true vintage observed, captured by binomial variables $D_{TrueVint}$, against a vector of hedonic variables $\mathbf{X}$, vectors of year $\mathbf{Y}$ and neighborhood $\bm{Loc}$ dummy variables and the building's $\mathbf{Vintage}$, estimated both with and without spatial dependencies. The intercept is denoted by $\alpha$ while $\bm{\beta}$, $\bm{\delta}$, $\bm{\gamma}$ and $\bm{\lambda}$ are vectors of regression coefficients, and $\epsilon$ is the error term.
+We tabulate confusion matrices and evaluate the classification performance in terms of recall, precision and $F_1$-scores. More formally, the next step regresses the style classifications by architects, captured by binomial variables $D_{TrueVint}$, against a vector of hedonic variables $\mathbf{X}$, vectors of year $\mathbf{Y}$ and neighborhood $\bm{Loc}$ dummy variables and the building's $\mathbf{Style}$, estimated both with and without spatial dependencies. The intercept is denoted by $\alpha$ while $\bm{\beta}$, $\bm{\delta}$, $\bm{\gamma}$ and $\bm{\lambda}$ are vectors of regression coefficients, and $\epsilon$ is the error term.
 
 \begin{equation} \label{eq:rev}
-  logit( D_{TrueVint,i} ) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Vintage}_i +  \gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
+  logit( D_{TrueVint,i} ) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Style}_i +  \gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
 \end{equation}
 
 The logit regressions are estimated by generalized least squares. For a well-performing classifier, the $\delta$ coefficients will be statistically significant and, more importantly, differences in the Akaike Information Criterion (AIC) allow for comparisons across the suggested ML classifiers. 
 
-Will the resulting classifiers be biased with respect to property values, picking up correlated but irrelevant cues such as greenery, upkeep, or cars brands instead of building exteriors? Are, for instance, more valuable houses more likely to be classified as the popular *Late Victorian* vintage while starter homes are disproportionally more likely to be classified as e.g. *Early Victorian*? We expect that in cases in which the ensemble provided a high confidence score, building features are clearly detectable on the pictures. For close calls, however, where models within the ensemble cannot agree, other factors might tilt the scale towards an incorrect class. A sizable difference in estimated marginal prices for estimated vintages versus values for ground truth vintages in the subsequent hedonic regression (Eq. \ref{eq:hed}, below) would indicate such a bias.
+Will the resulting classifiers be biased with respect to property values, picking up correlated but irrelevant cues such as greenery, upkeep, or cars brands instead of building exteriors? Are, for instance, more valuable houses more likely to be classified as the popular *Late Victorian* style while starter homes are disproportionally more likely to be classified as e.g. *Early Victorian*? We expect that in cases in which the ensemble provided a high confidence score, building features are clearly detectable on the pictures. For close calls, however, where models within the ensemble cannot agree, other factors might tilt the scale towards an incorrect class. A sizable difference in estimated marginal prices for machine's classifications versus the estimates for architects' classifications in the subsequent hedonic regression (Eq. \ref{eq:hed}, below) would indicate such a bias.
 
 
-## Building era and property price
+## Building style and property price
 
-Merging the estimated vintage classification with sales data [@LandRegistry2016a] we estimate a hedonic regression equation that establishes marginal prices for the building vintage [similar to @Moorhouse1994; @Asabere1989; @Vandell1989; @Fuerst2011; @Plaut2006], among other characteristics:
+Merging the machine's classification with sales data [@LandRegistry2016a] we estimate a hedonic regression equation that establishes marginal prices for the building style [similar to @Moorhouse1994; @Asabere1989; @Vandell1989; @Fuerst2011; @Plaut2006], among other characteristics:
 \begin{equation} \label{eq:hed}
-  ln(Price_i) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Vintage}_i + \eta\mathbf{VintNeigh}_i + \iota\mathbf{Vintage\cdot VintNeigh}_i  +\gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
+  ln(Price_i) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Style}_i + \eta\mathbf{StyleNeigh}_i + \iota\mathbf{Style\cdot StyleNeigh}_i  +\gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
 \end{equation}
 
-Here, the natural logarithm of sales prices is explained by a linear combination of hedonic attributes described in vector $\mathbf{X}$, vectors of year $\mathbf{Y}$ and neighborhood $\bm{Loc}$ dummy variables and the building's estimated $\mathbf{Vintage}$ and the prevailing vintage of other buildings in the direct proximity $(\mathbf{VintNeigh})$. The intercept is denoted by $\alpha$ while $\bm{\beta}$, $\bm{\delta}$, $\bm{\eta}$, $\bm{\iota}$, $\bm{\gamma}$ and $\bm{\lambda}$ are vectors of regression coefficients. $\epsilon$ is the IID error term. Heteroscedastic robust standard errors will be reported.
+Here, the natural logarithm of sales prices is explained by a linear combination of hedonic attributes described in vector $\mathbf{X}$, vectors of year $\mathbf{Y}$ and neighborhood $\bm{Loc}$ dummy variables and the building's estimated $\mathbf{Style}$ and the prevailing vintage of other buildings in the direct proximity $(\mathbf{StyleNeigh})$. The intercept is denoted by $\alpha$ while $\bm{\beta}$, $\bm{\delta}$, $\bm{\eta}$, $\bm{\iota}$, $\bm{\gamma}$ and $\bm{\lambda}$ are vectors of regression coefficients. $\epsilon$ is the IID error term. Heteroscedastic robust standard errors will be reported.
 
-Are buildings from different eras imperfect substitutes catering to multiple groups of households with distinct vintage preferences? @Buitelaar2017 indicate that any premium for an architectural style must stem from either differences in construction prices (which they do not find in their Dutch sample) or from supply constraints, as new construction potentially does not capture the demand for traditional styles. For Cambridge, new supply will inevitably be of either contemporary or revival style as historic vintage buildings, by definition, are not supplied any more. Estimating Eq. \ref{eq:hed} for a subset of newly constructed buildings will show whether construction prices or supply constraints for new homes built according to different architectural styles persist -- if too few vernacular buildings were built, prices should reflect such a shortage.
+Are buildings with different appearances imperfect substitutes catering to multiple groups of households with distinct style preferences? @Buitelaar2017 indicate that any premium for an architectural style must stem from either differences in construction prices (which they do not find in their Dutch sample) or from supply constraints, as new construction potentially does not capture the demand for traditional styles. For Cambridge, new supply will inevitably be of either contemporary or revival style as historic vintages (and their styles), by definition, are not supplied any more. Estimating Eq. \ref{eq:hed} for a subset of newly constructed buildings will show whether construction prices or supply constraints for new homes built according to different architectural styles persist -- if too few vernacular buildings were built, prices should reflect such a shortage.
 
 
 # Data
@@ -155,11 +158,11 @@ Residential real estate transactions are public data in the UK, collected and pu
 
 The Ordnance Survey *AddressBase* [@OrdnanceSurvey2017] links street addresses to building outlines on Ordnance Survey maps [@OrdnanceSurvey2017a], which allows us to calculate the buildings floor plate (in $m^2$) and to estimate the building's volume from digital elevation models [@EnvironmentAgency2015], as suggested by @Lindenthal2017. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 indicator variables for each of the smallest census tracts (*Lower Super Output Areas*, LSOA) subdividing Cambridge [@ONS2017]. LSOAs typically have 1,000--3,000 residents and 400--1,200 households of comparable economic and socio-demographic characteristics [@ONS2017b].
 
-Overall, we collect pictures of more than 48,000 distinct buildings from the Google Street View API. The subset of 25,000 pictures that has been classified by trained architects into the seven vintages will serve as \emph{ground truth} for our study. Two additional categories identify buildings hidden by *greenery* or uninformative pictures featuring *plain walls*. The classified images are available at the authors' websites.
+Overall, we collect pictures of more than 48,000 distinct buildings from the Google Street View API. The subset of 25,000 pictures that has been classified by trained architects into the seven styles will serve as \emph{ground truth} for our study. Two additional categories identify buildings hidden by *greenery* or uninformative pictures featuring *plain walls*. The classified images are available at the authors' websites.
 
 # Results
 
-Almost 16,000 of the 25,000 buildings for which we have the architects' ground truth could be matched to the 23,768 sales transactions that have been recorded for Cambridge between 1995 and 2018. Thus, we observe both the machine *estimated vintage* and architect defined *ground truth* classification for the majority of buildings in the data set.
+Almost 16,000 of the 25,000 buildings for which we have an architect's classification could be matched to the 23,768 sales transactions that have been recorded for Cambridge between 1995 and 2018. The remaining 9,000 houses have not been sold since 1995 - but the information on their architectural style is still valuable for our measures of neighborhood styles. Thus, we observe both the machine's and the architects' classification for the majority of buildings in the data set.
 
 
 \begin{center}
@@ -168,15 +171,15 @@ Almost 16,000 of the 25,000 buildings for which we have the architects' ground t
 
 
 
-The agreement between vintage estimates and the corresponding ground truth classifications by experts is reassuringly strong. When relying on feature vectors of the buildings and their closest neighbors, 67 to 84 percent of true classifications are matched with correctly estimated labels (Table \ref{tab:confmat}, Panel A). The recall rates are especially high for older vintages: For *Georgians*, it is 79 percent, *Early Victorian* 81 percent, *Late Victorian/Edwardian* 78 percent, *Interwar* 84 percent, respectively. For more recent *Postwar* buildings, the rate drops to 71 percent, for *Contemporary* to 72 percent and for *Revival* to 67 percent.
+The agreement between classifications by the machine and by the architects is reassuringly strong. When relying on feature vectors of the buildings and their closest neighbors, 67 to 84 percent of true classifications are matched with correctly estimated labels (Table \ref{tab:confmat}, Panel A). The recall rates are especially high for older styles: For *Georgians*, it is 79 percent, *Early Victorian* 81 percent, *Late Victorian/Edwardian* 78 percent, *Interwar* 84 percent, respectively. For more recent *Postwar* buildings, the rate drops to 71 percent, for *Contemporary* to 72 percent and for *Revival* to 67 percent.
 
-A visual inspection of classifications is additionally reassuring. Figure \ref{fig:vint_examples} displays the pictures which carry the highest out-of-sample scores for each vintage. The model is clearly able to differentiate based on small cues, even when only parts of the facade are captured on the picture.
+A visual inspection of classifications is additionally reassuring. Figure \ref{fig:vint_examples} displays the pictures which carry the highest out-of-sample scores for each style The model is clearly able to differentiate based on small cues, even when only parts of the facade are captured on the picture.
 
-The Herfindahl scores for classifications vary substantially across ground truth vintages (Table \ref{tab:herftab}), indicating that the models within the ensemble, for instance, agree more often on a building being *Georgian* than finding consensus for other vintages. For *Contemporary* or *Revival* vintages, individual classifications differ most. All off-diagonal elements in the lower panel of Table \ref{tab:herftab} are negative, suggesting that, in general, the Herfindahl index is a good predictor of misclassified images.
+The Herfindahl scores for classifications vary substantially across styles, as classified by the architects (Table \ref{tab:herftab}), indicating that the models within the ensemble, for instance, agree more often on a building being *Georgian* than finding consensus for other styles. For *Contemporary* or *Revival* styles, individual classifications differ most. All off-diagonal elements in the lower panel of Table \ref{tab:herftab} are negative, suggesting that, in general, the Herfindahl index is a good predictor of misclassified images.
 
 A closer inspection of the misclassified images sheds some light on the limits of automatically collected street level imagery. What do misclassified images have in common? Off-the-shelf object detection algorithms can identify broadly defined objects such as trees, vehicles, houses, doors, or windows without any additional training. Using an Inception/Resnet object detection model trained on Open Images\footnote{In this case, "faster rcnn inception resnet v2 atrous oidv2", available from \url{https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md}}, we calculate the share of the image area taken up by cars or trees as a measure of view obstruction. The more image area is showing buildings and, importantly, windows the more meaningful input an automatic classifier can draw from, resulting in better classifications. In addition, images not taken at an optimal angle or zoom factor are detected by calculating the distance between the bounding box for the largest building detected on the image and the center of the image: For well-centered images, this offset will be small. 
 
-Table \ref{tab:imgqualsumstats} presents the mean values for the image quality variables. Table \ref{tab:diffimgchar}, Panel A, compares the mean values for views obstructed by trees or vehicles for correctly (on diagonal) and incorrectly classified images. In most cases, the off-diagonal values are positive, showing that more obstacles in the view of sight correlate with a higher likelihood of misclassifications. Similarly, if more of the image area shows a house (Panel B), misclassifications are reduced (negative differences). This effect is stronger for windows, which appear to give valuable cues about a house's vintage (Panel C). Finally, houses that are not in the center of the building tend to be misclassified more frequently (positive differences in Panel D). In sum, bad quality images lead to misclassifications.
+Table \ref{tab:imgqualsumstats} presents the mean values for the image quality variables. Table \ref{tab:diffimgchar}, Panel A, compares the mean values for views obstructed by trees or vehicles for correctly (on diagonal) and incorrectly classified images. In most cases, the off-diagonal values are positive, showing that more obstacles in the view of sight correlate with a higher likelihood of misclassifications. Similarly, if more of the image area shows a house (Panel B), misclassifications are reduced (negative differences). This effect is stronger for windows, which appear to give valuable cues about a house's style (Panel C). Finally, houses that are not in the center of the building tend to be misclassified more frequently (positive differences in Panel D). In sum, bad quality images lead to misclassifications.
 
 \begin{center}
   -- Insert Table \ref{tab:herftab}, Table \ref{tab:imgqualsumstats} and Table \ref{tab:diffimgchar} about here --
@@ -184,7 +187,7 @@ Table \ref{tab:imgqualsumstats} presents the mean values for the image quality v
 
 
 
-The number of misclassifications decreases decidedly when considering observations with high ensemble confidence only: The majority vote based on the most confident two-thirds of predictions only are more in line with ground truth, as higher recall, precision and $F_1$-scores in Table \ref{tab:confmat}, Panel B, show. The improvement is most evident in the precision rates. For the relatively rare categories of *Georgian* and *Revival* about the same number of buildings classified as *Georgian/Revival* in Panel A actually belong to a different ground truth class -- the precision shoots up from 0.50 to 0.70 for *Georgian* and from 0.52 to 0.82 for *Revival* when excluding the not so confident lower third of predictions in Panel B.
+The number of misclassifications decreases decidedly when considering observations with high ensemble confidence only: The majority vote based on the most confident two-thirds of machine classifications only are more in line with the architects' classifications, as higher recall, precision and $F_1$-scores in Table \ref{tab:confmat}, Panel B, show. The improvement is most evident in the precision rates. For the relatively rare categories of *Georgian* and *Revival* about the same number of buildings classified as *Georgian/Revival* in Panel A actually belong to a different style, according to the human experts. The precision shoots up from 0.50 to 0.70 for *Georgian* and from 0.52 to 0.82 for *Revival* when excluding the not so confident lower third of predictions in Panel B.
 
 The majority of misclassification is concentrated in temporally adjacent eras: 10 percent of *Late Victorian/Edwardian* buildings are labelled as *Early Victorian* or 18 percent of *Postwar* buildings are erroneously regarded as stemming from the *Interwar* period. Hardly ever is a contemporary building mistaken for a historic home.
 
@@ -193,7 +196,7 @@ The majority of misclassification is concentrated in temporally adjacent eras: 1
 \end{center}
 
 
-Overall, the spatial softmax classification incorporating the nearest neighbor's feature vector outperforms the base classifier: pairwise differences of the $F_1$-scores from the spatial and the base classifier are clearly positive (Fig. \ref{fig:boxplot}). AIC values for 28 binomial models based on Eq. \ref{eq:rev} decrease as hedonic characteristics, location and time dummies are augmented by the base and spatial ML predictor. For all building vintages, the AIC are lowest for the spatial ML predictor. In sum, the spatial classifier performs better for UK vintage data than a classifier based on single buildings only. 
+Overall, the spatial softmax classification incorporating the nearest neighbor's feature vector outperforms the base classifier: pairwise differences of the $F_1$-scores from the spatial and the base classifier are clearly positive (Fig. \ref{fig:boxplot}). AIC values for 28 binomial models based on Eq. \ref{eq:rev} decrease as hedonic characteristics, location and time dummies are augmented by the base and spatial ML predictor (Table \ref{tab:aic}). For all building styles, the AIC are lowest for the spatial ML predictor. In sum, the spatial classifier performs better for UK style data than a classifier based on single buildings only. 
 
 \begin{center}
   -- Insert Table \ref{tab:aic} and Figure \ref{fig:boxplot} about here --
@@ -210,15 +213,15 @@ Successively, the estimated coefficients from 8 different versions of the hedoni
 \end{center}
 
 
-The first column in Table \ref{tab:hedreg} presents the estimated regression coefficients for ground truth vintages. The base vintage *Contemporary* is more expensive than almost all other vintages, which show negative coefficients that are significantly different from 0. A clear pecking order appears: *Georgian* and *Revival* buildings demand the highest premium $(+0.04)$,  followed by *Late Victorian/Edwardian* $(+0.01)$, *Contemporary* (base), *Early Victorian* $(-0.13)$,  *Interwar* $(-0.15)$ and *Postwar* $(-0.22)$. 
+The first column in Table \ref{tab:hedreg} presents the estimated regression coefficients for the architects' classifications. The base style *Contemporary* is more expensive than almost all other styles, which show negative coefficients that are significantly different from 0. A clear pecking order appears: *Georgian* and *Revival* buildings demand the highest premium $(+0.04)$,  followed by *Late Victorian/Edwardian* $(+0.01)$, *Contemporary* (base), *Early Victorian* $(-0.13)$,  *Interwar* $(-0.15)$ and *Postwar* $(-0.22)$. 
 
-The sample of ground truth images is not necessarily representative of the overall population so we re-estimate the model using predicted vintages for *all* buildings for which we were able to extract usable pictures from Google Street View. Overall, the vintage coefficients become more positive relative to the base, implying that our automatic classification is biased and tends to classify unattractive buildings to the *Contemporary* vintage. Reversely, more attractive buildings are disproportionally often misclassified as *Late Vic./Edw.*, pushing up the corresponding coefficient to $0.11$. This bias vanishes in the third model, which uses only confidently predicted vintages (Column 3).
+The sample images classified by architects is not necessarily representative of the overall population so we re-estimate the model using machine classifications for *all* buildings for which we were able to extract usable pictures from Google Street View. Overall, the style coefficients become more positive relative to the base, implying that our automatic classification is biased and tends to classify unattractive buildings to the *Contemporary* style. Reversely, more attractive buildings are disproportionally often misclassified as *Late Vic./Edw.*, pushing up the corresponding coefficient to $0.11$. This bias vanishes in the third model, which uses only confidently estimated machine styles (Column 3).
 
-Models 4--6 follow the same logic as 1--3 but are estimated for *new* buildings only. Basically this contrasts houses which might *look* different from the street, having either contemporary or revival facades, but which are all modern homes at their core. Differences in e.g. materials, floor plans, green space and gardens are minimal. For newly built homes, no effect of *Revival* architecture on price can be found, neither for ground truth classifications nor for high confidence ML estimates. After controlling for location, building characteristics and quality, buyers show no willingness to pay a premium for *Revival* architecture.
+Models 4--6 follow the same logic as 1--3 but are estimated for *new* buildings only. Basically this contrasts houses which might *look* different from the street, having either contemporary or revival facades, but which are all modern homes at their core. Differences in e.g. materials, floor plans, green space and gardens are minimal. For newly built homes, no effect of *Revival* architecture on price can be found for high confidence ML estimates, neither for classifications by machines nor by architects. After controlling for location, building characteristics and quality, buyers show no willingness to pay a premium for *Revival* architecture (Columns 4 and 6).
 
-Introducing a variable capturing the most prominent style of buildings on the same street and within 100 m ($\mathbf{VintNeigh}$) does not change the pecking order of building vintages much (Table \ref{tab:hedreg}, Column 7). Neighboring styles are compared to the base case of a *Contemporary* house in a *Contemporary* street. The negative coefficients on dissimilar neighboring styles support a finding by @Lindenthal2017 that shows that a harmonious match of a building's shape with its direct environment leads to a price premium -- or a discount in case of shape mismatches. In relative terms, *Postwar* buildings are the least popular neighbors. The difference between *Revival* and *Contemporary* neighbors is not statistically significant. We fail to find evidence in favor of positive externalities from revival architecture. Everything else equal, buildings within ensembles of *Contemporary* generally do not achieve higher transaction prices than buildings in more historic areas (as Table \ref{tab:comb} will confirm later). 
+Introducing a variable capturing the most prominent style of buildings on the same street and within 100 m ($\mathbf{VintNeigh}$) does not change the pecking order of building styles much (Table \ref{tab:hedreg}, Column 7). Neighboring styles are compared to the base case of a *Contemporary* house in a *Contemporary* street. The negative coefficients on dissimilar neighboring styles support a finding by @Lindenthal2017 that shows that a harmonious match of a building's shape with its direct environment leads to a price premium -- or a discount in case of shape mismatches. In relative terms, *Postwar* buildings are the least popular neighbors. The difference between *Revival* and *Contemporary* neighbors is not statistically significant. We fail to find evidence in favor of positive externalities from revival architecture. Everything else equal, buildings within ensembles of *Contemporary* generally do not achieve higher transaction prices than buildings in more historic areas (as Table \ref{tab:comb} will confirm later). 
 
-Table \ref{tab:hedregint} presents the $\iota$ interaction coefficients (Eq. \ref{eq:hed}) for vintage-neighboring vintage combinations with sufficient numbers of observations (see Table \ref{tab:vintneigh}). The last row suggests that a general claim that *Revival* neighbors exert positive externalities and increase property values relative to *Contemporary* surroundings cannot be confirmed empirically. Again, we find no statistically significant difference.
+Table \ref{tab:hedregint} presents the $\iota$ interaction coefficients (Eq. \ref{eq:hed}) for style-neighboring style combinations with sufficient numbers of observations (see Table \ref{tab:vintneigh}). The last row suggests that a general claim that *Revival* neighbors exert positive externalities and increase property values relative to *Contemporary* surroundings cannot be confirmed empirically. Again, we find no statistically significant difference.
 
 
 \begin{center}
@@ -231,9 +234,9 @@ In Table \ref{tab:comb}, the combined effect of building styles on property valu
 
 The contributions of this paper are threefold: First, it introduces an algorithm that collects pictures of *individual* buildings from Google Street View. Earlier work has not achieved this level of detail and was, at least in the UK, limited to street sections only. A large-scale application of automatic classification of individual buildings' characteristics using Google Street View has potential not only in the UK. The image collection and classification method can easily be ported to other study areas which have existing Street View data and either LIDAR based building outlines or high resolution satellite images. In a follow-up project, we are working on an improved classification workflow in which a customized object detection model is able to recognize specific building outlines without the need for additional maps or other data.
 
-Second, we developed a new database of 25,000 building pictures that have been classified by architecture experts into relevant architectural styles or vintages. We subsequently trained a neural network classifier to automatically classify all residential buildings of a mid-sized English city into architectural styles or vintages. The suggested classifier is trained on feature vectors of buildings and their nearest neighbors to exploit spatial correlation in observed classifications. 
+Second, we developed a new database of 25,000 building pictures that have been classified by architecture experts into relevant architectural styles. We subsequently trained a neural network classifier to automatically classify all residential buildings of a mid-sized English city into architectural styles. The suggested classifier is trained on feature vectors of buildings and their nearest neighbors to exploit spatial correlation in observed classifications. 
 
-The large ground truth data set allows for a comparison of human expert classifications with predictions made by ML classifiers. Poor image quality, for instance obstructed views or the lack of informative features such as windows, is correlated with misclassifications. Importantly, for cases in which the ML classifiers are relatively indecisive between classes, visual cues that are correlated with vintage but not part of a building's architecture (for instance trees or cars) bias the estimates. Fore these less certain cases, more valuable homes are systematically more likely to be classified as e.g. *Late Victorian/Edw.* and less likely to be considered *Contemporary*. A follow up study could investigate which elements in the building pictures lead to the misclassifications [@Ribeiro2016]. Given the danger of systematic biases, one should remain wary of ML estimates derived from ground truth data sizable enough to train models -- but too small to investigate any biases.
+The large ground truth data set allows for a comparison of human expert versus machine classifications. Poor image quality, for instance obstructed views or the lack of informative features such as windows, is correlated with misclassifications. Importantly, for cases in which the ML classifiers are relatively indecisive between classes, visual cues that are correlated with the exterior's style but not part of a building's architecture (for instance trees or cars) bias the estimates. Fore these less certain cases, more valuable homes are systematically more likely to be classified as e.g. *Late Victorian/Edw.* and less likely to be considered *Contemporary*. A follow up study could investigate which elements in the building pictures lead to the misclassifications [@Ribeiro2016]. Given the danger of systematic biases, one should remain wary of ML estimates derived from data sets sizable enough to train models -- but too small to investigate any biases.
 
 Third, we test whether revival or vernacular architecture leads to price premia over contemporary architecture. We do not find evidence for a preference of residents for specific architecture after controlling for quality and location of buildings. This applies to both direct price effects but also indirect effects of a buildings appearance on the value of neighboring homes. Further work will extend the spatial scope of the study area to the UK in general and to other countries.
 
@@ -281,13 +284,13 @@ Third, we test whether revival or vernacular architecture leads to price premia 
 \footnotesize
 \begin{tabular}{lccccccc}
 \toprule 
-  & \multicolumn{7}{c}{\emph{Ground truth}} \\ 
+  & \multicolumn{7}{c}{\emph{Architects}} \\ 
   \cmidrule(lr){2-8} 
 & Georgian &  Early Vic. & Late V. /Edw. & Interwar & Postwar & Cont. & Revival \\  
 
 Mean Herf. & 0.88 &  0.80 & 0.79 & 0.77 & 0.68 &  0.70 &  0.70 \\  
  \midrule 
-\emph{Pred. vintage} & \multicolumn{7}{c}{\emph{Difference from correct classifications (diagonal), t-stats in parenthesis}} \\
+\emph{Machine} & \multicolumn{7}{c}{\emph{Difference from correct classifications (diagonal), t-stats in parenthesis}} \\
 \cmidrule(lr){2-8} 
 Georgian & -- & -0.21 (-9.87) & -0.28 (-13.11) & -0.33 (-9.95) & -0.27 (-6.30) & -0.25 (-7.97) & -0.25 (-7.54) \\
  Early Vic. & -0.22 (-6.28) &  -- & -0.19 (-19.20) & -0.31 (-13.70) & -0.21 (-10.05) & -0.21 (-7.53) & -0.15 (-3.84) \\
@@ -300,19 +303,19 @@ Georgian & -- & -0.21 (-9.87) & -0.28 (-13.11) & -0.33 (-9.95) & -0.27 (-6.30) &
 \end{tabular}
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
-\footnotesize \emph{Notes:} For each ensemble classification $i$, we derive the Herfindahl scores as the sum of the squared share of votes from individual models for each of the 7 vintages $v$ received, calculated as: $Herf_i=\sum_{v=1}^{v=7} (votes_v/votes_{all})^2$. A high score indicates high levels of consensus within the ensemble. The Herf. scores tend to be lower at off-diagonal cells, indicating lower consensus for misclassifications.
+\footnotesize \emph{Notes:} For each ensemble classification $i$, we derive the Herfindahl scores as the sum of the squared share of votes from individual models for each of the 7 styles $s$ received, calculated as: $Herf_i=\sum_{s=1}^{s=7} (votes_s/votes_{all})^2$. A high score indicates high levels of consensus within the ensemble. The Herf. scores tend to be lower at off-diagonal cells, indicating lower consensus for misclassifications.
 \end{minipage}
 \end{table}
 
 
 \begin{table}[ht] 
 \centering 
- \caption{Mean Values for image quality variables, by vintage}
+ \caption{Mean Values for image quality variables, by style}
  
 \label{tab:imgqualsumstats}
 \begin{tabular}{lcccc} 
 \toprule 
-Ground Truth & Share Blocked & House Area & Window Area & Image Offset \\ 
+Architects' classifications & Share Blocked & House Area & Window Area & Image Offset \\ 
 \midrule
  Georgian & 0.07 & 0.81 & 0.15 & 0.07 \\ 
  Early Vic. & 0.06 & 0.86 & 0.16 & 0.05 \\ 
@@ -340,7 +343,7 @@ Ground Truth & Share Blocked & House Area & Window Area & Image Offset \\
 
 \toprule 
 
-\emph{Predicted} & \multicolumn{7}{c}{\emph{Ground truth}} \\ 
+\emph{Machine} & \multicolumn{7}{c}{\emph{Architects}} \\ 
   \cmidrule(lr){2-8} 
 & Georgian & Early Vic. & Late V./Edw. & Interwar & Postwar & Cont. & Revival \\  
 
@@ -397,7 +400,7 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
  \begin{minipage}{\textwidth} 
 \footnotesize 
 \vspace{0.25cm}
-\emph{Notes:} Cross-tabulation of photo characteristics by projected and ground truth. Off-diagonal elements ($Predicted_{j}-Ground Truth_{i}$) describe the difference in measure intensity between correctly and incorrectly classified photos for a given ground truth vintage. For example, cell \{Early Vic., Georgian\} compares the mean characteristic value for the set of photos which are actually Georgian but misclassified as Early Vic. to the set of correctly classified Georgian photos. The numbers in italic represent the mean characteristic value for each set of correctly classified photos. T-stats are in parenthesis.
+\emph{Notes:} Cross-tabulation of photo characteristics by machine and architects' classifications. Off-diagonal elements ($Machine_{j}-Architects_{i}$) describe the difference in measure intensity between correctly and incorrectly classified photos for a given classification by architects. For example, cell \{Early Vic., Georgian\} compares the mean characteristic value for the set of photos which are actually Georgian but misclassified as Early Vic. to the set of correctly classified Georgian photos. The numbers in italic represent the mean characteristic value for each set of correctly classified photos. T-stats are in parenthesis.
 \end{minipage} 
 \endgroup 
 \end{table}
@@ -407,14 +410,14 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 
 
 \begin{figure}[htb!]
-\caption{Examples of Estimated Building Vintages}
-```{r plot_top_pictures, cache=TRUE, results='asis', echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Examples of Buildings, classified into Vintages"}
+\caption{Examples of machine-based style classifications}
+```{r plot_top_pictures, cache=TRUE, results='asis', echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Examples of Buildings, classified into Styles"}
 source("../R/plot_top_pictures.R")
 plot_top_pictures(img.width = "45px")
 ```
 \label{fig:vint_examples}
 \begin{minipage}{0.7\textwidth}
-\footnotesize \emph{Notes:} For a brief discussion of the building vintages see page \pageref{def_eras}.
+\footnotesize \emph{Notes:} For a brief discussion of the building styles see page \pageref{def_eras}.
 \end{minipage}
 \end{figure}
 
@@ -436,7 +439,7 @@ plot_top_pictures(img.width = "45px")
 
 
 \begin{table}[htb!]
-\caption{Vintage predictions as dependent variables (Eq. \ref{eq:rev} AIC comparison) }
+\caption{Machine style classifications as dependent variables (Eq. \ref{eq:rev} AIC comparison) }
 \label{tab:aic}
 \centering
 \begin{tabular}{lrrrr}
@@ -496,7 +499,7 @@ Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
 \singlespacing
-\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). The estimated scores for building vintages are inferred from the Google Street View classification model.
+\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
 \end{minipage}
 \end{table} 
 
@@ -567,14 +570,14 @@ Adjusted R$^{2}$ & 0.88 & 0.88 & 0.88 & 0.93 & 0.91 & 0.92 & 0.89 & 0.89 \\
 \end{tabular} 
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
-\footnotesize \emph{Notes:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01. Standard errors are robust (White's estimator). Models (1) and (4) are estimated using ground truth classifications only. Models (2) and (5) are estimated based on all observations that have been automatically classified. Models (3) and (6) are also based on automatic classifications but the sample is reduced to high confidence predictions only. Models (4-6) are estimated on sales of newly completed buildings only. The interaction terms for Model (8) are in Table \ref{tab:hedregint}.  
+\footnotesize \emph{Notes:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01. Standard errors are robust (White's estimator). Models (1) and (4) are estimated using the architects' classifications only. Models (2) and (5) are estimated based on all observations that have been automatically classified. Models (3) and (6) are also based on automatic classifications but the sample is reduced to high confidence predictions only. Models (4-6) are estimated on sales of newly completed buildings only. The interaction terms for Model (8) are in Table \ref{tab:hedregint}.  
 \end{minipage}
 \end{table} 
 
 
 
 \begin{table}[ht]
-\caption{Counts: Building vintage and neighboring buildings' vintage}
+\caption{Counts: Building style and neighboring buildings' style}
 \label{tab:vintneigh}
 \centering
 \begin{tabular}{lrrrrrrr}
@@ -595,7 +598,7 @@ Georgian & 164 &  44 &   7 &   0 &   0 &   0 &   1 \\
 \end{tabular}
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
-\footnotesize \emph{Notes:} The vintage of direct neighborhoods is defined as the most frequent detected style on the same street and within 100m. 
+\footnotesize \emph{Notes:} The style of direct neighborhoods is defined as the most frequent detected style on the same street, within 100m. 
 \end{minipage}
 \end{table}
 
