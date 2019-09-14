@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Machine Learning, Building Styles and Property Values},
+            pdftitle={Machine Learning, Architectural Styles and Property Values},
             pdfauthor={Thies Lindenthal* (University of Cambridge) \& Erik B. Johnson (University of Alabama)},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -74,7 +74,7 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Machine Learning, Building Styles and Property Values}
+  \title{Machine Learning, Architectural Styles and Property Values}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
     \author{Thies Lindenthal* (University of Cambridge) \& Erik B. Johnson
@@ -83,7 +83,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{13 September 2019}
+    \date{14 September 2019}
 
 \usepackage{soul}
 \usepackage{color}
@@ -246,8 +246,9 @@ challenge we address in this paper is to extract and utilize building
 level information from this ubiquitous sensor, using freely available
 deep learning techniques.
 
-\hypertarget{methodology}{%
-\section{Methodology}\label{methodology}}
+\hypertarget{ml-classification-of-building-styles}{%
+\section{ML classification of building
+styles}\label{ml-classification-of-building-styles}}
 
 \hypertarget{image-collection}{%
 \subsection{Image collection}\label{image-collection}}
@@ -383,8 +384,9 @@ Cambridge's houses can be classified into seven broad styles:
 \end{itemize}
 
 Two final-year architectural students classified a large sub-sample of
-approximately 25,000 images from our data set of Cambridge houses. This
-is a much larger sample than needed in our case. In our case, each
+approximately 25,000 images from our data set of Cambridge
+houses.\footnote{The full set of classified images are available for download at the authors' websites.}
+This is a much larger sample than needed in our case. In our case, each
 category requires less than 250 observations to reach saturated training
 accuracy levels. We greatly exceed this number for the purpose of this
 paper so that we can compare the out-of-sample convolutional neural
@@ -403,7 +405,8 @@ of:
 
 \begin{itemize}
 \item
-  an input layer the size of the feature vectors,
+  an input layer the size of the feature vectors, e.g.~2048 or 4096,
+  respectively,
 \item
   one dense layer (relu) half the size of the input layer, one
   subsequent dropout (rate 0.5) layer,
@@ -481,46 +484,13 @@ difference in estimated marginal prices for machine's classifications
 versus the estimates for architects' classifications in the subsequent
 hedonic regression (Eq. \ref{eq:hed}, below) would indicate such a bias.
 
-\hypertarget{building-style-and-property-price}{%
-\subsection{Building style and property
-price}\label{building-style-and-property-price}}
+\hypertarget{architectural-styles-and-property-values}{%
+\section{Architectural styles and property
+values}\label{architectural-styles-and-property-values}}
 
-Merging the machine's classification with sales data (Land Registry
-2017) we estimate a hedonic regression equation that establishes
-marginal prices for the building style (similar to Moorhouse and Smith
-1994; Asabere, Hachey, and Grubaugh 1989; Vandell and Lane 1989; Fuerst,
-McAllister, and Murray 2011; Plaut and Uzulena 2006), among other
-characteristics: \begin{equation} \label{eq:hed}
-  ln(Price_i) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Style}_i + \eta\mathbf{StyleNeigh}_i + \iota\mathbf{Style\cdot StyleNeigh}_i  +\gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
-\end{equation}
-
-Here, the natural logarithm of sales prices is explained by a linear
-combination of hedonic attributes described in vector \(\mathbf{X}\),
-vectors of year \(\mathbf{Y}\) and neighborhood \(\bm{Loc}\) dummy
-variables and the building's estimated \(\mathbf{Style}\) and the
-prevailing vintage of other buildings in the direct proximity
-\((\mathbf{StyleNeigh})\). The intercept is denoted by \(\alpha\) while
-\(\bm{\beta}\), \(\bm{\delta}\), \(\bm{\eta}\), \(\bm{\iota}\),
-\(\bm{\gamma}\) and \(\bm{\lambda}\) are vectors of regression
-coefficients. \(\epsilon\) is the IID error term. Heteroscedastic robust
-standard errors will be reported.
-
-Are buildings with different appearances imperfect substitutes catering
-to multiple groups of households with distinct style preferences?
-Buitelaar and Schilder (2017) indicate that any premium for an
-architectural style must stem from either differences in construction
-prices (which they do not find in their Dutch sample) or from supply
-constraints, as new construction potentially does not capture the demand
-for traditional styles. For Cambridge, new supply will inevitably be of
-either contemporary or revival style as historic vintages (and their
-styles), by definition, are not supplied any more. Estimating Eq.
-\ref{eq:hed} for a subset of newly constructed buildings will show
-whether construction prices or supply constraints for new homes built
-according to different architectural styles persist -- if too few
-vernacular buildings were built, prices should reflect such a shortage.
-
-\hypertarget{data}{%
-\section{Data}\label{data}}
+\hypertarget{residential-transaction-data}{%
+\subsection{Residential transaction
+data}\label{residential-transaction-data}}
 
 Residential real estate transactions are public data in the UK,
 collected and published by the Land Registry (Land Registry 2017). The
@@ -534,9 +504,15 @@ Cambridge proper which were recorded between January 1995 and October
 £2,000,000. Linking recently taken images to sales data from 24 years
 assumes that houses have not changed their architectural styles -- which
 seems reasonable. We are not aware of any conversions of just the
-exterior of buildings. Full redevelopments did occur and we exclude
-sales for a given address pre-dating any redevelopment. Table
-\ref{tab:sumstats} presents summary statistics for the sample.
+exterior of buildings. In case of full redevelopments, we exclude any
+sales for a given address pre-dating the redevelopment, ensuring that a
+currently taken pictures represents the house at all included
+transactions. Table \ref{tab:sumstats} presents summary statistics for
+the sample.
+
+\begin{center}
+  -- Insert Table \ref{tab:sumstats} about here --
+\end{center}
 
 The Ordnance Survey \emph{AddressBase} (Ordnance Survey 2017a) links
 street addresses to building outlines on Ordnance Survey maps (Ordnance
@@ -552,13 +528,47 @@ typically have 1,000--3,000 residents and 400--1,200 households of
 comparable economic and socio-demographic characteristics (Office for
 National Statistics 2017).
 
-Overall, we collect pictures of more than 48,000 distinct buildings from
-the Google Street View API. The subset of 25,000 pictures that has been
-classified by trained architects into the seven styles will serve as
-\emph{ground truth} for our study. Two additional categories identify
-buildings hidden by \emph{greenery} or uninformative pictures featuring
-\emph{plain walls}. The classified images are available at the authors'
-websites.
+\hypertarget{hedonic-regression-setup}{%
+\subsection{Hedonic regression setup}\label{hedonic-regression-setup}}
+
+Merging the machine's classification with sales data (Land Registry
+2017) we estimate a hedonic regression equation that establishes
+marginal prices for the building style (similar to Moorhouse and Smith
+1994; Asabere, Hachey, and Grubaugh 1989; Vandell and Lane 1989; Fuerst,
+McAllister, and Murray 2011; Plaut and Uzulena 2006), among other
+characteristics: \begin{equation} \label{eq:hed}
+  ln(Price_i) = \alpha + \beta\mathbf{X_i} + \delta\mathbf{Style}_i + \eta\mathbf{StyleNeigh}_i + \iota\mathbf{Style\cdot StyleNeigh}_i  +\gamma\mathbf{Y}_i + \lambda\mathbf{Loc}_i +  \epsilon_i
+\end{equation}
+
+Here, the natural logarithm of sales prices is explained by a linear
+combination of hedonic attributes described in vector \(\mathbf{X}\),
+vectors of year \(\mathbf{Y}\) and neighborhood \(\bm{Loc}\) dummy
+variables and the building's estimated \(\mathbf{Style}\) and the
+prevailing styles of other buildings in the direct proximity
+\((\mathbf{StyleNeigh})\). \(\mathbf{Style\cdot StyleNeigh}\) is a
+vector of interaction terms for the building's and the neighborhood's
+dominant style. The intercept is denoted by \(\alpha\) while
+\(\bm{\beta}\), \(\bm{\delta}\), \(\bm{\eta}\), \(\bm{\iota}\),
+\(\bm{\gamma}\) and \(\bm{\lambda}\) are vectors of regression
+coefficients. \(\epsilon\) is the IID error term. Heteroscedastic robust
+standard errors will be reported.
+
+Are buildings with different appearances imperfect substitutes catering
+to multiple groups of households with distinct style or vintage
+preferences? Buitelaar and Schilder (2017) indicate that any premium for
+an architectural style must stem from either differences in construction
+prices (which they do not find in their Dutch sample) or from supply
+constraints, as new construction potentially does not capture the demand
+for traditional styles. For Cambridge, new supply will inevitably be of
+either contemporary or revival style as historic vintages (and their
+styles), by definition, are not supplied any more. Estimating Eq.
+\ref{eq:hed} for a subset of newly constructed buildings will show
+whether construction prices or supply constraints for new homes built
+according to different architectural styles persist -- if too few
+vernacular buildings were built, prices should reflect such a shortage.
+Singling out new buildings crucially controls for the otherwise
+unobserved age of buildings, which is tightly intertwined with its
+aesthetics.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -694,7 +704,7 @@ measure controls for proximity to the city center \emph{within} each
 neighborhood.
 
 \begin{center}
-  -- Insert Table \ref{tab:sumstats} and Table \ref{tab:hedreg} about here --
+  -- Insert Table \ref{tab:hedreg} about here --
 \end{center}
 
 The first column in Table \ref{tab:hedreg} presents the estimated
@@ -848,6 +858,45 @@ study area to the UK in general and to other countries.
 \footnotesize \emph{Notes:} We first look up the nearest Google Street View panorama point (green dot) based on the centroid (red dot) coordinates of a given building obtained from Ordnance Survey maps. A viewshed analysis identifies which exterior walls are visible from the panorama point, ignoring any wall segments where the direct line of sight from the panorama point is obstructed by other buildings. The camera bearing (green line) and zoom factor are based on the angle of the most outer lines of sight (blue lines).
 \end{minipage}
 \end{figure}
+
+\begin{table}[!htbp] \centering 
+  \caption{Summary statistics residential property transactions} 
+  \label{tab:sumstats} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc} 
+\toprule
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
+\midrule
+Price & 23,768 & 253,646.20 & 170,987.20 & 10,000 & 127,000 & 326,374.8 & 1,000,000 \\ 
+Year & 23,768 & 2,004.89 & 6.59 & 1,995 & 1,999 & 2,010 & 2,018 \\ 
+ln(volume) & 23,768 & 286.00 & 188.14 & 0.00 & 215.50 & 370.89 & 1,926.45 \\ 
+ln(area) & 23,768 & 63.25 & 28.44 & 4.94 & 45.74 & 72.46 & 1,058.70 \\ 
+ln(dist. city center) & 23,768 & 2,477.63 & 1,007.55 & 112.78 & 1,652.39 & 3,166.05 & 5,023.62 \\ 
+New & 23,768 & 0.04 & 0.20 & 0 & 0 & 0 & 1 \\ 
+Type: detached & 23,768 & 0.13 & 0.34 & 0 & 0 & 0 & 1 \\ 
+Type: semi-detached & 23,768 & 0.35 & 0.48 & 0 & 0 & 1 & 1 \\ 
+Type: terraced & 23,768 & 0.52 & 0.50 & 0 & 0 & 1 & 1 \\ 
+Georgian & 23,768 & 0.03 & 0.16 & 0 & 0 & 0 & 1 \\ 
+Early Vic. & 23,768 & 0.15 & 0.36 & 0 & 0 & 0 & 1 \\ 
+Late Vic./Edw. & 23,768 & 0.21 & 0.40 & 0 & 0 & 0 & 1 \\ 
+Interwar & 23,768 & 0.32 & 0.47 & 0 & 0 & 1 & 1 \\ 
+Postwar & 23,768 & 0.23 & 0.42 & 0 & 0 & 0 & 1 \\ 
+Contemporary & 23,768 & 0.03 & 0.17 & 0 & 0 & 0 & 1 \\ 
+Revival & 23,768 & 0.04 & 0.20 & 0 & 0 & 0 & 1 \\ 
+Neigh: Georgian & 23,768 & 0.02 & 0.12 & 0 & 0 & 0 & 1 \\ 
+Neigh: Early Vic. & 23,768 & 0.14 & 0.35 & 0 & 0 & 0 & 1 \\ 
+Neigh: Late V./Edw. & 23,768 & 0.22 & 0.41 & 0 & 0 & 0 & 1 \\ 
+Neigh: Interwar & 23,768 & 0.32 & 0.47 & 0 & 0 & 1 & 1 \\ 
+Neigh: Postwar & 23,768 & 0.25 & 0.43 & 0 & 0 & 1 & 1 \\ 
+Neigh: Contemporary & 23,768 & 0.02 & 0.15 & 0 & 0 & 0 & 1 \\ 
+Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\ 
+\bottomrule
+\end{tabular} 
+\begin{minipage}{\textwidth}
+\vspace{0.25cm}
+\singlespacing
+\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
+\end{minipage}
+\end{table}
 
 \input{confusion_matrix.tex}
 
@@ -1031,45 +1080,6 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \vspace{0.25cm}
 \footnotesize \emph{Notes:}
 AIC values for 28 binomial models in which the occurrence of building styles (in rows) is explained by hedonic characteristics, location and time dummies (Column 1), augmented by the base ML predictor (Column 2), the suggested spatial ML predictor (Column 3 \& 4). Across building styles, the AIC are lowest for the spatial ML predictor, especially when uncertain predictions are omitted (Column 4). This suggests that the spatial predictor performs best.
-\end{minipage}
-\end{table}
-
-\begin{table}[!htbp] \centering 
-  \caption{Summary statistics residential property transactions} 
-  \label{tab:sumstats} 
-\begin{tabular}{@{\extracolsep{5pt}}lccccccc} 
-\toprule
-Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
-\midrule
-Price & 23,768 & 253,646.20 & 170,987.20 & 10,000 & 127,000 & 326,374.8 & 1,000,000 \\ 
-Year & 23,768 & 2,004.89 & 6.59 & 1,995 & 1,999 & 2,010 & 2,018 \\ 
-ln(volume) & 23,768 & 286.00 & 188.14 & 0.00 & 215.50 & 370.89 & 1,926.45 \\ 
-ln(area) & 23,768 & 63.25 & 28.44 & 4.94 & 45.74 & 72.46 & 1,058.70 \\ 
-ln(dist. city center) & 23,768 & 2,477.63 & 1,007.55 & 112.78 & 1,652.39 & 3,166.05 & 5,023.62 \\ 
-New & 23,768 & 0.04 & 0.20 & 0 & 0 & 0 & 1 \\ 
-Type: detached & 23,768 & 0.13 & 0.34 & 0 & 0 & 0 & 1 \\ 
-Type: semi-detached & 23,768 & 0.35 & 0.48 & 0 & 0 & 1 & 1 \\ 
-Type: terraced & 23,768 & 0.52 & 0.50 & 0 & 0 & 1 & 1 \\ 
-Georgian & 23,768 & 0.03 & 0.16 & 0 & 0 & 0 & 1 \\ 
-Early Vic. & 23,768 & 0.15 & 0.36 & 0 & 0 & 0 & 1 \\ 
-Late Vic./Edw. & 23,768 & 0.21 & 0.40 & 0 & 0 & 0 & 1 \\ 
-Interwar & 23,768 & 0.32 & 0.47 & 0 & 0 & 1 & 1 \\ 
-Postwar & 23,768 & 0.23 & 0.42 & 0 & 0 & 0 & 1 \\ 
-Contemporary & 23,768 & 0.03 & 0.17 & 0 & 0 & 0 & 1 \\ 
-Revival & 23,768 & 0.04 & 0.20 & 0 & 0 & 0 & 1 \\ 
-Neigh: Georgian & 23,768 & 0.02 & 0.12 & 0 & 0 & 0 & 1 \\ 
-Neigh: Early Vic. & 23,768 & 0.14 & 0.35 & 0 & 0 & 0 & 1 \\ 
-Neigh: Late V./Edw. & 23,768 & 0.22 & 0.41 & 0 & 0 & 0 & 1 \\ 
-Neigh: Interwar & 23,768 & 0.32 & 0.47 & 0 & 0 & 1 & 1 \\ 
-Neigh: Postwar & 23,768 & 0.25 & 0.43 & 0 & 0 & 1 & 1 \\ 
-Neigh: Contemporary & 23,768 & 0.02 & 0.15 & 0 & 0 & 0 & 1 \\ 
-Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\ 
-\bottomrule
-\end{tabular} 
-\begin{minipage}{\textwidth}
-\vspace{0.25cm}
-\singlespacing
-\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
 \end{minipage}
 \end{table}
 
