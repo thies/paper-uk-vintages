@@ -83,7 +83,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{14 September 2019}
+    \date{16 September 2019}
 
 \usepackage{soul}
 \usepackage{color}
@@ -848,6 +848,8 @@ study area to the UK in general and to other countries.
 \end{minipage}
 \end{figure}
 
+\newpage
+
 \begin{figure}[hbt]
   \caption{Image Collection on Google Street View: Camera Direction and Zoom}
   \centering
@@ -858,6 +860,8 @@ study area to the UK in general and to other countries.
 \footnotesize \emph{Notes:} We first look up the nearest Google Street View panorama point (green dot) based on the centroid (red dot) coordinates of a given building obtained from Ordnance Survey maps. A viewshed analysis identifies which exterior walls are visible from the panorama point, ignoring any wall segments where the direct line of sight from the panorama point is obstructed by other buildings. The camera bearing (green line) and zoom factor are based on the angle of the most outer lines of sight (blue lines).
 \end{minipage}
 \end{figure}
+
+\newpage
 
 \begin{table}[!htbp] \centering 
   \caption{Summary statistics residential property transactions} 
@@ -898,7 +902,11 @@ Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\
 \end{minipage}
 \end{table}
 
+\newpage
+
 \input{confusion_matrix.tex}
+
+\newpage
 
 \begin{table}[!htb] 
 \caption{Prediction certainty: Herfindahl index from ensemble model} 
@@ -929,6 +937,9 @@ Georgian & -- & -0.21 (-9.87) & -0.28 (-13.11) & -0.33 (-9.95) & -0.27 (-6.30) &
 \end{minipage}
 \end{table}
 
+\newpage
+\clearpage
+
 \begin{table}[ht] 
 \centering 
  \caption{Mean Values for image quality variables, by style}
@@ -952,6 +963,9 @@ Architects' classifications & Share Blocked & House Area & Window Area & Image O
 \footnotesize \emph{Notes:} Using an Inception/Resnet object detection model trained on Open Images, basic object on the images are detected and the share of the image area taken up by cars, trees, buildings and windows are calculated. Images taken not taken at an optimal angle or zoom factor are detected by calculating the offset between the bounding box for the largest detected building and the center of the image.
 \end{minipage}
 \end{table}
+
+\newpage
+\clearpage
 
 \begin{table}[!htb] 
 \caption{Difference in photo characteristics by correctly and incorrectly classified images} 
@@ -1024,6 +1038,9 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \endgroup 
 \end{table}
 
+\newpage
+\clearpage
+
 \begin{figure}[htb!]
 \caption{Examples of machine-based style classifications}
 \begin{tabular}{lllllll}
@@ -1048,6 +1065,8 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \end{minipage}
 \end{figure}
 
+\newpage
+
 \begin{figure}[htb!]
   \caption{Difference of $F_1$-scores: spatial model vs. base model }
   \centering
@@ -1058,6 +1077,8 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \footnotesize \emph{Notes:} The bar plot shows difference in the $F_1$-scores per category for the classifiers using both building level and neighbor information (dark and light blue) vs. a classifier using building level information only (red).
 \end{minipage}
 \end{figure}
+
+\newpage
 
 \begin{table}[htb!]
 \caption{Machine style classifications as dependent variables (Eq. \ref{eq:rev} AIC comparison) }
@@ -1082,6 +1103,8 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 AIC values for 28 binomial models in which the occurrence of building styles (in rows) is explained by hedonic characteristics, location and time dummies (Column 1), augmented by the base ML predictor (Column 2), the suggested spatial ML predictor (Column 3 \& 4). Across building styles, the AIC are lowest for the spatial ML predictor, especially when uncertain predictions are omitted (Column 4). This suggests that the spatial predictor performs best.
 \end{minipage}
 \end{table}
+
+\newpage
 
 \begin{table}[!htbp] \centering 
   \caption{Hedonic Regression Estimates} 
@@ -1150,6 +1173,8 @@ Adjusted R$^{2}$ & 0.88 & 0.88 & 0.88 & 0.93 & 0.91 & 0.92 & 0.89 & 0.89 \\
 \end{minipage}
 \end{table}
 
+\newpage
+
 \begin{table}[ht]
 \caption{Counts: Building style and neighboring buildings' style}
 \label{tab:vintneigh}
@@ -1175,6 +1200,8 @@ Georgian & 164 &  44 &   7 &   0 &   0 &   0 &   1 \\
 \footnotesize \emph{Notes:} The style of direct neighborhoods is defined as the most frequent detected style on the same street, within 100m. 
 \end{minipage}
 \end{table}
+
+\newpage
 
 \begin{table}[ht]
 \centering
@@ -1208,8 +1235,9 @@ Contemporary & -- & -- & -- & -- & -- & -- & -- \\
 \vspace{0.25cm}
 \footnotesize \emph{Notes:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01. Standard errors are robust (White's estimator). This table features the coefficients for interaction terms of building style and neighborhood styles only, while Table \ref{tab:hedreg}, Column 8 presents all other coefficients for this model.
 \end{minipage}
-
 \end{table}
+
+\newpage
 
 \begin{table}[ht]
 \centering

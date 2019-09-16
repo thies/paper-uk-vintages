@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.19)  14 SEP 2019 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.19)  16 SEP 2019 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,671 +944,6 @@ File: figures/84VineryRD.png Graphic file (type png)
 <use figures/84VineryRD.png>
 Package pdftex.def Info: figures/84VineryRD.png  used on input line 842.
 (pdftex.def)             Requested size: 375.78166pt x 249.24294pt.
-<figures/fan.png, id=239, 304.9794pt x 211.0284pt>
-File: figures/fan.png Graphic file (type png)
-<use figures/fan.png>
-Package pdftex.def Info: figures/fan.png  used on input line 854.
-(pdftex.def)             Requested size: 304.9926pt x 211.03754pt.
-
-Overfull \hbox (14.32811pt too wide) in paragraph at lines 865--899
- [][] 
- []
-
-(./confusion_matrix.tex
-
-LaTeX Warning: Float too large for page by 30.86491pt on input line 101.
-
-)
-Overfull \hbox (25.24353pt too wide) in paragraph at lines 907--930
-[][]
- []
-
-</home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8ecncUe
-8oqjErqQ.jpg, id=240, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8e
-cncUe8oqjErqQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8ec
-ncUe8oqjErqQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010058205_KqBBtZS8ecncUe8oqjErqQ.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG9xNge
-N_ETY7aQ.jpg, id=241, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG
-9xNgeN_ETY7aQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG9
-xNgeN_ETY7aQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010102767_u_7T3iAyG9xNgeN_ETY7aQ.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x66NPn
-NEGxTkvA.jpg, id=242, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x
-66NPnNEGxTkvA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x6
-6NPnNEGxTkvA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010141478_FT9houQ2x66NPnNEGxTkvA.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026vDKdQ
-aJiLkdkw.jpg, id=243, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026
-vDKdQaJiLkdkw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026v
-DKdQaJiLkdkw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010065714_pzExlR026vDKdQaJiLkdkw.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPpOfCy
-v8IjfnlA.jpg, id=244, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRP
-pOfCyv8IjfnlA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPp
-OfCyv8IjfnlA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010137600_qYxYCsLRPpOfCyv8IjfnlA.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31ujVFzn
--xh_DYfw.jpg, id=245, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31u
-jVFzn-xh_DYfw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31uj
-VFzn-xh_DYfw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-057677225_srJnz_31ujVFzn-xh_DYfw.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3vLvjqb
-tHeryMdQ.jpg, id=246, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3v
-LvjqbtHeryMdQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3vL
-vjqbtHeryMdQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500413689_VylY6Sy3vLvjqbtHeryMdQ.jpg  used on input line 1033.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5Te54CS
-cFmblMHA.jpg, id=247, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5T
-e54CScFmblMHA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5Te
-54CScFmblMHA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010056385_XQsTJ2p5Te54CScFmblMHA.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4WlmafqN2JX
-Q2ZhYEkw.jpg, id=248, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4Wlmaf
-qN2JXQ2ZhYEkw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4Wlmafq
-N2JXQ2ZhYEkw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010102769_c_e4WlmafqN2JXQ2ZhYEkw.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8Ecx_
-ajaYc-rg.jpg, id=249, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r
-8Ecx_ajaYc-rg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8
-Ecx_ajaYc-rg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010017237_yWs7fxQ0r8Ecx_ajaYc-rg.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79cN59f
-H4xvm5Yw.jpg, id=250, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79
-cN59fH4xvm5Yw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79c
-N59fH4xvm5Yw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010141115_xG0eSas79cN59fH4xvm5Yw.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8SGjf7
-Tg9tLS7w.jpg, id=251, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8
-SGjf7Tg9tLS7w.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8S
-Gjf7Tg9tLS7w.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010023665_B2Is2WMV8SGjf7Tg9tLS7w.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYtGox02
--tF2i9rQ.jpg, id=252, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYt
-Gox02-tF2i9rQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYtG
-ox02-tF2i9rQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500748070_DkW5iwQYtGox02-tF2i9rQ.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7GPQxP
-OtoevEHw.jpg, id=253, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7
-GPQxPOtoevEHw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7G
-PQxPOtoevEHw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010176986_bNOie2HS7GPQxPOtoevEHw.jpg  used on input line 1034.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI2MTiv
-vvWv6wyQ.jpg, id=254, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI
-2MTivvvWv6wyQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI2
-MTivvvWv6wyQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010058145_xBAz4f8lI2MTivvvWv6wyQ.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEGB1IK
-e4tsl1yw.jpg, id=255, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkE
-GB1IKe4tsl1yw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEG
-B1IKe4tsl1yw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103488_Y1L2niOkEGB1IKe4tsl1yw.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQouZ6l
-HtM4J3oA.jpg, id=256, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQ
-ouZ6lHtM4J3oA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQo
-uZ6lHtM4J3oA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010021367_JF-P4lOQQouZ6lHtM4J3oA.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHXGx4xc
-62JSUNJA.jpg, id=257, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHX
-Gx4xc62JSUNJA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHXG
-x4xc62JSUNJA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010065349_HDvoqsiHXGx4xc62JSUNJA.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSFyJZU2
-DP7TbboQ.jpg, id=258, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSF
-yJZU2DP7TbboQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSFy
-JZU2DP7TbboQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-009993819_748OTBKSFyJZU2DP7TbboQ.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej2136u
-Zeb3qKqA.jpg, id=259, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej
-2136uZeb3qKqA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej2
-136uZeb3qKqA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-057677000_8l6ywNIej2136uZeb3qKqA.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHmhX3Jm
-HNwyulmQ.jpg, id=260, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHm
-hX3JmHNwyulmQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHmh
-X3JmHNwyulmQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500088807_4vu-eMLHmhX3JmHNwyulmQ.jpg  used on input line 1035.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCgpQug
-ahoE7EPw.jpg, id=261, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxC
-gpQugahoE7EPw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCg
-pQugahoE7EPw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010059206__nUymOPxCgpQugahoE7EPw.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuLW6kbL
-LP0QgJMA.jpg, id=262, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuL
-W6kbLLP0QgJMA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuLW
-6kbLLP0QgJMA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103870_ywN_BuvuLW6kbLLP0QgJMA.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT-MAce
-6q6qkmTQ.jpg, id=263, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT
--MAce6q6qkmTQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT-
-MAce6q6qkmTQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010017412_aOsldmaOT-MAce6q6qkmTQ.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA-AfCu
-z4tWyg7g.jpg, id=264, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA
--AfCuz4tWyg7g.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA-
-AfCuz4tWyg7g.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010107971_veilqmDOA-AfCuz4tWyg7g.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBTCQu0e
-VM9nhN9Q.jpg, id=265, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBT
-CQu0eVM9nhN9Q.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBTC
-Qu0eVM9nhN9Q.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010025542_8rvXwCYBTCQu0eVM9nhN9Q.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBUOvZg
-iXRdSAnA.jpg, id=266, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVB
-UOvZgiXRdSAnA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBU
-OvZgiXRdSAnA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500555322_FffLx_XVBUOvZgiXRdSAnA.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgebzrGz
-DR_Cahaw.jpg, id=267, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcge
-bzrGzDR_Cahaw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgeb
-zrGzDR_Cahaw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010066754_dJmIRHcgebzrGzDR_Cahaw.jpg  used on input line 1036.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCmlMezN
-uDHGixwg.jpg, id=268, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCm
-lMezNuDHGixwg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCml
-MezNuDHGixwg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010060140_8_DVq9QCmlMezNuDHGixwg.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRTOlAoG
-daraQsTQ.jpg, id=269, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRT
-OlAoGdaraQsTQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRTO
-lAoGdaraQsTQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103819_mF6OqQrRTOlAoGdaraQsTQ.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIrtPJZw
-Pz5d0G6Q.jpg, id=270, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIr
-tPJZwPz5d0G6Q.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIrt
-PJZwPz5d0G6Q.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010097999_xTD3YceIrtPJZwPz5d0G6Q.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7pkk41
-jryvYQ4A.jpg, id=271, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7
-pkk41jryvYQ4A.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7p
-kk41jryvYQ4A.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010065347_pouLRqJd7pkk41jryvYQ4A.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS1riX
-fGzpSkBw.jpg, id=272, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRav
-S1riXfGzpSkBw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS
-1riXfGzpSkBw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-009992776_QxMV8eRavS1riXfGzpSkBw.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mim1nGB
-ZAdgw_ew.jpg, id=273, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mi
-m1nGBZAdgw_ew.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mim
-1nGBZAdgw_ew.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500555341_NVXmLF7mim1nGBZAdgw_ew.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5edS2o
-bfSogNIw.jpg, id=274, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5
-edS2obfSogNIw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5e
-dS2obfSogNIw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500569086_g5RwBQ7D5edS2obfSogNIw.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCmlMezN
-uDHGixwg.jpg, id=275, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCm
-lMezNuDHGixwg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCml
-MezNuDHGixwg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010060139_8_DVq9QCmlMezNuDHGixwg.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0pQd5f
-ChNztfYA.jpg, id=276, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0
-pQd5fChNztfYA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0p
-Qd5fChNztfYA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010101711_wNQ403N-0pQd5fChNztfYA.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBLF4C0o
-o8U4XABg.jpg, id=277, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBL
-F4C0oo8U4XABg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBLF
-4C0oo8U4XABg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010021374_55tKverBLF4C0oo8U4XABg.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPwLeCB
-KJIQmeCg.jpg, id=278, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpP
-wLeCBKJIQmeCg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPw
-LeCBKJIQmeCg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010065352_kDKqKaGpPwLeCBKJIQmeCg.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F0L6hc
-sFoZEydw.jpg, id=279, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F
-0L6hcsFoZEydw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F0
-L6hcsFoZEydw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010015484_zlR1vVJ7F0L6hcsFoZEydw.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2HhGsTV
-DBan2DKw.jpg, id=280, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2H
-hGsTVDBan2DKw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2Hh
-GsTVDBan2DKw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500548748_i6QAKtN2HhGsTVDBan2DKw.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIwddWdH
-idEuXowA.jpg, id=281, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIw
-ddWdHidEuXowA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIwd
-dWdHidEuXowA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-057955271_dMXMWNaIwddWdHidEuXowA.jpg  used on input line 1038.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY6LJb-
-_hKatlUw.jpg, id=282, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY
-6LJb-_hKatlUw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY6
-LJb-_hKatlUw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010060141_W3ZIE8mPY6LJb-_hKatlUw.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9tNnNF
-958OBO3g.jpg, id=283, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9
-tNnNF958OBO3g.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9t
-NnNF958OBO3g.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103226_XO6qx_5Q9tNnNF958OBO3g.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZjQ_q
-hD7puDBw.jpg, id=284, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1Gxh
-ZjQ_qhD7puDBw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZ
-jQ_qhD7puDBw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010017109_MbGvl1GxhZjQ_qhD7puDBw.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyWASyYf
-cSPTjdBA.jpg, id=285, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyW
-ASyYfcSPTjdBA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyWA
-SyYfcSPTjdBA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-009995496_N4NgCofyWASyYfcSPTjdBA.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE_Ifdb
-INnYx7XQ.jpg, id=286, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE
-_IfdbINnYx7XQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE_
-IfdbINnYx7XQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010068890_aswyTpwrE_IfdbINnYx7XQ.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLxn8SRW
-4Ib2wexQ.jpg, id=287, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLx
-n8SRW4Ib2wexQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLxn
-8SRW4Ib2wexQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010104229_qFV1-weLxn8SRW4Ib2wexQ.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34MLIcJO
-rjvIu9uw.jpg, id=288, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34M
-LIcJOrjvIu9uw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34ML
-IcJOrjvIu9uw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010199676_smIagQ34MLIcJOrjvIu9uw.jpg  used on input line 1039.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpyKpiI
-Z1YO9ypg.jpg, id=289, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUp
-yKpiIZ1YO9ypg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpy
-KpiIZ1YO9ypg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010059966_e8c8bmHUpyKpiIZ1YO9ypg.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswdAj7EG
-qRlp8sXQ.jpg, id=290, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswd
-Aj7EGqRlp8sXQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswdA
-j7EGqRlp8sXQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010101704_ZQFxujswdAj7EGqRlp8sXQ.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht5EX_K
-9pqIK-kQ.jpg, id=291, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht
-5EX_K9pqIK-kQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht5
-EX_K9pqIK-kQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010017361_WxMCM3nht5EX_K9pqIK-kQ.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3urSJo
-4ESg1zfw.jpg, id=292, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3
-urSJo4ESg1zfw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3u
-rSJo4ESg1zfw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010066620_4TqmJVLf3urSJo4ESg1zfw.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjoQ9swg
-oB2oXA3w.jpg, id=293, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjo
-Q9swgoB2oXA3w.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjoQ
-9swgoB2oXA3w.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010023689_KpXUKEdjoQ9swgoB2oXA3w.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYtGox02
--tF2i9rQ.jpg, id=294, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYt
-Gox02-tF2i9rQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYtG
-ox02-tF2i9rQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500748058_DkW5iwQYtGox02-tF2i9rQ.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgebzrGz
-DR_Cahaw.jpg, id=295, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcge
-bzrGzDR_Cahaw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgeb
-zrGzDR_Cahaw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010066718_dJmIRHcgebzrGzDR_Cahaw.jpg  used on input line 1040.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv6UwOE
-9HD2LgJg.jpg, id=296, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv
-6UwOE9HD2LgJg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv6
-UwOE9HD2LgJg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010060813_VlKeIvrTv6UwOE9HD2LgJg.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree6QCxE
-xkKqIzbw.jpg, id=297, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree
-6QCxExkKqIzbw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree6
-QCxExkKqIzbw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103859_P5YwPMree6QCxExkKqIzbw.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4iW-90
-aFMrIaSA.jpg, id=298, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4
-iW-90aFMrIaSA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4i
-W-90aFMrIaSA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010141515_5g5Bhsn_4iW-90aFMrIaSA.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbagcfkfZ
-jLw4mKlw.jpg, id=299, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbag
-cfkfZjLw4mKlw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbagc
-fkfZjLw4mKlw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010066361_gliMrVbagcfkfZjLw4mKlw.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8OzsbWjH
-YscCf-rA.jpg, id=300, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8Oz
-sbWjHYscCf-rA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8Ozs
-bWjHYscCf-rA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500527045_p4zTtg8OzsbWjHYscCf-rA.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVeyKyx
-7dPnXK6A.jpg, id=301, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmV
-eyKyx7dPnXK6A.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVe
-yKyx7dPnXK6A.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500748076_zDr74LLmVeyKyx7dPnXK6A.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9TU4Og
-8pXOgSxw.jpg, id=302, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9
-TU4Og8pXOgSxw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9T
-U4Og8pXOgSxw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500413682_drSMg0SQ9TU4Og8pXOgSxw.jpg  used on input line 1041.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUpyKpiI
-Z1YO9ypg.jpg, id=303, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUp
-yKpiIZ1YO9ypg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUpy
-KpiIZ1YO9ypg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010059967_e8c8bmHUpyKpiIZ1YO9ypg.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXYmF3dE
-VMKlWBfQ.jpg, id=304, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXY
-mF3dEVMKlWBfQ.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXYm
-F3dEVMKlWBfQ.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010103388_CZH157SXYmF3dEVMKlWBfQ.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pDsP0CI
-mvDMKC0w.jpg, id=305, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pD
-sP0CImvDMKC0w.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pDs
-P0CImvDMKC0w.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010025644_bJ8zv37pDsP0CImvDMKC0w.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67J78V
-XCoN_HMA.jpg, id=306, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw6
-7J78VXCoN_HMA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67
-J78VXCoN_HMA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010144910_COpJNwPw67J78VXCoN_HMA.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWaXplyC
-P6XeVAvw.jpg, id=307, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWa
-XplyCP6XeVAvw.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWaX
-plyCP6XeVAvw.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-009992797_JUTa4GsWaXplyCP6XeVAvw.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX2zAwE
-iJnA-Pxg.jpg, id=308, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX
-2zAwEiJnA-Pxg.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX2
-zAwEiJnA-Pxg.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
-500086356_n92s3snPX2zAwEiJnA-Pxg.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-</home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbeMXUhC
-agwazbiA.jpg, id=309, 642.4pt x 642.4pt>
-File: /home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbe
-MXUhCagwazbiA.jpg Graphic file (type jpg)
-<use /home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbeM
-XUhCagwazbiA.jpg>
-Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
-010176201_dDyXoyEbeMXUhCagwazbiA.jpg  used on input line 1042.
-(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1049
-[][]
- []
-
-<figures/barplot_f1scores.jpg, id=311, 1003.75pt x 501.875pt>
-File: figures/barplot_f1scores.jpg Graphic file (type jpg)
-<use figures/barplot_f1scores.jpg>
-Package pdftex.def Info: figures/barplot_f1scores.jpg  used on input line 1054.
-
-(pdftex.def)             Requested size: 375.808pt x 187.90399pt.
-
-Overfull \hbox (18.73627pt too wide) in paragraph at lines 1090--1151
- [][] 
- []
-
 [15
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
@@ -1616,198 +951,869 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                  <./figures/84VineryRd.png>] [16pdfTeX warning (ext4): destina
-tion with the same identifier (name{table.1}) has been already used, duplicate 
-ignored
+l.851 \newpage
+               <./figures/84VineryRd.png>]
+<figures/fan.png, id=246, 304.9794pt x 211.0284pt>
+File: figures/fan.png Graphic file (type png)
+<use figures/fan.png>
+Package pdftex.def Info: figures/fan.png  used on input line 856.
+(pdftex.def)             Requested size: 304.9926pt x 211.03754pt.
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 ] [17pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.2}) has been already used, duplicate ignored
+l.864 \newpage
+               <./figures/fan.png>]
+Overfull \hbox (14.32811pt too wide) in paragraph at lines 869--903
+ [][] 
+ []
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                  <./figures/fan.png>] [18pdfTeX warning (ext4): destination wi
-th the same identifier (name{table.2}) has been already used, duplicate ignored
+l.905 \newpage
+              ] (./confusion_matrix.tex
 
+LaTeX Warning: Float too large for page by 30.86491pt on input line 101.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1240 \clearpage
-                 ] [19pdfTeX warning (ext4): destination with the same identifi
-er (name{table.3}) has been already used, duplicate ignored
+)
+Overfull \hbox (25.24353pt too wide) in paragraph at lines 915--938
+[][]
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1240 \clearpage
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.4}) has been already used, duplicate ignored
+[18pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 ] [20pdfTeX warning (ext4): destination with the same identifi
-er (name{table.5}) has been already used, duplicate ignored
+l.941 \clearpage
+                ] [19pdfTeX warning (ext4): destination with the same identifie
+r (name{table.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.6}) has been already used, duplicate ignored
+l.941 \clearpage
+                ] [20
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 ] [21pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.3}) has been already used, duplicate ignored
+l.967 \newpage
+              ] [21
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
+ been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                  </home/thies/db/Cambridge/data/images/cambridge/0001000010058
-205_KqBBtZS8ecncUe8oqjErqQ.jpg> </home/thies/db/Cambridge/data/images/cambridge
-/0001000010102767_u_7T3iAyG9xNgeN_ETY7aQ.jpg> </home/thies/db/Cambridge/data/im
-ages/cambridge/0001000010141478_FT9houQ2x66NPnNEGxTkvA.jpg> </home/thies/db/Cam
-bridge/data/images/cambridge/0001000010065714_pzExlR026vDKdQaJiLkdkw.jpg> </hom
-e/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPpOfCyv8Ijf
-nlA.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz
-_31ujVFzn-xh_DYfw.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000025
-00413689_VylY6Sy3vLvjqbtHeryMdQ.jpg> </home/thies/db/Cambridge/data/images/camb
-ridge/0001000010056385_XQsTJ2p5Te54CScFmblMHA.jpg> </home/thies/db/Cambridge/da
-ta/images/cambridge/0001000010102769_c_e4WlmafqN2JXQ2ZhYEkw.jpg> </home/thies/d
-b/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8Ecx_ajaYc-rg.jpg> 
+l.1041 \newpage
+               ]
+</home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8ecncUe
+8oqjErqQ.jpg, id=280, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8e
+cncUe8oqjErqQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010058205_KqBBtZS8ec
+ncUe8oqjErqQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010058205_KqBBtZS8ecncUe8oqjErqQ.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG9xNge
+N_ETY7aQ.jpg, id=281, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG
+9xNgeN_ETY7aQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010102767_u_7T3iAyG9
+xNgeN_ETY7aQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010102767_u_7T3iAyG9xNgeN_ETY7aQ.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x66NPn
+NEGxTkvA.jpg, id=282, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x
+66NPnNEGxTkvA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141478_FT9houQ2x6
+6NPnNEGxTkvA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010141478_FT9houQ2x66NPnNEGxTkvA.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026vDKdQ
+aJiLkdkw.jpg, id=283, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026
+vDKdQaJiLkdkw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065714_pzExlR026v
+DKdQaJiLkdkw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010065714_pzExlR026vDKdQaJiLkdkw.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPpOfCy
+v8IjfnlA.jpg, id=284, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRP
+pOfCyv8IjfnlA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPp
+OfCyv8IjfnlA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010137600_qYxYCsLRPpOfCyv8IjfnlA.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31ujVFzn
+-xh_DYfw.jpg, id=285, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31u
+jVFzn-xh_DYfw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_31uj
+VFzn-xh_DYfw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+057677225_srJnz_31ujVFzn-xh_DYfw.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3vLvjqb
+tHeryMdQ.jpg, id=286, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3v
+LvjqbtHeryMdQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500413689_VylY6Sy3vL
+vjqbtHeryMdQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500413689_VylY6Sy3vLvjqbtHeryMdQ.jpg  used on input line 1050.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5Te54CS
+cFmblMHA.jpg, id=287, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5T
+e54CScFmblMHA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010056385_XQsTJ2p5Te
+54CScFmblMHA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010056385_XQsTJ2p5Te54CScFmblMHA.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4WlmafqN2JX
+Q2ZhYEkw.jpg, id=288, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4Wlmaf
+qN2JXQ2ZhYEkw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010102769_c_e4Wlmafq
+N2JXQ2ZhYEkw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010102769_c_e4WlmafqN2JXQ2ZhYEkw.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8Ecx_
+ajaYc-rg.jpg, id=289, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r
+8Ecx_ajaYc-rg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8
+Ecx_ajaYc-rg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010017237_yWs7fxQ0r8Ecx_ajaYc-rg.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
 </home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79cN59f
-H4xvm5Yw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010023665_
-B2Is2WMV8SGjf7Tg9tLS7w.jpg> </home/thies/db/Cambridge/data/images/cambridge/100
-0002500748070_DkW5iwQYtGox02-tF2i9rQ.jpg> </home/thies/db/Cambridge/data/images
-/cambridge/0001000010176986_bNOie2HS7GPQxPOtoevEHw.jpg> </home/thies/db/Cambrid
-ge/data/images/cambridge/0001000010058145_xBAz4f8lI2MTivvvWv6wyQ.jpg> </home/th
-ies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEGB1IKe4tsl1yw.
-jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQ
-ouZ6lHtM4J3oA.jpg> </home/thies/db/Cambridge/data/images/cambridge/000100001006
-5349_HDvoqsiHXGx4xc62JSUNJA.jpg> </home/thies/db/Cambridge/data/images/cambridg
-e/0001000009993819_748OTBKSFyJZU2DP7TbboQ.jpg> </home/thies/db/Cambridge/data/i
-mages/cambridge/1000002057677000_8l6ywNIej2136uZeb3qKqA.jpg> </home/thies/db/Ca
-mbridge/data/images/cambridge/1000002500088807_4vu-eMLHmhX3JmHNwyulmQ.jpg> </ho
-me/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCgpQugahoE
-7EPw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_
-BuvuLW6kbLLP0QgJMA.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000
-010017412_aOsldmaOT-MAce6q6qkmTQ.jpg> </home/thies/db/Cambridge/data/images/cam
-bridge/0001000010107971_veilqmDOA-AfCuz4tWyg7g.jpg> </home/thies/db/Cambridge/d
-ata/images/cambridge/0001000010025542_8rvXwCYBTCQu0eVM9nhN9Q.jpg> </home/thies/
-db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBUOvZgiXRdSAnA.jpg>
- </home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgebzrG
-zDR_Cahaw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010060140
-_8_DVq9QCmlMezNuDHGixwg.jpg> </home/thies/db/Cambridge/data/images/cambridge/00
-01000010103819_mF6OqQrRTOlAoGdaraQsTQ.jpg> </home/thies/db/Cambridge/data/image
-s/cambridge/0001000010097999_xTD3YceIrtPJZwPz5d0G6Q.jpg> </home/thies/db/Cambri
-dge/data/images/cambridge/0001000010065347_pouLRqJd7pkk41jryvYQ4A.jpg> </home/t
-hies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS1riXfGzpSkBw
-.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7m
-im1nGBZAdgw_ew.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000025005
-69086_g5RwBQ7D5edS2obfSogNIw.jpg> </home/thies/db/Cambridge/data/images/cambrid
-ge/0001000010060139_8_DVq9QCmlMezNuDHGixwg.jpg> </home/thies/db/Cambridge/data/
-images/cambridge/0001000010101711_wNQ403N-0pQd5fChNztfYA.jpg> </home/thies/db/C
-ambridge/data/images/cambridge/0001000010021374_55tKverBLF4C0oo8U4XABg.jpg> </h
-ome/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPwLeCBKJI
-QmeCg.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR
-1vVJ7F0L6hcsFoZEydw.jpg> </home/thies/db/Cambridge/data/images/cambridge/100000
-2500548748_i6QAKtN2HhGsTVDBan2DKw.jpg> </home/thies/db/Cambridge/data/images/ca
-mbridge/1000002057955271_dMXMWNaIwddWdHidEuXowA.jpg> </home/thies/db/Cambridge/
-data/images/cambridge/0001000010060141_W3ZIE8mPY6LJb-_hKatlUw.jpg> </home/thies
-/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9tNnNF958OBO3g.jpg
-> </home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZjQ
-_qhD7puDBw.jpg> </home/thies/db/Cambridge/data/images/cambridge/000100000999549
-6_N4NgCofyWASyYfcSPTjdBA.jpg> </home/thies/db/Cambridge/data/images/cambridge/0
-001000010068890_aswyTpwrE_IfdbINnYx7XQ.jpg> </home/thies/db/Cambridge/data/imag
-es/cambridge/0001000010104229_qFV1-weLxn8SRW4Ib2wexQ.jpg> </home/thies/db/Cambr
-idge/data/images/cambridge/0001000010199676_smIagQ34MLIcJOrjvIu9uw.jpg> </home/
-thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpyKpiIZ1YO9yp
-g.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujs
-wdAj7EGqRlp8sXQ.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010
-017361_WxMCM3nht5EX_K9pqIK-kQ.jpg> </home/thies/db/Cambridge/data/images/cambri
-dge/0001000010066620_4TqmJVLf3urSJo4ESg1zfw.jpg> </home/thies/db/Cambridge/data
-/images/cambridge/0001000010023689_KpXUKEdjoQ9swgoB2oXA3w.jpg> </home/thies/db/
-Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYtGox02-tF2i9rQ.jpg> </
-home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgebzrGzDR
-_Cahaw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010060813_Vl
-KeIvrTv6UwOE9HD2LgJg.jpg> </home/thies/db/Cambridge/data/images/cambridge/00010
-00010103859_P5YwPMree6QCxExkKqIzbw.jpg> </home/thies/db/Cambridge/data/images/c
-ambridge/0001000010141515_5g5Bhsn_4iW-90aFMrIaSA.jpg> </home/thies/db/Cambridge
-/data/images/cambridge/0001000010066361_gliMrVbagcfkfZjLw4mKlw.jpg> </home/thie
-s/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8OzsbWjHYscCf-rA.jp
-g> </home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVey
-Kyx7dPnXK6A.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000025004136
-82_drSMg0SQ9TU4Og8pXOgSxw.jpg> </home/thies/db/Cambridge/data/images/cambridge/
-0001000010059967_e8c8bmHUpyKpiIZ1YO9ypg.jpg> </home/thies/db/Cambridge/data/ima
-ges/cambridge/0001000010103388_CZH157SXYmF3dEVMKlWBfQ.jpg> </home/thies/db/Camb
-ridge/data/images/cambridge/0001000010025644_bJ8zv37pDsP0CImvDMKC0w.jpg> </home
-/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67J78VXCoN_H
-MA.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4G
-sWaXplyCP6XeVAvw.jpg> </home/thies/db/Cambridge/data/images/cambridge/100000250
-0086356_n92s3snPX2zAwEiJnA-Pxg.jpg> </home/thies/db/Cambridge/data/images/cambr
-idge/0001000010176201_dDyXoyEbeMXUhCagwazbiA.jpg>] [22pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.4}) has been already used, dupl
-icate ignored
+H4xvm5Yw.jpg, id=290, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79
+cN59fH4xvm5Yw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79c
+N59fH4xvm5Yw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010141115_xG0eSas79cN59fH4xvm5Yw.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8SGjf7
+Tg9tLS7w.jpg, id=291, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8
+SGjf7Tg9tLS7w.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2Is2WMV8S
+Gjf7Tg9tLS7w.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010023665_B2Is2WMV8SGjf7Tg9tLS7w.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYtGox02
+-tF2i9rQ.jpg, id=292, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYt
+Gox02-tF2i9rQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748070_DkW5iwQYtG
+ox02-tF2i9rQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500748070_DkW5iwQYtGox02-tF2i9rQ.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7GPQxP
+OtoevEHw.jpg, id=293, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7
+GPQxPOtoevEHw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010176986_bNOie2HS7G
+PQxPOtoevEHw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010176986_bNOie2HS7GPQxPOtoevEHw.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI2MTiv
+vvWv6wyQ.jpg, id=294, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI
+2MTivvvWv6wyQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010058145_xBAz4f8lI2
+MTivvvWv6wyQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010058145_xBAz4f8lI2MTivvvWv6wyQ.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEGB1IK
+e4tsl1yw.jpg, id=295, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkE
+GB1IKe4tsl1yw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEG
+B1IKe4tsl1yw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103488_Y1L2niOkEGB1IKe4tsl1yw.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQouZ6l
+HtM4J3oA.jpg, id=296, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQ
+ouZ6lHtM4J3oA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQo
+uZ6lHtM4J3oA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010021367_JF-P4lOQQouZ6lHtM4J3oA.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHXGx4xc
+62JSUNJA.jpg, id=297, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHX
+Gx4xc62JSUNJA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065349_HDvoqsiHXG
+x4xc62JSUNJA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010065349_HDvoqsiHXGx4xc62JSUNJA.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSFyJZU2
+DP7TbboQ.jpg, id=298, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSF
+yJZU2DP7TbboQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000009993819_748OTBKSFy
+JZU2DP7TbboQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+009993819_748OTBKSFyJZU2DP7TbboQ.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej2136u
+Zeb3qKqA.jpg, id=299, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej
+2136uZeb3qKqA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002057677000_8l6ywNIej2
+136uZeb3qKqA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+057677000_8l6ywNIej2136uZeb3qKqA.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHmhX3Jm
+HNwyulmQ.jpg, id=300, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHm
+hX3JmHNwyulmQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500088807_4vu-eMLHmh
+X3JmHNwyulmQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500088807_4vu-eMLHmhX3JmHNwyulmQ.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCgpQug
+ahoE7EPw.jpg, id=301, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxC
+gpQugahoE7EPw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCg
+pQugahoE7EPw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010059206__nUymOPxCgpQugahoE7EPw.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuLW6kbL
+LP0QgJMA.jpg, id=302, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuL
+W6kbLLP0QgJMA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_BuvuLW
+6kbLLP0QgJMA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103870_ywN_BuvuLW6kbLLP0QgJMA.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT-MAce
+6q6qkmTQ.jpg, id=303, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT
+-MAce6q6qkmTQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017412_aOsldmaOT-
+MAce6q6qkmTQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010017412_aOsldmaOT-MAce6q6qkmTQ.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA-AfCu
+z4tWyg7g.jpg, id=304, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA
+-AfCuz4tWyg7g.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010107971_veilqmDOA-
+AfCuz4tWyg7g.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010107971_veilqmDOA-AfCuz4tWyg7g.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBTCQu0e
+VM9nhN9Q.jpg, id=305, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBT
+CQu0eVM9nhN9Q.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010025542_8rvXwCYBTC
+Qu0eVM9nhN9Q.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010025542_8rvXwCYBTCQu0eVM9nhN9Q.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBUOvZg
+iXRdSAnA.jpg, id=306, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVB
+UOvZgiXRdSAnA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBU
+OvZgiXRdSAnA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500555322_FffLx_XVBUOvZgiXRdSAnA.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgebzrGz
+DR_Cahaw.jpg, id=307, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcge
+bzrGzDR_Cahaw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgeb
+zrGzDR_Cahaw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010066754_dJmIRHcgebzrGzDR_Cahaw.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCmlMezN
+uDHGixwg.jpg, id=308, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCm
+lMezNuDHGixwg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8_DVq9QCml
+MezNuDHGixwg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010060140_8_DVq9QCmlMezNuDHGixwg.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRTOlAoG
+daraQsTQ.jpg, id=309, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRT
+OlAoGdaraQsTQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103819_mF6OqQrRTO
+lAoGdaraQsTQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103819_mF6OqQrRTOlAoGdaraQsTQ.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIrtPJZw
+Pz5d0G6Q.jpg, id=310, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIr
+tPJZwPz5d0G6Q.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010097999_xTD3YceIrt
+PJZwPz5d0G6Q.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010097999_xTD3YceIrtPJZwPz5d0G6Q.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7pkk41
+jryvYQ4A.jpg, id=311, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7
+pkk41jryvYQ4A.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065347_pouLRqJd7p
+kk41jryvYQ4A.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010065347_pouLRqJd7pkk41jryvYQ4A.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS1riX
+fGzpSkBw.jpg, id=312, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRav
+S1riXfGzpSkBw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS
+1riXfGzpSkBw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+009992776_QxMV8eRavS1riXfGzpSkBw.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mim1nGB
+ZAdgw_ew.jpg, id=313, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mi
+m1nGBZAdgw_ew.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mim
+1nGBZAdgw_ew.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500555341_NVXmLF7mim1nGBZAdgw_ew.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5edS2o
+bfSogNIw.jpg, id=314, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5
+edS2obfSogNIw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500569086_g5RwBQ7D5e
+dS2obfSogNIw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500569086_g5RwBQ7D5edS2obfSogNIw.jpg  used on input line 1054.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCmlMezN
+uDHGixwg.jpg, id=315, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCm
+lMezNuDHGixwg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060139_8_DVq9QCml
+MezNuDHGixwg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010060139_8_DVq9QCmlMezNuDHGixwg.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0pQd5f
+ChNztfYA.jpg, id=316, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0
+pQd5fChNztfYA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010101711_wNQ403N-0p
+Qd5fChNztfYA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010101711_wNQ403N-0pQd5fChNztfYA.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBLF4C0o
+o8U4XABg.jpg, id=317, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBL
+F4C0oo8U4XABg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010021374_55tKverBLF
+4C0oo8U4XABg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010021374_55tKverBLF4C0oo8U4XABg.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPwLeCB
+KJIQmeCg.jpg, id=318, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpP
+wLeCBKJIQmeCg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPw
+LeCBKJIQmeCg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010065352_kDKqKaGpPwLeCBKJIQmeCg.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F0L6hc
+sFoZEydw.jpg, id=319, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F
+0L6hcsFoZEydw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1vVJ7F0
+L6hcsFoZEydw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010015484_zlR1vVJ7F0L6hcsFoZEydw.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2HhGsTV
+DBan2DKw.jpg, id=320, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2H
+hGsTVDBan2DKw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500548748_i6QAKtN2Hh
+GsTVDBan2DKw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500548748_i6QAKtN2HhGsTVDBan2DKw.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIwddWdH
+idEuXowA.jpg, id=321, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIw
+ddWdHidEuXowA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002057955271_dMXMWNaIwd
+dWdHidEuXowA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+057955271_dMXMWNaIwddWdHidEuXowA.jpg  used on input line 1055.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY6LJb-
+_hKatlUw.jpg, id=322, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY
+6LJb-_hKatlUw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060141_W3ZIE8mPY6
+LJb-_hKatlUw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010060141_W3ZIE8mPY6LJb-_hKatlUw.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9tNnNF
+958OBO3g.jpg, id=323, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9
+tNnNF958OBO3g.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9t
+NnNF958OBO3g.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103226_XO6qx_5Q9tNnNF958OBO3g.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZjQ_q
+hD7puDBw.jpg, id=324, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1Gxh
+ZjQ_qhD7puDBw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZ
+jQ_qhD7puDBw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010017109_MbGvl1GxhZjQ_qhD7puDBw.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyWASyYf
+cSPTjdBA.jpg, id=325, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyW
+ASyYfcSPTjdBA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000009995496_N4NgCofyWA
+SyYfcSPTjdBA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+009995496_N4NgCofyWASyYfcSPTjdBA.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE_Ifdb
+INnYx7XQ.jpg, id=326, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE
+_IfdbINnYx7XQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010068890_aswyTpwrE_
+IfdbINnYx7XQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010068890_aswyTpwrE_IfdbINnYx7XQ.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLxn8SRW
+4Ib2wexQ.jpg, id=327, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLx
+n8SRW4Ib2wexQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010104229_qFV1-weLxn
+8SRW4Ib2wexQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010104229_qFV1-weLxn8SRW4Ib2wexQ.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34MLIcJO
+rjvIu9uw.jpg, id=328, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34M
+LIcJOrjvIu9uw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010199676_smIagQ34ML
+IcJOrjvIu9uw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010199676_smIagQ34MLIcJOrjvIu9uw.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpyKpiI
+Z1YO9ypg.jpg, id=329, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUp
+yKpiIZ1YO9ypg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpy
+KpiIZ1YO9ypg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010059966_e8c8bmHUpyKpiIZ1YO9ypg.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswdAj7EG
+qRlp8sXQ.jpg, id=330, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswd
+Aj7EGqRlp8sXQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswdA
+j7EGqRlp8sXQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010101704_ZQFxujswdAj7EGqRlp8sXQ.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht5EX_K
+9pqIK-kQ.jpg, id=331, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht
+5EX_K9pqIK-kQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010017361_WxMCM3nht5
+EX_K9pqIK-kQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010017361_WxMCM3nht5EX_K9pqIK-kQ.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3urSJo
+4ESg1zfw.jpg, id=332, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3
+urSJo4ESg1zfw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066620_4TqmJVLf3u
+rSJo4ESg1zfw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010066620_4TqmJVLf3urSJo4ESg1zfw.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjoQ9swg
+oB2oXA3w.jpg, id=333, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjo
+Q9swgoB2oXA3w.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010023689_KpXUKEdjoQ
+9swgoB2oXA3w.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010023689_KpXUKEdjoQ9swgoB2oXA3w.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYtGox02
+-tF2i9rQ.jpg, id=334, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYt
+Gox02-tF2i9rQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748058_DkW5iwQYtG
+ox02-tF2i9rQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500748058_DkW5iwQYtGox02-tF2i9rQ.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgebzrGz
+DR_Cahaw.jpg, id=335, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcge
+bzrGzDR_Cahaw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgeb
+zrGzDR_Cahaw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010066718_dJmIRHcgebzrGzDR_Cahaw.jpg  used on input line 1057.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv6UwOE
+9HD2LgJg.jpg, id=336, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv
+6UwOE9HD2LgJg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKeIvrTv6
+UwOE9HD2LgJg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010060813_VlKeIvrTv6UwOE9HD2LgJg.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree6QCxE
+xkKqIzbw.jpg, id=337, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree
+6QCxExkKqIzbw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103859_P5YwPMree6
+QCxExkKqIzbw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103859_P5YwPMree6QCxExkKqIzbw.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4iW-90
+aFMrIaSA.jpg, id=338, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4
+iW-90aFMrIaSA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010141515_5g5Bhsn_4i
+W-90aFMrIaSA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010141515_5g5Bhsn_4iW-90aFMrIaSA.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbagcfkfZ
+jLw4mKlw.jpg, id=339, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbag
+cfkfZjLw4mKlw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010066361_gliMrVbagc
+fkfZjLw4mKlw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010066361_gliMrVbagcfkfZjLw4mKlw.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8OzsbWjH
+YscCf-rA.jpg, id=340, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8Oz
+sbWjHYscCf-rA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8Ozs
+bWjHYscCf-rA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500527045_p4zTtg8OzsbWjHYscCf-rA.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVeyKyx
+7dPnXK6A.jpg, id=341, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmV
+eyKyx7dPnXK6A.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVe
+yKyx7dPnXK6A.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500748076_zDr74LLmVeyKyx7dPnXK6A.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9TU4Og
+8pXOgSxw.jpg, id=342, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9
+TU4Og8pXOgSxw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500413682_drSMg0SQ9T
+U4Og8pXOgSxw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500413682_drSMg0SQ9TU4Og8pXOgSxw.jpg  used on input line 1058.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUpyKpiI
+Z1YO9ypg.jpg, id=343, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUp
+yKpiIZ1YO9ypg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010059967_e8c8bmHUpy
+KpiIZ1YO9ypg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010059967_e8c8bmHUpyKpiIZ1YO9ypg.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXYmF3dE
+VMKlWBfQ.jpg, id=344, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXY
+mF3dEVMKlWBfQ.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010103388_CZH157SXYm
+F3dEVMKlWBfQ.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010103388_CZH157SXYmF3dEVMKlWBfQ.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pDsP0CI
+mvDMKC0w.jpg, id=345, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pD
+sP0CImvDMKC0w.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010025644_bJ8zv37pDs
+P0CImvDMKC0w.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010025644_bJ8zv37pDsP0CImvDMKC0w.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67J78V
+XCoN_HMA.jpg, id=346, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw6
+7J78VXCoN_HMA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67
+J78VXCoN_HMA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010144910_COpJNwPw67J78VXCoN_HMA.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWaXplyC
+P6XeVAvw.jpg, id=347, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWa
+XplyCP6XeVAvw.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsWaX
+plyCP6XeVAvw.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+009992797_JUTa4GsWaXplyCP6XeVAvw.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX2zAwE
+iJnA-Pxg.jpg, id=348, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX
+2zAwEiJnA-Pxg.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/1000002500086356_n92s3snPX2
+zAwEiJnA-Pxg.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/1000002
+500086356_n92s3snPX2zAwEiJnA-Pxg.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+</home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbeMXUhC
+agwazbiA.jpg, id=349, 642.4pt x 642.4pt>
+File: /home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbe
+MXUhCagwazbiA.jpg Graphic file (type jpg)
+<use /home/thies/db/Cambridge/data/images/cambridge/0001000010176201_dDyXoyEbeM
+XUhCagwazbiA.jpg>
+Package pdftex.def Info: /home/thies/db/Cambridge/data/images/cambridge/0001000
+010176201_dDyXoyEbeMXUhCagwazbiA.jpg  used on input line 1059.
+(pdftex.def)             Requested size: 45.16864pt x 45.16864pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1066
+[][]
+ []
+
+[22
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                  <./figures/barplot_f1scores.jpg>] [23pdfTeX warning (ext4): d
-estination with the same identifier (name{table.7}) has been already used, dupl
-icate ignored
+l.1068 \newpage
+                </home/thies/db/Cambridge/data/images/cambridge/000100001005820
+5_KqBBtZS8ecncUe8oqjErqQ.jpg> </home/thies/db/Cambridge/data/images/cambridge/0
+001000010102767_u_7T3iAyG9xNgeN_ETY7aQ.jpg> </home/thies/db/Cambridge/data/imag
+es/cambridge/0001000010141478_FT9houQ2x66NPnNEGxTkvA.jpg> </home/thies/db/Cambr
+idge/data/images/cambridge/0001000010065714_pzExlR026vDKdQaJiLkdkw.jpg> </home/
+thies/db/Cambridge/data/images/cambridge/0001000010137600_qYxYCsLRPpOfCyv8Ijfnl
+A.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002057677225_srJnz_3
+1ujVFzn-xh_DYfw.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002500
+413689_VylY6Sy3vLvjqbtHeryMdQ.jpg> </home/thies/db/Cambridge/data/images/cambri
+dge/0001000010056385_XQsTJ2p5Te54CScFmblMHA.jpg> </home/thies/db/Cambridge/data
+/images/cambridge/0001000010102769_c_e4WlmafqN2JXQ2ZhYEkw.jpg> </home/thies/db/
+Cambridge/data/images/cambridge/0001000010017237_yWs7fxQ0r8Ecx_ajaYc-rg.jpg> </
+home/thies/db/Cambridge/data/images/cambridge/0001000010141115_xG0eSas79cN59fH4
+xvm5Yw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010023665_B2
+Is2WMV8SGjf7Tg9tLS7w.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000
+02500748070_DkW5iwQYtGox02-tF2i9rQ.jpg> </home/thies/db/Cambridge/data/images/c
+ambridge/0001000010176986_bNOie2HS7GPQxPOtoevEHw.jpg> </home/thies/db/Cambridge
+/data/images/cambridge/0001000010058145_xBAz4f8lI2MTivvvWv6wyQ.jpg> </home/thie
+s/db/Cambridge/data/images/cambridge/0001000010103488_Y1L2niOkEGB1IKe4tsl1yw.jp
+g> </home/thies/db/Cambridge/data/images/cambridge/0001000010021367_JF-P4lOQQou
+Z6lHtM4J3oA.jpg> </home/thies/db/Cambridge/data/images/cambridge/00010000100653
+49_HDvoqsiHXGx4xc62JSUNJA.jpg> </home/thies/db/Cambridge/data/images/cambridge/
+0001000009993819_748OTBKSFyJZU2DP7TbboQ.jpg> </home/thies/db/Cambridge/data/ima
+ges/cambridge/1000002057677000_8l6ywNIej2136uZeb3qKqA.jpg> </home/thies/db/Camb
+ridge/data/images/cambridge/1000002500088807_4vu-eMLHmhX3JmHNwyulmQ.jpg> </home
+/thies/db/Cambridge/data/images/cambridge/0001000010059206__nUymOPxCgpQugahoE7E
+Pw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010103870_ywN_Bu
+vuLW6kbLLP0QgJMA.jpg> </home/thies/db/Cambridge/data/images/cambridge/000100001
+0017412_aOsldmaOT-MAce6q6qkmTQ.jpg> </home/thies/db/Cambridge/data/images/cambr
+idge/0001000010107971_veilqmDOA-AfCuz4tWyg7g.jpg> </home/thies/db/Cambridge/dat
+a/images/cambridge/0001000010025542_8rvXwCYBTCQu0eVM9nhN9Q.jpg> </home/thies/db
+/Cambridge/data/images/cambridge/1000002500555322_FffLx_XVBUOvZgiXRdSAnA.jpg> <
+/home/thies/db/Cambridge/data/images/cambridge/0001000010066754_dJmIRHcgebzrGzD
+R_Cahaw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010060140_8
+_DVq9QCmlMezNuDHGixwg.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001
+000010103819_mF6OqQrRTOlAoGdaraQsTQ.jpg> </home/thies/db/Cambridge/data/images/
+cambridge/0001000010097999_xTD3YceIrtPJZwPz5d0G6Q.jpg> </home/thies/db/Cambridg
+e/data/images/cambridge/0001000010065347_pouLRqJd7pkk41jryvYQ4A.jpg> </home/thi
+es/db/Cambridge/data/images/cambridge/0001000009992776_QxMV8eRavS1riXfGzpSkBw.j
+pg> </home/thies/db/Cambridge/data/images/cambridge/1000002500555341_NVXmLF7mim
+1nGBZAdgw_ew.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002500569
+086_g5RwBQ7D5edS2obfSogNIw.jpg> </home/thies/db/Cambridge/data/images/cambridge
+/0001000010060139_8_DVq9QCmlMezNuDHGixwg.jpg> </home/thies/db/Cambridge/data/im
+ages/cambridge/0001000010101711_wNQ403N-0pQd5fChNztfYA.jpg> </home/thies/db/Cam
+bridge/data/images/cambridge/0001000010021374_55tKverBLF4C0oo8U4XABg.jpg> </hom
+e/thies/db/Cambridge/data/images/cambridge/0001000010065352_kDKqKaGpPwLeCBKJIQm
+eCg.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010015484_zlR1v
+VJ7F0L6hcsFoZEydw.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000025
+00548748_i6QAKtN2HhGsTVDBan2DKw.jpg> </home/thies/db/Cambridge/data/images/camb
+ridge/1000002057955271_dMXMWNaIwddWdHidEuXowA.jpg> </home/thies/db/Cambridge/da
+ta/images/cambridge/0001000010060141_W3ZIE8mPY6LJb-_hKatlUw.jpg> </home/thies/d
+b/Cambridge/data/images/cambridge/0001000010103226_XO6qx_5Q9tNnNF958OBO3g.jpg> 
+</home/thies/db/Cambridge/data/images/cambridge/0001000010017109_MbGvl1GxhZjQ_q
+hD7puDBw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000009995496_
+N4NgCofyWASyYfcSPTjdBA.jpg> </home/thies/db/Cambridge/data/images/cambridge/000
+1000010068890_aswyTpwrE_IfdbINnYx7XQ.jpg> </home/thies/db/Cambridge/data/images
+/cambridge/0001000010104229_qFV1-weLxn8SRW4Ib2wexQ.jpg> </home/thies/db/Cambrid
+ge/data/images/cambridge/0001000010199676_smIagQ34MLIcJOrjvIu9uw.jpg> </home/th
+ies/db/Cambridge/data/images/cambridge/0001000010059966_e8c8bmHUpyKpiIZ1YO9ypg.
+jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010101704_ZQFxujswd
+Aj7EGqRlp8sXQ.jpg> </home/thies/db/Cambridge/data/images/cambridge/000100001001
+7361_WxMCM3nht5EX_K9pqIK-kQ.jpg> </home/thies/db/Cambridge/data/images/cambridg
+e/0001000010066620_4TqmJVLf3urSJo4ESg1zfw.jpg> </home/thies/db/Cambridge/data/i
+mages/cambridge/0001000010023689_KpXUKEdjoQ9swgoB2oXA3w.jpg> </home/thies/db/Ca
+mbridge/data/images/cambridge/1000002500748058_DkW5iwQYtGox02-tF2i9rQ.jpg> </ho
+me/thies/db/Cambridge/data/images/cambridge/0001000010066718_dJmIRHcgebzrGzDR_C
+ahaw.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000010060813_VlKe
+IvrTv6UwOE9HD2LgJg.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000
+010103859_P5YwPMree6QCxExkKqIzbw.jpg> </home/thies/db/Cambridge/data/images/cam
+bridge/0001000010141515_5g5Bhsn_4iW-90aFMrIaSA.jpg> </home/thies/db/Cambridge/d
+ata/images/cambridge/0001000010066361_gliMrVbagcfkfZjLw4mKlw.jpg> </home/thies/
+db/Cambridge/data/images/cambridge/1000002500527045_p4zTtg8OzsbWjHYscCf-rA.jpg>
+ </home/thies/db/Cambridge/data/images/cambridge/1000002500748076_zDr74LLmVeyKy
+x7dPnXK6A.jpg> </home/thies/db/Cambridge/data/images/cambridge/1000002500413682
+_drSMg0SQ9TU4Og8pXOgSxw.jpg> </home/thies/db/Cambridge/data/images/cambridge/00
+01000010059967_e8c8bmHUpyKpiIZ1YO9ypg.jpg> </home/thies/db/Cambridge/data/image
+s/cambridge/0001000010103388_CZH157SXYmF3dEVMKlWBfQ.jpg> </home/thies/db/Cambri
+dge/data/images/cambridge/0001000010025644_bJ8zv37pDsP0CImvDMKC0w.jpg> </home/t
+hies/db/Cambridge/data/images/cambridge/0001000010144910_COpJNwPw67J78VXCoN_HMA
+.jpg> </home/thies/db/Cambridge/data/images/cambridge/0001000009992797_JUTa4GsW
+aXplyCP6XeVAvw.jpg> </home/thies/db/Cambridge/data/images/cambridge/10000025000
+86356_n92s3snPX2zAwEiJnA-Pxg.jpg> </home/thies/db/Cambridge/data/images/cambrid
+ge/0001000010176201_dDyXoyEbeMXUhCagwazbiA.jpg>]
+<figures/barplot_f1scores.jpg, id=355, 1003.75pt x 501.875pt>
+File: figures/barplot_f1scores.jpg Graphic file (type jpg)
+<use figures/barplot_f1scores.jpg>
+Package pdftex.def Info: figures/barplot_f1scores.jpg  used on input line 1073.
+
+(pdftex.def)             Requested size: 375.808pt x 187.90399pt.
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 ] [24pdfTeX warning (ext4): destination with the same identifi
-er (name{table.8}) has been already used, duplicate ignored
+l.1081 \newpage
+                <./figures/barplot_f1scores.jpg>] [24pdfTeX warning (ext4): des
+tination with the same identifier (name{table.6}) has been already used, duplic
+ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.9}) has been already used, duplicate ignored
+l.1107 \newpage
+               ]
+Overfull \hbox (18.73627pt too wide) in paragraph at lines 1113--1174
+ [][] 
+ []
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{table.7}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.10}) has been already used, duplicate ignored
+l.1176 \newpage
+               ] [26pdfTeX warning (ext4): destination with the same identifier
+ (name{table.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1240 \clearpage
+l.1204 \newpage
+               ] [27pdfTeX warning (ext4): destination with the same identifier
+ (name{table.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1240 \newpage
+               ] [28pdfTeX warning (ext4): destination with the same identifier
+ (name{table.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1268 \clearpage
                  ]
-Underfull \hbox (badness 2057) in paragraph at lines 1278--1281
+Underfull \hbox (badness 2057) in paragraph at lines 1306--1309
 [][]\T1/lmr/m/n/10 (+20) Environment Agency. 2015. ``LI-DAR Com-pos-ite DSM - 1
 m.'' []$https : / / data . gov . uk / dataset /
  []
 
-[25
+[29
 
-] [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1422.
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1422.
+] [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1450.
+[31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1450.
 (./manuscript_assa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1422.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1450.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1450.
 
 Package rerunfilecheck Info: File `manuscript_assa.out' has not changed.
 (rerunfilecheck)             Checksum: CC5592304193318E8BCFCEB2C2ACB404;2374.
 Package logreq Info: Writing requests to 'manuscript_assa.run.xml'.
 \openout1 = `manuscript_assa.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1422.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1450.
  ) 
 Here is how much of TeX's memory you used:
- 19638 strings out of 494518
- 335936 string characters out of 6176313
- 703611 words of memory out of 5000000
+ 19642 strings out of 494518
+ 335964 string characters out of 6176313
+ 627611 words of memory out of 5000000
  22744 multiletter control sequences out of 15000+600000
  105476 words of font info for 168 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1858,10 +1864,10 @@ lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy8.pfb>
-Output written on manuscript_assa.pdf (27 pages, 8915610 bytes).
+Output written on manuscript_assa.pdf (31 pages, 8917185 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
  18910 words of extra memory for PDF output out of 20736 (max. 10000000)
 

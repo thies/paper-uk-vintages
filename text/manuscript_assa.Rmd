@@ -265,6 +265,7 @@ Third, we test whether revival or vernacular architecture leads to price premia 
 \end{minipage}
 \end{figure}
 
+\newpage
 
 
 
@@ -279,6 +280,7 @@ Third, we test whether revival or vernacular architecture leads to price premia 
 \end{minipage}
 \end{figure}
 
+\newpage
 
 
 \begin{table}[!htbp] \centering 
@@ -320,9 +322,11 @@ Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\
 \end{minipage}
 \end{table} 
 
+\newpage
 
 \input{confusion_matrix.tex}
 
+\newpage
 
 \begin{table}[!htb] 
 \caption{Prediction certainty: Herfindahl index from ensemble model} 
@@ -353,6 +357,9 @@ Georgian & -- & -0.21 (-9.87) & -0.28 (-13.11) & -0.33 (-9.95) & -0.27 (-6.30) &
 \end{minipage}
 \end{table}
 
+\newpage
+\clearpage 
+
 
 \begin{table}[ht] 
 \centering 
@@ -378,6 +385,8 @@ Architects' classifications & Share Blocked & House Area & Window Area & Image O
 \end{minipage}
 \end{table}
 
+\newpage
+\clearpage
 
 
 \begin{table}[!htb] 
@@ -452,6 +461,8 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \end{table}
 
 
+\newpage
+\clearpage
 
 
 
@@ -469,6 +480,7 @@ plot_top_pictures(img.width = "45px")
 
 
 
+\newpage
 
 
 
@@ -483,6 +495,7 @@ plot_top_pictures(img.width = "45px")
 \end{minipage}
 \end{figure}
 
+\newpage
 
 \begin{table}[htb!]
 \caption{Machine style classifications as dependent variables (Eq. \ref{eq:rev} AIC comparison) }
@@ -509,6 +522,7 @@ AIC values for 28 binomial models in which the occurrence of building styles (in
 \end{table}
 
 
+\newpage
 
 
 
@@ -580,6 +594,7 @@ Adjusted R$^{2}$ & 0.88 & 0.88 & 0.88 & 0.93 & 0.91 & 0.92 & 0.89 & 0.89 \\
 \end{minipage}
 \end{table} 
 
+\newpage
 
 
 \begin{table}[ht]
@@ -607,6 +622,8 @@ Georgian & 164 &  44 &   7 &   0 &   0 &   0 &   1 \\
 \footnotesize \emph{Notes:} The style of direct neighborhoods is defined as the most frequent detected style on the same street, within 100m. 
 \end{minipage}
 \end{table}
+
+\newpage
 
 
 \begin{table}[ht]
@@ -641,8 +658,12 @@ Contemporary & -- & -- & -- & -- & -- & -- & -- \\
 \vspace{0.25cm}
 \footnotesize \emph{Notes:} $^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01. Standard errors are robust (White's estimator). This table features the coefficients for interaction terms of building style and neighborhood styles only, while Table \ref{tab:hedreg}, Column 8 presents all other coefficients for this model.
 \end{minipage}
-
 \end{table}
+
+
+\newpage
+
+
 
 \begin{table}[ht]
 \centering
