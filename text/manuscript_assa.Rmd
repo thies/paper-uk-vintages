@@ -18,6 +18,7 @@ header-includes:
    - \usepackage{multirow}
    - \doublespacing
    - \usepackage[backend=bibtex, style=authoryear]{biblatex}
+   
 fig_width: 6
 fig_height: 4
 output: 
@@ -25,13 +26,18 @@ output:
     keep_tex: true
     number_sections: true
 bibliography: references.bib
-abstract: "This paper first introduces an algorithm that collects pictures of individual buildings from Google Street View. Second, it trains a deep convolutional neural network (CNN) to classify residential buildings into architectural styles, taking into account spatial dependencies of these styles. Third, it investigates whether architectural styles influence house prices. For re-sales, the architectural style is a significant determinant of transaction prices while no such effect is found for new buildings. Additionally, we are able to provide guidance on how to detect and overcome some of the limitations of machine learning methods through a large-scale comparison of predictions and expert classifications." 
+abstract: "This paper introduces an algorithm that collects pictures of individual buildings from Google Street View. It then trains a deep convolutional neural network (CNN) to classify residential buildings into architectural styles, taking into account spatial dependencies of these styles explicitly. Third, it investigates whether architectural styles influence house prices. For re-sales, the architectural style is a significant determinant of transaction prices while no such effect is found for new buildings. Importantly, this paper explores how to detect and overcome biases in machine learning methods through a large-scale comparison of predictions and expert classifications, partially opening up the `black box' of automatic building classification systems." 
 ---
 
-# Introduction
 \let\svthefootnote\thefootnote
 \let\thefootnote\relax\footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Peter Brummund, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp, Pavel Krivenko and participants at the ASSA/AREUEA 2019 annual meeting and seminars at UCL/Bartlett and the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
 \addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
+
+\newpage
+
+
+# Introduction
+
 If new developments were only pleasing to the eye, so Britain's *Building Better, Building Beautiful Commission* advising Government, nimbyism would cease and housing supply could finally reach the levels demanded by a growing and more affluent population [@economistlineofbeauty2018]. The inaugural chair of this new commission boldly suggested that if we built *``as our Georgian and Victorian forebears built* [...]. *All objections to new building would slip away in the sheer relief of the public''* [@scruton2018]. Even Prince Charles, in similar spirit, put forward ten principles for urban growth and architecture that emphasize tradition and aesthetics [@princecharles2014]. When governments and princes occupy themselves with beauty, economists surely may take a closer look as well. In this paper, we aim to identify the architectural styles of residential buildings using computer vision techniques and to empirically search for any transaction price premia associated with these styles. If aesthetics were as strong a force in the built environment as claimed, we should indeed find a significant effect on property prices. 
 
 This paper assesses the value of architectural aesthetics head on by classifying the exterior styles of residential buildings using street level images. Recent work illustrates how street level imagery and machine learning classification is an efficient and powerful combination for measuring previously unobserved characteristics of the urban environment. @Naik2017 describe how neighborhood demographics may impact the physical appearance of neighborhoods. @Gebru2017 use classified vehicle make and model information to predict income, race, education, and voting patterns at the precinct level. @Glaeser2016 predict income in New York City. @Naik2016AER create a neighborhood safety based Streetscore which is shown to be highly correlated with neighborhood population density and household income. @Nadai2016 find that greenery and street facing windows contribute to a positive appearance of safety while @Liu2017 evaluate the quality and upkeep of the built environment along Beijing's streets.  
@@ -73,7 +79,7 @@ Self-evidently, the images we use for classifying architectural style must focus
 
 
 
-Specifically, we first look up the nearest Google Street View panorama point (green dot in Figure \ref{fig:fan}) based on the centroid (red dot) coordinates of a given building obtained from Ordnance Survey maps. We then perform a viewshed analysis and identify which exterior walls are visible from the panorama point, ignoring any wall segments where the direct line of sight from the panorama point is obstructed by other buildings. We can then estimate the camera bearing (green line) and zoom factor, based on the fan of the lines of sight (in blue).\footnote{Code necessary to replicate this analysis is available from the author's GitHub.com code repositories: \href{https://github.com/thies}{https://github.com/thies}.}
+Specifically, we first look up the nearest Google Street View panorama point (green dot in Figure \ref{fig:fan}) based on the centroid (red dot) coordinates of a given building obtained from Ordnance Survey maps. We then perform a viewshed analysis and identify which exterior walls are visible from the panorama point, ignoring any wall segments where the direct line of sight from the panorama point is obstructed by other buildings. We can then estimate the camera bearing (green line) and zoom factor, based on the fan of the lines of sight (in blue).\footnote{Code necessary to replicate this analysis is available from the authors' GitHub.com code repositories.}
 
 
 Obstructed lines of sight due to greenery, fences, garden walls or large vehicles cannot be detected from the Ordnance Survey maps. We therefore use a first stage image classification procedure to identify if the building image is obstructed and we proceed the second-closest location if the line of sight is obstructed.
@@ -318,7 +324,7 @@ Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
 \singlespacing
-\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
+\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models (Lindenthal, 2017b). We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
 \end{minipage}
 \end{table} 
 

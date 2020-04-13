@@ -83,7 +83,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{16 September 2019}
+    \date{13 April 2020}
 
 \usepackage{soul}
 \usepackage{color}
@@ -102,21 +102,18 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-This paper first introduces an algorithm that collects pictures of
-individual buildings from Google Street View. Second, it trains a deep
-convolutional neural network (CNN) to classify residential buildings
-into architectural styles, taking into account spatial dependencies of
-these styles. Third, it investigates whether architectural styles
+This paper introduces an algorithm that collects pictures of individual
+buildings from Google Street View. It then trains a deep convolutional
+neural network (CNN) to classify residential buildings into
+architectural styles, taking into account spatial dependencies of these
+styles explicitly. Third, it investigates whether architectural styles
 influence house prices. For re-sales, the architectural style is a
 significant determinant of transaction prices while no such effect is
-found for new buildings. Additionally, we are able to provide guidance
-on how to detect and overcome some of the limitations of machine
-learning methods through a large-scale comparison of predictions and
-expert classifications.
+found for new buildings. Importantly, this paper explores how to detect
+and overcome biases in machine learning methods through a large-scale
+comparison of predictions and expert classifications, partially opening
+up the `black box' of automatic building classification systems.
 \end{abstract}
-
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
 
 \let\svthefootnote\thefootnote
 \let\thefootnote\relax
@@ -124,6 +121,11 @@ expert classifications.
 \footnote{{*Corresponding author: Thies Lindenthal (htl24@cam.ac.uk). Replication files are available from the author's Github repository \href{https://github.com/thies}{https://github.com/thies}. Paul E. Glade and Lukas Heckmann-Umhau are thanked for exceptional research assistance. Carolin Schmidt, Peter Brummund, Mike Langen, Colin Lizieri, Franz Fuerst, Stanimira Milcheva, D'Maris Coffman, Norm Miller, Stephen Malpezzi, John Clapp, Pavel Krivenko and participants at the ASSA/AREUEA 2019 annual meeting and seminars at UCL/Bartlett and the Homer Hoyt Institute offered excellent feedback and critique on earlier versions of this paper.}}
 
 \addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
+
+\newpage
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 If new developments were only pleasing to the eye, so Britain's
 \emph{Building Better, Building Beautiful Commission} advising
@@ -214,10 +216,10 @@ These controls are crucial, as earlier work has established that age and
 style variables tend to be highly correlated. Coulson and McMillen
 (2008), for instance, suggest a non-parametric estimator and establish a
 U-shaped age function and distinct price discounts for postwar and
-contemporary styles (vis-à-vis more historic styles). Francke and Minne
-(2017) investigate the depreciation of residential real estate in the
-Netherlands and decompose land versus structure values singling out the
-effect of ``physical deterioration, functional obsolescence and and
+contemporary styles (vis-à-vis more historic styles). Francke and van de
+Minne (2017) investigate the depreciation of residential real estate in
+the Netherlands and decompose land versus structure values singling out
+the effect of ``physical deterioration, functional obsolescence and and
 vintage effects''. They find that buildings from the 1930s carry a
 strong price premium.
 
@@ -234,7 +236,7 @@ similarly shaped neighboring building is value enhancing while proximity
 to a wildly different neighboring shape, everything else remaining
 equal, is detrimental to property values (Lindenthal 2017a).
 
-Unfortunately, the traditional approaches chosen by e.g. Buitelaar and
+Unfortunately, the traditional approaches chosen by e.g.~Buitelaar and
 Schilder (2017) or Ahlfeldt and Mastro (2012) do not scale well. Each
 observation has to be classified into architectural styles by a human
 expert, which is time-consuming and costly, imposing an upper limit on
@@ -295,7 +297,7 @@ are visible from the panorama point, ignoring any wall segments where
 the direct line of sight from the panorama point is obstructed by other
 buildings. We can then estimate the camera bearing (green line) and zoom
 factor, based on the fan of the lines of sight (in
-blue).\footnote{Code necessary to replicate this analysis is available from the author's GitHub.com code repositories: \href{https://github.com/thies}{https://github.com/thies}.}
+blue).\footnote{Code necessary to replicate this analysis is available from the authors' GitHub.com code repositories.}
 
 Obstructed lines of sight due to greenery, fences, garden walls or large
 vehicles cannot be detected from the Ordnance Survey maps. We therefore
@@ -475,7 +477,7 @@ values, picking up correlated but irrelevant cues such as greenery,
 upkeep, or cars brands instead of building exteriors? Are, for instance,
 more valuable houses more likely to be classified as the popular
 \emph{Late Victorian} style while starter homes are disproportionally
-more likely to be classified as e.g. \emph{Early Victorian}? We expect
+more likely to be classified as e.g.~\emph{Early Victorian}? We expect
 that in cases in which the ensemble provided a high confidence score,
 building features are clearly detectable on the pictures. For close
 calls, however, where models within the ensemble cannot agree, other
@@ -813,7 +815,7 @@ ML classifiers are relatively indecisive between classes, visual cues
 that are correlated with the exterior's style but not part of a
 building's architecture (for instance trees or cars) bias the estimates.
 Fore these less certain cases, more valuable homes are systematically
-more likely to be classified as e.g. \emph{Late Victorian/Edw.} and less
+more likely to be classified as e.g.~\emph{Late Victorian/Edw.} and less
 likely to be considered \emph{Contemporary}. A follow up study could
 investigate which elements in the building pictures lead to the
 misclassifications (Ribeiro, Singh, and Guestrin 2016). Given the danger
@@ -898,7 +900,7 @@ Neigh: Revival & 23,768 & 0.03 & 0.18 & 0 & 0 & 0 & 1 \\
 \begin{minipage}{\textwidth}
 \vspace{0.25cm}
 \singlespacing
-\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models, as suggested by @Lindenthal2017a. We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
+\footnotesize \emph{Notes:} Summary statistics for sample of 23,768 residential real estate transactions for the city of Cambridge (UK) between 1995 and 2018 where buildings could be matched with Google Street View images. The buildings floor plate (in $m^2$) is based on OS maps and the buildings' volumes are estimated from digital elevation models (Lindenthal, 2017b). We control for the location of each building by calculating the distance to the city center proxied by Great St. Mary's Church, and non-parametrically by using 69 location dummies (based on LSOA). Building styles based on machine classifications.
 \end{minipage}
 \end{table}
 
@@ -1351,7 +1353,7 @@ Computer Vision and Pattern Recognition (CVPR)}, 770--78.
 Helbich, Marco, Andreas Jochem, Werner Mücke, and Bernhard Höfle. 2013.
 ``Boosting the predictive accuracy of urban hedonic house price models
 through airborne laser scanning.'' \emph{Computers, Environment and
-Urban Systems} 39. Elsevier Ltd: 81--92.
+Urban Systems} 39: 81--92.
 \url{https://doi.org/10.1016/j.compenvurbsys.2013.01.001}.
 
 \leavevmode\hypertarget{ref-princecharles2014}{}%
@@ -1377,7 +1379,7 @@ Real Estate in the United Kingdom}. Comprehens. Elsevier Inc.
 Liu, Lun, Elisabete A. Silva, Chunyang Wu, and Hui Wang. 2017. ``A
 machine learning-based method for the large-scale evaluation of the
 qualities of the urban environment.'' \emph{Computers, Environment and
-Urban Systems} 65. The Authors: 113--25.
+Urban Systems} 65: 113--25.
 \url{https://doi.org/10.1016/j.compenvurbsys.2017.06.003}.
 
 \leavevmode\hypertarget{ref-Moorhouse1994}{}%
@@ -1438,7 +1440,7 @@ Computer Vision.'' \url{https://doi.org/10.1109/CVPR.2016.308}.
 
 \leavevmode\hypertarget{ref-economistlineofbeauty2018}{}%
 The Economist. 2018. ``The line of beauty.'' \emph{The Economist},
-November. London.
+November.
 \url{https://www.economist.com/britain/2018/11/17/how-to-defeat-nimbyism-build-more-beautiful-houses}.
 
 \leavevmode\hypertarget{ref-Vandell1989}{}%
