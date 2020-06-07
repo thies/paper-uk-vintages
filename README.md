@@ -1,3 +1,3 @@
 # Machine Learning, Architectural Styles and Property Values
 
-Manuscript: [text/manuscript_assa.pdf](text/manuscript_assa.pdf)
+Latest version of manuscript: [text/manuscript.pdf](text/manuscript.pdf)
