@@ -112,6 +112,9 @@ reverseRegressions <- function(){
 
 
 
+
+
+
 #========= 
 # find dominant style of homes on same street, within 100m  
 # (not very elegant code, admittedly)
@@ -235,9 +238,19 @@ for(r in c("hed.base", "hed.base.true","hed.base.true.nolsoa","hed.base.pred","h
   rmse.set1[[r]] <- round( rmse[[r]], 3)
 }
 
+rs_reg.set2 <- list()
+rs_robustse.set2 <- list()
+rmse.set2 <- list()
+for(r in c("hed.base.true","hed.base.true.nolsoa") ){
+  rs_reg.set2[[r]] <-rs_reg[[r]] 
+  rs_robustse.set2[[r]] <-rs_robustse[[r]] 
+  rmse.set2[[r]] <- round( rmse[[r]], 3)
+}
+
+
 
 stargazer(rs_reg.set1,
-          #se=rs_robustse.set1,
+          se=rs_robustse.set1,
           dep.var.labels.include = FALSE,
           dep.var.caption = "Dependent variable: ln(price)",
           omit="year|lsoa|pred_era_neigh|:neigh_era|:nera",
@@ -266,13 +279,66 @@ stargazer(rs_reg.set1,
             c("RMSE", as.vector(unlist(rmse.set1)) ))
           )
 
+# for referee
+stargazer(rs_reg.set2,
+          se=rs_robustse.set2,
+          dep.var.labels.include = FALSE,
+          dep.var.caption = "Dependent variable: ln(price)",
+          omit="year|lsoa|pred_era_neigh|:neigh_era|:nera",
+          #type="text",
+          type="latex",
+          #out = "/home/thies/research/paper-uk-vintages/text/hed_reg_table_raw.set1.tex",
+          intercept.bottom=FALSE,
+          keep.stat=c("adj.rsq", "n"),
+          digits=2,
+          title="Hedonic Regression Estimates",
+          font.size="footnotesize",
+          label="tab:hedreg",
+          no.space=TRUE,
+          covariate.labels = c("Constant", 
+                               "ln(dist. city center)",
+                               "Type: semi-detached", "Type: terraced",
+                               "ln(area)", "ln(volume)",
+                               "New",
+                               "Georgian","Early Vic.","Late Vic./Edw.","Interwar","Postwar","Revival",
+                               "Neigh: Georgian","Neigh: Early Vic.","Neigh: Late V./Edw.","Neigh: Interwar","Neigh: Postwar","Neigh: Revival"
+          ),
+          add.lines = list(
+            c("Year dummies", rep("Yes",2)),
+            c("Neigh. dummies","Yes","No"),
+            c("Interaction terms", rep("No",2)) ,
+            c("RMSE", as.vector(unlist(rmse.set2)) ))
+)
+# herf concentration of style per lsoa
 
+lsoaXstyle <- table(regsample$lsoa11cd, regsample$true_era)
+lsoa.herfs <-  rowSums((lsoaXstyle/rowSums(lsoaXstyle))^2)
+summary(lsoa.herfs )
+hist(lsoa.herfs, breaks=50, col="lightblue", xlab="Herfindahl score of style at LSOA level")
+box()
 rs_reg.set2 <- list()
 rs_robustse.set2 <- list()
 for(r in c("hed.neigh.aug","hed.neigh","int.aug","int") ){
   rs_reg.set2[[r]] <-rs_reg[[r]] 
   rs_robustse.set2[[r]] <-rs_robustse[[r]] 
 }
+
+library(raster)
+shp <- shapefile("../text/maps/shp/Lower_Super_Output_Areas_December_2001_Generalised_Clipped_Boundaries_in_England_and_Wales.shp")
+for(s in unique(regsample$true_era)){
+  pdf(paste(file="../text/maps/",s,".pdf", sep=""), width = 2, height=2)
+  par(mar = c(0.2,0.2,0.2,0.2))
+  plot(range(regsample$x), range(regsample$y),type="n", xaxt='n', yaxt='n', xlab=NA, ylab=NA)
+  plot(shp, add=TRUE, lwd=0.5)
+  points(regsample$x[regsample$true_era == s], regsample$y[regsample$true_era == s], pch=19, cex=0.4)
+  dev.off()
+}
+
+
+
+
+
+
 
 stargazer(rs_reg.set2,
           dep.var.labels.include = FALSE,
@@ -302,6 +368,8 @@ stargazer(rs_reg.set2,
             c("Year dummies", "Yes","Yes", "Yes","Yes","Yes","Yes"),
             c("Neigh. dummies", "Yes", "Yes","Yes","Yes","Yes","Yes"))
 )
+
+
 
 
 xtab <- list()

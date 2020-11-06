@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?><gmd:MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<gmd:fileIdentifier>
+<gco:CharacterString>90e15daaaeef4baa877f4bffe01ebef0</gco:CharacterString>
+</gmd:fileIdentifier>
+<gmd:language>
+<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
+</gmd:language>
+<gmd:characterSet>
+<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+</gmd:characterSet>
+<gmd:hierarchyLevel>
+<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</gmd:MD_ScopeCode>
+</gmd:hierarchyLevel>
+<gmd:hierarchyLevelName>
+<gco:CharacterString>dataset</gco:CharacterString>
+</gmd:hierarchyLevelName>
+<gmd:contact>
+<gmd:CI_ResponsibleParty>
+<gmd:organisationName>
+<gco:CharacterString>ONS Geography</gco:CharacterString>
+</gmd:organisationName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:electronicMailAddress>
+<gco:CharacterString>ons.geography@ons.gsi.gov.uk</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</gmd:CI_RoleCode>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:contact>
+<dateStamp>
+<gco:Date>2016-09-06</gco:Date>
+</dateStamp>
+<gmd:metadataStandardName>
+<gco:CharacterString>INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119</gco:CharacterString>
+</gmd:metadataStandardName>
+<gmd:metadataStandardVersion>
+<gco:CharacterString>V. 1.2</gco:CharacterString>
+</gmd:metadataStandardVersion>
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>Lower Layer Super Output Areas (December 2001) Boundaries</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<date>
+<gco:Date>2001-12-31</gco:Date>
+</date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" codeSpace="ISOTC211/19115">creation</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+<gmd:date>
+<gmd:CI_Date>
+<date>
+<gco:Date>2016-09-06</gco:Date>
+</date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+<gmd:identifier>
+<gmd:MD_Identifier>
+<gmd:code>
+<gco:CharacterString>90e15daaaeef4baa877f4bffe01ebef0</gco:CharacterString>
+</gmd:code>
+</gmd:MD_Identifier>
+</gmd:identifier>
+</gmd:CI_Citation>
+</gmd:citation>
+<gmd:abstract>
+<gco:CharacterString>This file contains the digital vector boundaries for the lower layer super output areas (LSOA) in England and Wales, as at 31 December 2001. The boundaries available are: Full resolution - extent of the realm (usually this is the Mean Low Water mark but in some cases boundaries extend beyond this to include off shore islands); Full resolution - clipped to the coastline (Mean High Water mark); Generalised (20m) - clipped to the coastline (Mean High Water mark).Contains both Ordnance Survey and ONS Intellectual Property Rights. 
+REST URL of ArcGIS for INSPIRE View Service – https://ons-inspire.esriuk.com/arcgis/rest/services/Census_Boundaries/Lower_Super_Output_Areas_December_2001_Boundaries/MapServer/exts/InspireView   REST URL of ArcGIS for INSPIRE Feature Download Service - https://ons-inspire.esriuk.com/arcgis/rest/services/Census_Boundaries/Lower_Super_Output_Areas_December_2001_Boundaries/MapServer/exts/InspireFeatureDownload</gco:CharacterString>
+</gmd:abstract>
+<gmd:purpose>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:purpose>
+<gmd:credit>
+<gco:CharacterString>Office for National Statistics</gco:CharacterString>
+</gmd:credit>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Lower Super Output Areas</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>2001</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Census Boundaries</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>England and Wales</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WFS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>WMS</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>LSOA Boundaries</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:resourceConstraints>
+<gmd:MD_LegalConstraints>
+<gmd:useLimitation>
+<gco:CharacterString>Licence, http://www.nationalarchives.gov.uk/doc/open-government-licence/, Contains National Statistics data © Crown copyright and database right [2016]</gco:CharacterString>
+</gmd:useLimitation>
+<gmd:accessConstraints>
+<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" codeSpace="ISOTC211/19115">license</gmd:MD_RestrictionCode>
+</gmd:accessConstraints>
+<gmd:useConstraints>
+<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" codeSpace="ISOTC211/19115">license</gmd:MD_RestrictionCode>
+</gmd:useConstraints>
+<gmd:otherConstraints>
+<gco:CharacterString>Licence, http://www.nationalarchives.gov.uk/doc/open-government-licence/, Contains National Statistics data © Crown copyright and database right [2016]</gco:CharacterString>
+</gmd:otherConstraints>
+</gmd:MD_LegalConstraints>
+</gmd:resourceConstraints>
+<gmd:language>
+<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
+</gmd:language>
+<gmd:characterSet>
+<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+</gmd:characterSet>
+<gmd:topicCategory>
+<gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+</gmd:topicCategory>
+<gmd:extent>
+<gmd:EX_Extent>
+<gmd:geographicElement>
+<gmd:EX_GeographicBoundingBox>
+<gmd:westBoundLongitude>
+<gco:Decimal>-6</gco:Decimal>
+</gmd:westBoundLongitude>
+<gmd:eastBoundLongitude>
+<gco:Decimal>2</gco:Decimal>
+</gmd:eastBoundLongitude>
+<gmd:southBoundLatitude>
+<gco:Decimal>49.9</gco:Decimal>
+</gmd:southBoundLatitude>
+<gmd:northBoundLatitude>
+<gco:Decimal>56</gco:Decimal>
+</gmd:northBoundLatitude>
+</gmd:EX_GeographicBoundingBox>
+</gmd:geographicElement>
+</gmd:EX_Extent>
+</gmd:extent>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
+<gmd:distributionInfo>
+<gmd:MD_Distribution>
+<gmd:transferOptions>
+<gmd:MD_DigitalTransferOptions/>
+</gmd:transferOptions>
+</gmd:MD_Distribution>
+</gmd:distributionInfo>
+<gmd:dataQualityInfo>
+<gmd:DQ_DataQuality>
+<gmd:scope>
+<gmd:DQ_Scope>
+<gmd:level>
+<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</gmd:MD_ScopeCode>
+</gmd:level>
+</gmd:DQ_Scope>
+</gmd:scope>
+<gmd:report>
+<gmd:DQ_DomainConsistency>
+<gmd:result>
+<gmd:DQ_ConformanceResult>
+<gmd:specification>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<date>
+<gco:Date>2010-12-08</gco:Date>
+</date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+</gmd:CI_Citation>
+</gmd:specification>
+<gmd:explanation>
+<gco:CharacterString>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:EN:PDF</gco:CharacterString>
+</gmd:explanation>
+<gmd:pass>
+<gco:Boolean>true</gco:Boolean>
+</gmd:pass>
+</gmd:DQ_ConformanceResult>
+</gmd:result>
+</gmd:DQ_DomainConsistency>
+</gmd:report>
+<gmd:lineage>
+<gmd:LI_Lineage>
+<gmd:statement>
+<gco:CharacterString>This dataset was built by ONS Geography</gco:CharacterString>
+</gmd:statement>
+</gmd:LI_Lineage>
+</gmd:lineage>
+</gmd:DQ_DataQuality>
+</gmd:dataQualityInfo>
+</gmd:MD_Metadata>
