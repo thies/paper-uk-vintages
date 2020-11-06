@@ -12,10 +12,10 @@ setwd("~/research/paper-uk-vintages/R/")
 paths <- list()
 local.paths <- TRUE
 if(local.paths){
-  paths[["full_samples"]] <- "~/db/paper-uk-vintages/pred_full_sample.csv"
-  paths[["preds"]] <- "~/db/paper-uk-vintages/predicted_styles.csv"
-  paths[["sales"]] <- "~/Dropbox (Cambridge University)/Cambridge/data/derived/sales_2018-10.csv"
-  paths[["lsoa"]] <- "~/Dropbox (Cambridge University)/Cambridge/data/derived/lsoa_x_toid.csv"
+  paths[["full_samples"]] <- "~/dropbox/paper-uk-vintages/pred_full_sample.csv"
+  paths[["preds"]] <- "~/dropbox/paper-uk-vintages/predicted_styles.csv"
+  paths[["sales"]] <- "~/dropbox/Cambridge/data/derived/sales_2018-10.csv"
+  paths[["lsoa"]] <- "~/dropbox/Cambridge/data/derived/lsoa_x_toid.csv"
 } else {
   paths[["full_samples"]] <- "https://www.dropbox.com/s/v26ofbxg2zmzbrp/pred_full_sample.csv?dl=1"
   paths[["preds"]] <- "https://www.dropbox.com/s/3ked11qizv37lpj/predicted_styles.csv?dl=1"
@@ -114,6 +114,7 @@ reverseRegressions <- function(){
 
 #========= 
 # find dominant style of homes on same street, within 100m  
+# (not very elegant code, admittedly)
 sales <- subset(sales, !is.na(centrX))
 dnn <- dnearneigh(as.matrix(sales[,c("centrX","centrY")]), 0, 100)
 sales$neigh_era <- NA
@@ -142,44 +143,59 @@ sales$true_era <- relevel( factor(sales$true_era), "f contemporary" )
 sales$true_era[sales$true_era =="w walls"] <- NA
 sales$true_era[sales$true_era =="x greenery"] <- NA
 
-sales$era <- sales$pred_era
-rs_reg[["hed.base"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=sales)
+
+
+regsample <- subset(sales, !is.na(pred_era) & ! is.na(true_era) & ! is.na(neigh_era))
+regsample.new <- subset(regsample, new=="Y" & ( true_era == "f contemporary" | true_era == "g cont victorian") & ( pred_era == "f contemporary" | pred_era == "g cont victorian")   )
+regsample$misclassified <- 0
+regsample$misclassified[regsample$pred_era != regsample$true_era] <- 1
+
+
+regsample$era <- regsample$true_era
+rs_reg[["hed.base"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new, data=regsample )
 summary(rs_reg[["hed.base"]])
 
-sales$era <- sales$true_era
-rs_reg[["hed.base.true"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=sales)
+rs_reg[["hed.base.true"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=regsample)
 summary(rs_reg[["hed.base.true"]])
 
+rs_reg[["hed.base.true.nolsoa"]] <- lm(log(price)~factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=regsample)
+summary(rs_reg[["hed.base.true.nolsoa"]])
 
-sales$era <- sales$pred_era
-rs_reg[["hed.base.true.pred"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=subset(sales, !is.na(true_era)))
-summary(rs_reg[["hed.base.true.pred"]])
+
+rs_reg[["hed.base.mis"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=subset( regsample, misclassified == 1))
+summary(rs_reg[["hed.base.mis"]])
+
+regsample$era <- regsample$pred_era
+rs_reg[["hed.base.mis.pred"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=subset( regsample, misclassified == 1))
+summary(rs_reg[["hed.base.mis.pred"]])
+
+
+regsample$era <- regsample$pred_era
+rs_reg[["hed.base.pred"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=regsample)
+summary(rs_reg[["hed.base.pred"]])
 
 # high herf observations only
-sales$era <- sales$pred_era
-rs_reg[["hed.base.herf"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=subset(sales, !is.na(herf) & herf > herf.threshold))
+regsample$era <- regsample$pred_era
+rs_reg[["hed.base.herf"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+era, data=subset(regsample, !is.na(herf) & herf > herf.threshold))
 summary(rs_reg[["hed.base.herf"]])
 
 
-rs_reg[["hed.new.only"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist) + propertytype+log(area2D+1)+log(volum3D+1)+era, data=subset(sales, new=="Y" & ( era == "f contemporary" | era == "g cont victorian")))
-summary(rs_reg[["hed.new.only"]])
+regsample.new$era <- regsample.new$true_era
+rs_reg[["hed.new.true"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist) + propertytype+log(area2D+1)+log(volum3D+1)+ era, data=regsample.new)
+summary(rs_reg[["hed.new.true"]])
 
-sales$era <- sales$true_era
-rs_reg[["hed.new.only.true"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist) + propertytype+log(area2D+1)+log(volum3D+1)+ era, data=subset(sales, new=="Y" & ( era == "f contemporary" | era == "g cont victorian")))
-summary(rs_reg[["hed.new.only.true"]])
-
-sales$era <- sales$pred_era
-rs_reg[["hed.new.only.true.pred"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist) + propertytype+log(area2D+1)+log(volum3D+1)+ era, data=subset(sales, new=="Y" & ( era == "f contemporary" | era == "g cont victorian") &  !is.na(herf) & herf > herf.threshold))
-summary(rs_reg[["hed.new.only.true.pred"]])
+regsample.new$era <- regsample.new$pred_era
+rs_reg[["hed.new.pred"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist) + propertytype+log(area2D+1)+log(volum3D+1)+era, data=regsample.new)
+summary(rs_reg[["hed.new.pred"]])
 
 # Neighbourhood effects
-sales$era <- sales$pred_era
-sales$nera <- sales$neigh_era
-rs_reg[["hed.neigh"]]<- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+ era+nera, data=subset(sales, !is.na(herf) & herf > herf.threshold))
+regsample$era <- regsample$pred_era
+regsample$nera <- regsample$neigh_era
+rs_reg[["hed.neigh"]]<- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+ era+nera, data=subset(regsample, !is.na(herf) & herf > herf.threshold))
 summary(rs_reg[["hed.neigh"]])
 
 # Interaction terms, one base
-rs_reg[["int"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+ era*nera, data=subset(sales, !is.na(herf) & herf > herf.threshold))
+rs_reg[["int"]] <- lm(log(price)~lsoa11cd+factor(year)+log(dist)+propertytype+log(area2D+1)+log(volum3D+1)+new+ era*nera, data=subset(regsample, !is.na(herf) & herf > herf.threshold))
 summary(rs_reg[["int"]])
 
 
@@ -198,9 +214,11 @@ summary(rs_reg[["int"]])
 
 # Robust SE's
 rs_robustse <- list()
+rmse <- list()
 library(sandwich)
 for(n in names(rs_reg)){
   rs_robustse[[n]] <- as.numeric( sqrt(diag( vcovHC(rs_reg[[ n ]]  , type = "HC1")  )))
+  rmse[[n]] <- sqrt(mean(rs_reg[[ n ]]$residuals^2))
 }
 
 n <- table(sales$neigh_era, sales$era)
@@ -210,19 +228,21 @@ rownames(n) <- paste("neigh", row.names(n))
 
 rs_reg.set1 <- list()
 rs_robustse.set1 <- list()
-for(r in c("hed.base.true","hed.base","hed.base.herf","hed.new.only.true","hed.new.only","hed.new.only.true.pred", "hed.neigh","int") ){
+rmse.set1 <- list()
+for(r in c("hed.base", "hed.base.true","hed.base.true.nolsoa","hed.base.pred","hed.base.herf","hed.base.mis","hed.new.true", "hed.neigh","int") ){
   rs_reg.set1[[r]] <-rs_reg[[r]] 
   rs_robustse.set1[[r]] <-rs_robustse[[r]] 
+  rmse.set1[[r]] <- round( rmse[[r]], 3)
 }
 
 
 stargazer(rs_reg.set1,
-          se=rs_robustse.set1,
+          #se=rs_robustse.set1,
           dep.var.labels.include = FALSE,
           dep.var.caption = "Dependent variable: ln(price)",
           omit="year|lsoa|pred_era_neigh|:neigh_era|:nera",
-          #type="text",
-          type="latex",
+          type="text",
+          #type="latex",
           #out = "/home/thies/research/paper-uk-vintages/text/hed_reg_table_raw.set1.tex",
           intercept.bottom=FALSE,
           keep.stat=c("adj.rsq", "n"),
@@ -240,9 +260,10 @@ stargazer(rs_reg.set1,
                                "Neigh: Georgian","Neigh: Early Vic.","Neigh: Late V./Edw.","Neigh: Interwar","Neigh: Postwar","Neigh: Revival"
           ),
           add.lines = list(
-            c("Year dummies", rep("Yes",8)),
-            c("Neigh. dummies", rep("Yes",8)),
-            c("Interaction terms", rep("No",7),"Next Table"))
+            c("Year dummies", rep("Yes",9)),
+            c("Neigh. dummies", rep("Yes",9)),
+            c("Interaction terms", rep("No",8),"Next Table") ,
+            c("RMSE", as.vector(unlist(rmse.set1)) ))
           )
 
 

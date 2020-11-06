@@ -83,7 +83,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{13 April 2020}
+    \date{14 April 2020}
 
 \usepackage{soul}
 \usepackage{color}
@@ -482,7 +482,7 @@ that in cases in which the ensemble provided a high confidence score,
 building features are clearly detectable on the pictures. For close
 calls, however, where models within the ensemble cannot agree, other
 factors might tilt the scale towards an incorrect class. A sizable
-difference in estimated marginal prices for machine's classifications
+difference in estimated marginal prices for machine classifications
 versus the estimates for architects' classifications in the subsequent
 hedonic regression (Eq. \ref{eq:hed}, below) would indicate such a bias.
 
@@ -500,15 +500,15 @@ records include the date of transaction, price paid, street address, a
 classification of the property type (flat, detached, semi-detached, or
 terraced house), the estate type (freehold or leasehold) and an
 indicator for newly built properties. We select transactions from
-Cambridge proper which were recorded between January 1995 and October
-2018, excluding any leaseholds, flats and properties classified as type
+Cambridge which were recorded between January 1995 and October 2018,
+excluding any leaseholds, flats and properties classified as type
 ``other'', and sales with prices below £50,000 or in excess of
 £2,000,000. Linking recently taken images to sales data from 24 years
 assumes that houses have not changed their architectural styles -- which
 seems reasonable. We are not aware of any conversions of just the
 exterior of buildings. In case of full redevelopments, we exclude any
 sales for a given address pre-dating the redevelopment, ensuring that a
-currently taken pictures represents the house at all included
+currently taken picture represents the house at all included
 transactions. Table \ref{tab:sumstats} presents summary statistics for
 the sample.
 
@@ -552,8 +552,8 @@ vector of interaction terms for the building's and the neighborhood's
 dominant style. The intercept is denoted by \(\alpha\) while
 \(\bm{\beta}\), \(\bm{\delta}\), \(\bm{\eta}\), \(\bm{\iota}\),
 \(\bm{\gamma}\) and \(\bm{\lambda}\) are vectors of regression
-coefficients. \(\epsilon\) is the IID error term. Heteroscedastic robust
-standard errors will be reported.
+coefficients. \(\epsilon\) is the IID error term. Heteroscedasticity
+robust standard errors will be reported.
 
 Are buildings with different appearances imperfect substitutes catering
 to multiple groups of households with distinct style or vintage
@@ -566,11 +566,11 @@ either contemporary or revival style as historic vintages (and their
 styles), by definition, are not supplied any more. Estimating Eq.
 \ref{eq:hed} for a subset of newly constructed buildings will show
 whether construction prices or supply constraints for new homes built
-according to different architectural styles persist -- if too few
+according to different architectural styles prevail -- if too few
 vernacular buildings were built, prices should reflect such a shortage.
 Singling out new buildings crucially controls for the otherwise
-unobserved age of buildings, which is tightly intertwined with its
-aesthetics.
+unobserved age of these buildings, which is tightly intertwined with
+their aesthetics.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -601,8 +601,8 @@ percent and for \emph{Revival} to 67 percent.
 
 A visual inspection of classifications is additionally reassuring.
 Figure \ref{fig:vint_examples} displays the pictures which carry the
-highest out-of-sample scores for each style The model is clearly able to
-differentiate based on small cues, even when only parts of the facade
+highest out-of-sample scores for each style. The model is clearly able
+to differentiate based on small cues, even when only parts of the facade
 are captured on the picture.
 
 The Herfindahl scores for classifications vary substantially across
@@ -661,9 +661,9 @@ experts. The precision shoots up from 0.50 to 0.70 for \emph{Georgian}
 and from 0.52 to 0.82 for \emph{Revival} when excluding the not so
 confident lower third of predictions in Panel B.
 
-The majority of misclassification is concentrated in temporally adjacent
-eras: 10 percent of \emph{Late Victorian/Edwardian} buildings are
-labelled as \emph{Early Victorian} or 18 percent of \emph{Postwar}
+The majority of misclassifications is concentrated in temporally
+adjacent eras: 10 percent of \emph{Late Victorian/Edwardian} buildings
+are labelled as \emph{Early Victorian} or 18 percent of \emph{Postwar}
 buildings are erroneously regarded as stemming from the \emph{Interwar}
 period. Hardly ever is a contemporary building mistaken for a historic
 home.
@@ -719,32 +719,32 @@ followed by \emph{Late Victorian/Edwardian} \((+0.01)\),
 \emph{Contemporary} (base), \emph{Early Victorian} \((-0.13)\),
 \emph{Interwar} \((-0.15)\) and \emph{Postwar} \((-0.22)\).
 
-The sample images classified by architects is not necessarily
+The sample of images classified by architects is not necessarily
 representative of the overall population so we re-estimate the model
 using machine classifications for \emph{all} buildings for which we were
 able to extract usable pictures from Google Street View. Overall, the
 style coefficients become more positive relative to the base, implying
-that our automatic classification is biased and tends to classify
-unattractive buildings to the \emph{Contemporary} style. Reversely, more
-attractive buildings are disproportionally often misclassified as
-\emph{Late Vic./Edw.}, pushing up the corresponding coefficient to
-\(0.11\). This bias vanishes in the third model, which uses only
-confidently estimated machine styles (Column 3).
+that our automatic classification is biased and tends to classify bland
+or low quality buildings to the \emph{Contemporary} style. Reversely,
+more attractive or higher quality buildings are disproportionately often
+misclassified as \emph{Late Vic./Edw.}, pushing up the corresponding
+coefficient to \(0.11\). This bias vanishes in the third model, which
+uses only confidently estimated machine styles (Column 3).
 
 Models 4--6 follow the same logic as 1--3 but are estimated for
-\emph{new} buildings only. Basically this contrasts houses which might
-\emph{look} different from the street, having either contemporary or
-revival facades, but which are all modern homes at their core.
-Differences in e.g.~materials, floor plans, green space and gardens are
-minimal. For newly built homes, no effect of \emph{Revival} architecture
-on price can be found for high confidence ML estimates, neither for
-classifications by machines nor by architects. After controlling for
-location, building characteristics and quality, buyers show no
-willingness to pay a premium for \emph{Revival} architecture (Columns 4
-and 6).
+\emph{new} buildings only, which are either in the contemporary or the
+revival style. Basically this contrasts houses which might \emph{look}
+different from the street, having either contemporary or revival
+facades, but which are all modern homes at their core. Differences in
+e.g.~materials, floor plans, green space and gardens are minimal. For
+newly built homes, no effect of \emph{Revival} architecture on price can
+be found for high confidence ML estimates, neither for classifications
+by machines nor by architects. After controlling for location, building
+characteristics and quality, buyers show no willingness to pay a premium
+for \emph{Revival} architecture (Columns 4 and 6).
 
 Introducing a variable capturing the most prominent style of buildings
-on the same street and within 100 m (\(\mathbf{VintNeigh}\)) does not
+on the same street and within 100 m (\(\mathbf{StyleNeigh}\)) does not
 change the pecking order of building styles much (Table
 \ref{tab:hedreg}, Column 7). Neighboring styles are compared to the base
 case of a \emph{Contemporary} house in a \emph{Contemporary} street. The
@@ -814,7 +814,7 @@ correlated with misclassifications. Importantly, for cases in which the
 ML classifiers are relatively indecisive between classes, visual cues
 that are correlated with the exterior's style but not part of a
 building's architecture (for instance trees or cars) bias the estimates.
-Fore these less certain cases, more valuable homes are systematically
+For these less certain cases, more valuable homes are systematically
 more likely to be classified as e.g.~\emph{Late Victorian/Edw.} and less
 likely to be considered \emph{Contemporary}. A follow up study could
 investigate which elements in the building pictures lead to the
@@ -827,9 +827,9 @@ Third, we test whether revival or vernacular architecture leads to price
 premia over contemporary architecture. We do not find evidence for a
 preference of residents for specific architecture after controlling for
 quality and location of buildings. This applies to both direct price
-effects but also indirect effects of a buildings appearance on the value
-of neighboring homes. Further work will extend the spatial scope of the
-study area to the UK in general and to other countries.
+effects but also indirect effects of a building's appearance on the
+value of neighboring homes. Further work will extend the spatial scope
+of the study area to the UK in general and to other countries.
 
 \newpage
 \clearpage
@@ -962,7 +962,7 @@ Architects' classifications & Share Blocked & House Area & Window Area & Image O
 \end{tabular}
 \begin{minipage}{0.9\textwidth}
 \vspace{0.25cm}
-\footnotesize \emph{Notes:} Using an Inception/Resnet object detection model trained on Open Images, basic object on the images are detected and the share of the image area taken up by cars, trees, buildings and windows are calculated. Images taken not taken at an optimal angle or zoom factor are detected by calculating the offset between the bounding box for the largest detected building and the center of the image.
+\footnotesize \emph{Notes:} Using an Inception/Resnet object detection model trained on Open Images, basic object on the images are detected and the share of the image area taken up by cars, trees, buildings and windows are calculated. Images not taken at an optimal angle or zoom factor are detected by calculating the offset between the bounding box for the largest detected building and the center of the image.
 \end{minipage}
 \end{table}
 
@@ -1035,7 +1035,7 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
  \begin{minipage}{\textwidth} 
 \footnotesize 
 \vspace{0.25cm}
-\emph{Notes:} Cross-tabulation of photo characteristics by machine and architects' classifications. Off-diagonal elements ($Machine_{j}-Architects_{i}$) describe the difference in measure intensity between correctly and incorrectly classified photos for a given classification by architects. For example, cell \{Early Vic., Georgian\} compares the mean characteristic value for the set of photos which are actually Georgian but misclassified as Early Vic. to the set of correctly classified Georgian photos. The numbers in italic represent the mean characteristic value for each set of correctly classified photos. T-stats are in parenthesis.
+\emph{Notes:} Cross-tabulation of photo characteristics by machine and architects' classifications. Off-diagonal elements ($Machine_{j}-Architects_{i}$) describe the difference in measure intensity between correctly and incorrectly classified photos for a given classification by architects. For example, cell \{Early Vic., Georgian\} compares the mean characteristic value for the set of photos which are actually Georgian but misclassified as Early Vic. to the set of correctly classified Georgian photos. T-stats are in parenthesis.
 \end{minipage} 
 \endgroup 
 \end{table}
@@ -1076,7 +1076,7 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
   \label{fig:boxplot}
 \begin{minipage}{0.7\textwidth}
 \vspace{0.25cm}
-\footnotesize \emph{Notes:} The bar plot shows difference in the $F_1$-scores per category for the classifiers using both building level and neighbor information (dark and light blue) vs. a classifier using building level information only (red).
+\footnotesize \emph{Notes:} The bar plot shows differences in the $F_1$-scores per category for the classifiers using both building level and neighbor information (dark and light blue) vs. a classifier using building level information only (red).
 \end{minipage}
 \end{figure}
 
@@ -1102,7 +1102,7 @@ Georgian &  -- &  0 (0.16) & -0.03 (-1.37) & -0.07 (-2.16) & -0.06 (-0.91) & -0.
 \begin{minipage}{0.7\textwidth}
 \vspace{0.25cm}
 \footnotesize \emph{Notes:}
-AIC values for 28 binomial models in which the occurrence of building styles (in rows) is explained by hedonic characteristics, location and time dummies (Column 1), augmented by the base ML predictor (Column 2), the suggested spatial ML predictor (Column 3 \& 4). Across building styles, the AIC are lowest for the spatial ML predictor, especially when uncertain predictions are omitted (Column 4). This suggests that the spatial predictor performs best.
+AIC values for 28 binomial models in which the occurrence of building styles (in rows) is explained by hedonic characteristics, location and time dummies (Column 1), augmented by the base ML predictor (Column 2), and the suggested spatial ML predictor (Column 3 \& 4). Across building styles, the AIC are lowest for the spatial ML predictor, especially when uncertain predictions are omitted (Column 4). This suggests that the spatial predictor performs best.
 \end{minipage}
 \end{table}
 

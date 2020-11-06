@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.23)  13 APR 2020 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.23)  14 APR 2020 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,11 +1805,11 @@ Package logreq Info: Writing requests to 'manuscript_assa.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1452.
  ) 
 Here is how much of TeX's memory you used:
- 19641 strings out of 494510
- 335947 string characters out of 6176235
+ 19647 strings out of 494510
+ 336007 string characters out of 6176235
  627850 words of memory out of 5000000
  22751 multiletter control sequences out of 15000+600000
- 105528 words of font info for 168 fonts, out of 8000000 for 9000
+ 105779 words of font info for 171 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  34i,12n,38p,983b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
@@ -1858,7 +1858,7 @@ lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/font
 s/type1/public/lm/lmsy8.pfb>
-Output written on manuscript_assa.pdf (31 pages, 8917541 bytes).
+Output written on manuscript_assa.pdf (31 pages, 8917398 bytes).
 PDF statistics:
  584 PDF objects out of 1000 (max. 8388607)
  448 compressed objects within 5 object streams
