@@ -465,13 +465,17 @@ xtable(tmp)
 
 ######### SUMSTATS TABLE
 
-sales.sumstat <- subset(sales, !is.na(pred_era))
+sales.sumstat <- subset(regsample)
 sales.sumstat$x <- NULL
 sales.sumstat$y <- NULL
 sales.sumstat$centrX <- NULL
 sales.sumstat$centrY <- NULL
 sales.sumstat$toid <- NULL
 sales.sumstat$toid_num <- NULL
+sales.sumstat$optional <- NULL
+sales.sumstat$misclassified <- NULL
+sales.sumstat$herf <- NULL
+
 
 sales.sumstat$newnum <- 0
 sales.sumstat$newnum[sales.sumstat$new == "Y"] <- 1
@@ -496,12 +500,12 @@ sales.sumstat <- cbind(sales.sumstat, dummies)
 stargazer(sales.sumstat, type="latex",
           title="Summary statistics residential property transactions",
           covariate.labels = c("Price","Year", 
-                               "ln(volume)", "ln(area)", 
-                               "ln(dist. city center)",
+                               "Volume", "Area", 
+                               "Dist. city center",
                                "New",
                                "Type: detached", "Type: semi-detached", "Type: terraced",
-                               "Georgian","Early Vic.","Late Vic./Edw.","Interwar","Postwar","Contemporary","Faux Vic.",
-                               "Neigh: Georgian","Neigh: Early Vic.","Neigh: Late V./Edw.","Neigh: Interwar","Neigh: Postwar","Neigh: Contemporary","Neigh: Faux Vic."),
+                               "Georgian","Early Vic.","Late Vic./Edw.","Interwar","Postwar","Contemporary","Revival",
+                               "Neigh: Georgian","Neigh: Early Vic.","Neigh: Late V./Edw.","Neigh: Interwar","Neigh: Postwar","Neigh: Contemporary","Neigh: Revival"),
           digits=2,
           out="~/research/paper-uk-vintages/text/sumstats.raw.tex"
 )  
