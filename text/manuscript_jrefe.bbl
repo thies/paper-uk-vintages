@@ -1,0 +1,1595 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{Ahlfeldt2012}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AG}{%
+         family={Ahlfeldt},
+         familyi={A\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mastro},
+         familyi={M\bibinitperiod},
+         given={Alexandra},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AGMA1}
+    \strng{fullhash}{AGMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1080/02673037.2012.728575
+    \endverb
+    \field{issn}{0267-3037}
+    \field{number}{8}
+    \field{pages}{1079\bibrangedash 1099}
+    \field{title}{{Valuing Iconic Design: Frank Lloyd Wright Architecture in
+  Oak Park, Illinois}}
+    \verb{url}
+    \verb http://www.tandfonline.com/doi/abs/10.1080/02673037.2012.728575
+    \endverb
+    \field{volume}{27}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Ahlfeldt, Mastro - 2012 - Valuing Iconic Design Frank Lloyd Wright
+    \verb  Architecture in Oak Park, Illinois.pdf:pdf
+    \endverb
+    \field{journaltitle}{Housing Studies}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Asabere1989}{article}{}
+    \name{author}{3}{}{%
+      {{hash=APK}{%
+         family={Asabere},
+         familyi={A\bibinitperiod},
+         given={Paul\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hachey},
+         familyi={H\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Grubaugh},
+         familyi={G\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{APKHGGS1}
+    \strng{fullhash}{APKHGGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1989}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1007/BF00152347
+    \endverb
+    \field{number}{3}
+    \field{pages}{181\bibrangedash 195}
+    \field{title}{{Architecture , Historic Zoning , and the Value of Homes}}
+    \field{volume}{2}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Asabere, Hachey, Grubaugh - 1989 - Architecture , Historic Zoning
+    \verb , and the Value of Homes.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Real Estate Finance and Economics}
+    \field{year}{1989}
+  \endentry
+
+  \entry{Buitelaar2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BE}{%
+         family={Buitelaar},
+         familyi={B\bibinitperiod},
+         given={Edwin},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Schilder},
+         familyi={S\bibinitperiod},
+         given={Frans},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BESF1}
+    \strng{fullhash}{BESF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1111/1540-6229.12137
+    \endverb
+    \field{issn}{15406229}
+    \field{number}{1}
+    \field{pages}{7\bibrangedash 27}
+    \field{title}{{The Economics of Style: Measuring the Price Effect of
+  Neo-Traditional Architecture in Housing}}
+    \field{volume}{45}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Buitelaar, Schilder - 2017 - The Economics of Style Measuring the
+    \verb Price Effect of Neo-Traditional Architecture in Housing.pdf:pdf
+    \endverb
+    \field{journaltitle}{Real Estate Economics}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Coulson2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CNE}{%
+         family={Coulson},
+         familyi={C\bibinitperiod},
+         given={N.\bibnamedelima Edward},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MDP}{%
+         family={McMillen},
+         familyi={M\bibinitperiod},
+         given={Daniel\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Age effects,Hedonic,Nonparametric,Vintage effects}
+    \strng{namehash}{CNEMDP1}
+    \strng{fullhash}{CNEMDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The simultaneous estimation of vintage, age and time of sale effects in
+  hedonic models is generally thought to be impossible without some restriction
+  on functional form. This is not the case. We extend and employ the method of
+  McKenzie (McKenzie, D., 2006. Disentangling age, cohort and time effects in
+  the additive model. Oxford Bulletin of Economics and Statistics, 68, 473-495)
+  to estimate additive, but otherwise unrestricted nonparametric hedonic
+  effects of these three temporal variables for a large sample of transactions
+  from Chicago. We compare these to standard treatments of these three
+  variables in hedonic models, and also test for the restrictions that would be
+  implied by linear and quadratic temporal effects, which are all strongly
+  rejected. {\textcopyright} 2008 Elsevier Inc. All rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jhe.2008.03.002
+    \endverb
+    \field{isbn}{10511377}
+    \field{issn}{10511377}
+    \field{number}{2}
+    \field{pages}{138\bibrangedash 151}
+    \field{title}{{Estimating time, age and vintage effects in housing prices}}
+    \field{volume}{17}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Coulson, McMillen - 2008 - Estimating time, age and vintage effect
+    \verb s in housing prices.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Housing Economics}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Nadai2016}{article}{}
+    \name{author}{9}{}{%
+      {{hash=DM}{%
+         family={{De Nadai}},
+         familyi={D\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VRL}{%
+         family={Vieriu},
+         familyi={V\bibinitperiod},
+         given={Radu\bibnamedelima L.},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZG}{%
+         family={Zen},
+         familyi={Z\bibinitperiod},
+         given={Gloria},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dragicevic},
+         familyi={D\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Naik},
+         familyi={N\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Caraviello},
+         familyi={C\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HCA}{%
+         family={Hidalgo},
+         familyi={H\bibinitperiod},
+         given={Cesar\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sebe},
+         familyi={S\bibinitperiod},
+         given={Nicu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LB}{%
+         family={Lepri},
+         familyi={L\bibinitperiod},
+         given={Bruno},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DM+1}
+    \strng{fullhash}{DMVRLZGDSNNCMHCASNLB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Policy makers, urban planners, architects, sociologists, and economists are
+  interested in creating urban areas that are both lively and safe. But are the
+  safety and liveliness of neighborhoods independent characteristics? Or are
+  they just two sides of the same coin? In a world where people avoid unsafe
+  looking places, neighborhoods that look unsafe will be less lively, and will
+  fail to harness the natural surveillance of human activity. But in a world
+  where the preference for safe looking neighborhoods is small, the connection
+  between the perception of safety and liveliness will be either weak or
+  nonexistent. In this paper we explore the connection between the levels of
+  activity and the perception of safety of neighborhoods in two major Italian
+  cities by combining mobile phone data (as a proxy for activity or liveliness)
+  with scores of perceived safety estimated using a Convolutional Neural
+  Network trained on a dataset of Google Street View images scored using a
+  crowdsourced visual perception survey. We find that: (i) safer looking
+  neighborhoods are more active than what is expected from their population
+  density, employee density, and distance to the city centre; and (ii) that the
+  correlation between appearance of safety and activity is positive, strong,
+  and significant, for females and people over 50, but negative for people
+  under 30, suggesting that the behavioral impact of perception depends on the
+  demographic of the population. Finally, we use occlusion techniques to
+  identify the urban features that contribute to the appearance of safety,
+  finding that greenery and street facing windows contribute to a positive
+  appearance of safety (in agreement with Oscar Newman's defensible space
+  theory). These results suggest that urban appearance modulates levels of
+  human activity and, consequently, a neighborhood's rate of natural
+  surveillance.%
+    }
+    \verb{eprint}
+    \verb 1608.00462
+    \endverb
+    \field{title}{{Are Safer Looking Neighborhoods More Lively? A Multimodal
+  Investigation into Urban Life}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1608.00462
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{EnvironmentAgency2015}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={{Environment Agency}},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{DATA.GOV.UK Datasets}
+    \field{title}{{LIDAR Composite DSM - 1m}}
+    \verb{url}
+    \verb https://data.gov.uk/dataset/lidar-composite-dsm-1m1
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Francke2017a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FMK}{%
+         family={Francke},
+         familyi={F\bibinitperiod},
+         given={Marc\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=vAM}{%
+         family={{{van de Minne}}},
+         familyi={v\bibinitperiod},
+         given={Alex\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMKvAM1}
+    \strng{fullhash}{FMKvAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1111/1540-6229.12146
+    \endverb
+    \field{isbn}{1540-6229}
+    \field{issn}{10808620}
+    \field{number}{2}
+    \field{pages}{415\bibrangedash 451}
+    \field{title}{{Land, Structure and Depreciation}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1111/1540-6229.12146
+    \endverb
+    \field{volume}{45}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Francke, van de Minne - 2017 - Land, Structure and Depreciation(3)
+    \verb .pdf:pdf
+    \endverb
+    \field{journaltitle}{Real Estate Economics}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Fuerst2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FF}{%
+         family={Fuerst},
+         familyi={F\bibinitperiod},
+         given={Franz},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={McAllister},
+         familyi={M\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MCB}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={Claudia\bibnamedelima B},
+         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FFMPMCB1}
+    \strng{fullhash}{FFMPMCB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1068/a43270
+    \endverb
+    \field{issn}{0308-518X}
+    \field{number}{1}
+    \field{pages}{166\bibrangedash 184}
+    \field{title}{{Designer buildings: estimating the economic value of
+  ‘signature' architecture}}
+    \verb{url}
+    \verb http://www.envplan.com/abstract.cgi?id=a43270
+    \endverb
+    \field{volume}{43}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Fuerst, McAllister, Murray - 2011 - Designer buildings estimating
+    \verb the economic value of ‘signature' architecture.pdf:pdf
+    \endverb
+    \field{journaltitle}{Environment and Planning A}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Gebru2017}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GT}{%
+         family={Gebru},
+         familyi={G\bibinitperiod},
+         given={Timnit},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yilun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Duyun},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AEL}{%
+         family={Aiden},
+         familyi={A\bibinitperiod},
+         given={Erez\bibnamedelima Lieberman},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinithyphendelim F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTKJWYCDDJAELFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The United States spends more than $1B each year on the American Community
+  Survey (ACS), a labor-intensive door-to-door study that measures statistics
+  relating to race, gender, education, occupation, unemployment, and other
+  demographic factors. Although a comprehensive source of data, the lag between
+  demographic changes and their appearance in the ACS can exceed half a decade.
+  As digital imagery becomes ubiquitous and machine vision techniques improve,
+  automated data analysis may provide a cheaper and faster alternative. Here,
+  we present a method that determines socioeconomic trends from 50 million
+  images of street scenes, gathered in 200 American cities by Google Street
+  View cars. Using deep learning-based computer vision techniques, we
+  determined the make, model, and year of all motor vehicles encountered in
+  particular neighborhoods. Data from this census of motor vehicles, which
+  enumerated 22M automobiles in total (8% of all automobiles in the US), was
+  used to accurately estimate income, race, education, and voting patterns,
+  with single-precinct resolution. (The average US precinct contains
+  approximately 1000 people.) The resulting associations are surprisingly
+  simple and powerful. For instance, if the number of sedans encountered during
+  a 15-minute drive through a city is higher than the number of pickup trucks,
+  the city is likely to vote for a Democrat during the next Presidential
+  election (88% chance); otherwise, it is likely to vote Republican (82%). Our
+  results suggest that automated systems for monitoring demographic trends may
+  effectively complement labor-intensive approaches, with the potential to
+  detect trends with fine spatial resolution, in close to real time.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.1700035114
+    \endverb
+    \verb{eprint}
+    \verb 1702.06683
+    \endverb
+    \field{number}{50}
+    \field{pages}{13108\bibrangedash 13113}
+    \field{title}{{Using Deep Learning and Google Street View to Estimate the
+  Demographic Makeup of the US}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1702.06683
+    \endverb
+    \field{volume}{114}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Gebru et al. - 2017 - Using Deep Learning and Google Street View t
+    \verb o Estimate the Demographic Makeup of the US.pdf:pdf
+    \endverb
+    \field{journaltitle}{PNAS}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Ghimire2010a}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GB}{%
+         family={Ghimire},
+         familyi={G\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rogan},
+         familyi={R\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GBRJMJ1}
+    \strng{fullhash}{GBRJMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Land-cover characterization of large heterogeneous landscapes is
+  challenging because of the confusion caused by high intra-class variability
+  and heterogeneous landscape artefacts. Neighbourhood context can be used to
+  supplement spectral information, and a novel way of incorporating spatial
+  dependence in a hetero- geneous region is tested here using an ensemble
+  learning technique called random forests and a measure of local spatial
+  dependence called the Getis statistic. The overall Kappa accuracy of the
+  random forest classifier that used a combination of spectral and local
+  spatial (Getis) variables at three different neighbourhood sizes (3x3, 7x7,
+  and 11x11) ranged from 0.85 to 0.92. This accuracy was higher than that of a
+  non-spatial random forest classifier having an overall Kappa accuracy of
+  0.78, which was run using the spectral variables only. This study
+  demonstrated that the use of the Getis statistic with different neighbourhood
+  sizes leads to substantial increase in per class classification accuracy of
+  heterogeneous land-cover categories.%
+    }
+    \verb{doi}
+    \verb 10.1080/01431160903252327
+    \endverb
+    \field{isbn}{2150-704X}
+    \field{issn}{2150704X}
+    \field{number}{1}
+    \field{pages}{45\bibrangedash 54}
+    \field{title}{{Contextual land-cover classification: Incorporating spatial
+  dependence in land-cover classification models using random forests and the
+  Getis statistic}}
+    \field{volume}{1}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Ghimire, Rogan, Miller - 2010 - Contextual land-cover classificati
+    \verb on Incorporating spatial dependence in land-cover classification mode
+    \verb l.pdf:pdf
+    \endverb
+    \field{journaltitle}{Remote Sensing Letters}
+    \field{year}{2010}
+  \endentry
+
+  \entry{GlaeserKincaidNaik2018}{unpublished}{}
+    \name{author}{3}{}{%
+      {{hash=GEL}{%
+         family={Glaeser},
+         familyi={G\bibinitperiod},
+         given={Edward\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KMS}{%
+         family={Kincaid},
+         familyi={K\bibinitperiod},
+         given={Michael\bibnamedelima Scott},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Naik},
+         familyi={N\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Public Economics}
+    \strng{namehash}{GELKMSNN1}
+    \strng{fullhash}{GELKMSNN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    1. Mathematical and Quantitative Methods - Econometric and Statistical
+  Methods: Special Topics - General 2. Financial Economics - Financial
+  Institutions and Services - Banks &bull; Depository Institutions &bull; Micro
+  Finance Institutions &bull; Mortgages 3. Urban, Rural, Regional, Real Estate,
+  and Transportation Economics - Real Estate Markets, Spatial Production
+  Analysis, and Firm Location - General 4. Other Special Topics - Cultural
+  Economics &bull; Economic Sociology &bull; Economic Anthropology - Economics
+  of the Arts and Literature%
+    }
+    \field{booktitle}{NBER Working Paper}
+    \field{title}{{Computer Vision and Real Estate: Do Looks Matter and Do
+  Incentives Determine Looks?}}
+    \verb{url}
+    \verb http://www.nber.org/papers/w25174
+    \endverb
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Glaeser, Kincaid, Naik - 2018 - Computer Vision and Real Estate Do
+    \verb  Looks Matter and Do Incentives Determine Looks.pdf:pdf
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{Glaeser2016}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GEL}{%
+         family={Glaeser},
+         familyi={G\bibinitperiod},
+         given={Edward\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KSD}{%
+         family={Kominers},
+         familyi={K\bibinitperiod},
+         given={Scott\bibnamedelima Duke},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Luca},
+         familyi={L\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Naik},
+         familyi={N\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GEL+1}
+    \strng{fullhash}{GELKSDLMNN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1111/ecin.12364
+    \endverb
+    \field{issn}{00952583}
+    \field{number}{1}
+    \field{pages}{114\bibrangedash 137}
+    \field{title}{{Big Data and Big Cities: The Promises and Limitations of
+  Improved Measures of Urban Life}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1111/ecin.12364
+    \endverb
+    \field{volume}{56}
+    \field{journaltitle}{Economic Inquiry}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{He2016}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HK}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Kaiming},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xiangyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Shaoqing},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKZXRSSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{770\bibrangedash 778}
+    \field{title}{{Deep Residual Learning for Image Recognition}}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/He et al. - 2016 - Deep Residual Learning for Image Recognition.pd
+    \verb f:pdf
+    \endverb
+    \field{journaltitle}{The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Helbich2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HM}{%
+         family={Helbich},
+         familyi={H\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jochem},
+         familyi={J\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={M{\"{u}}cke},
+         familyi={M\bibinitperiod},
+         given={Werner},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={H{\"{o}}fle},
+         familyi={H\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \keyw{Airborne laser scanning,GIS,Generalized additive model,Hedonic
+  regression,LiDAR,Real estate,Solar radiation,Vienna (Austria)}
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMJAMWHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    This paper introduces an integrative approach to hedonic house price
+  modeling which utilizes high density 3D airborne laser scanning (ALS) data.
+  In general, it is shown that extracting exploratory variables using 3D
+  analysis - thus explicitly considering high-rise buildings, shadowing
+  effects, etc. - is crucial in complex urban environments and is limited in
+  well-established raster-based modeling. This is fundamental in large-scale
+  urban analyses where essential determinants influencing real estate prices
+  are constantly missing and are not accessible in official and mass appraiser
+  databases. More specifically, the advantages of this methodology are
+  demonstrated by means of a novel and economically important externality,
+  namely incoming solar radiation, derived separately for each flat. Findings
+  from an empirical case study in Vienna, Austria, applying a non-linear
+  generalized additive hedonic model, suggest that solar radiation is
+  significantly capitalized in flat prices. A model comparison clearly proves
+  that the hedonic model accounting for ALS-based solar radiation performs
+  significantly superior. Compared to a model without this externality, it
+  increases the model's explanatory power by approximately 13% and additionally
+  reduces the prediction error by around 15%. The results provide strong
+  evidence that explanatory variables originating from ALS, explicitly
+  regarding the immediate 3D surroundings, enhance traditional hedonic models
+  in urban environments. {\textcopyright} 2013 Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.compenvurbsys.2013.01.001
+    \endverb
+    \field{issn}{01989715}
+    \field{pages}{81\bibrangedash 92}
+    \field{title}{{Boosting the predictive accuracy of urban hedonic house
+  price models through airborne laser scanning}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.compenvurbsys.2013.01.001
+    \endverb
+    \field{volume}{39}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Helbich et al. - 2013 - Boosting the predictive accuracy of urban
+    \verb hedonic house price models through airborne laser scanning.pdf:pdf
+    \endverb
+    \field{journaltitle}{Computers, Environment and Urban Systems}
+    \field{year}{2013}
+  \endentry
+
+  \entry{princecharles2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HRH The Prince of Wales}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{{Facing up to the future: Prince Charles on 21st century
+  architecture}}
+    \verb{url}
+    \verb https://www.architectural-review.com/essays/viewpoints/facing-up-to-t
+    \verb he-future-prince-charles-on-21st-century-architecture/8674119.article
+    \endverb
+    \field{journaltitle}{Architectural Review}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{LandRegistry2016a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Land Registry}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{{Price Paid Data}}
+    \verb{url}
+    \verb http://landregistry.data.gov.uk/app/ppd
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{Lindenthal2017b}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LT}{%
+         family={Lindenthal},
+         familyi={L\bibinitperiod},
+         given={Thies},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LT1}
+    \strng{fullhash}{LT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1111/1540-6229.12204
+    \endverb
+    \field{issn}{10808620}
+    \field{pages}{1\bibrangedash 26}
+    \field{title}{{Beauty in the Eye of the Home-Owner: Aesthetic Zoning and
+  Residential Property Values}}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1111/1540-6229.12204
+    \endverb
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Lindenthal - 2017 - Beauty in the Eye of the Home-Owner Aesthetic
+    \verb Zoning and Residential Property Values.pdf:pdf
+    \endverb
+    \field{journaltitle}{Real Estate Economics}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Lindenthal2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LT}{%
+         family={Lindenthal},
+         familyi={L\bibinitperiod},
+         given={Thies},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Inc.}%
+    }
+    \keyw{Density,GIS,House prices,LIDAR,London,Open data,Real estate,Remotely
+  sensed data,Supply elasticity housing,United Kingdom,Urban form,Volumetric
+  analysis}
+    \strng{namehash}{LT1}
+    \strng{fullhash}{LT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Reference Module in Earth Systems and Environmental
+  Sciences}
+    \verb{doi}
+    \verb https://doi.org/10.1016/B978-0-12-409548-9.09682-2
+    \endverb
+    \field{edition}{Comprehens}
+    \field{isbn}{978-0-12-409548-9}
+    \field{pages}{\bibrangedash }
+    \field{title}{{Estimating Supply Elasticities for Residential Real Estate
+  in the United Kingdom}}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/B9780124095489096822
+    \endverb
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Lindenthal - 2017 - Estimating Supply Elasticities for Residential
+    \verb  Real Estate in the United Kingdom.pdf:pdf
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{Liu2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Lun},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SEA}{%
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Elisabete\bibnamedelima A.},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chunyang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Authors}%
+    }
+    \keyw{Architecture,Machine learning,Physical quality,Street view
+  image,Urban design}
+    \strng{namehash}{LL+1}
+    \strng{fullhash}{LLSEAWCWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Given the present size of modern cities, it is beyond the perceptual
+  capacity of most people to develop a good knowledge about the qualities of
+  the urban space at every street corner. Correspondingly, for planners, it is
+  also difficult to accurately answer questions such as ‘where the quality of
+  the physical environment is the most dilapidated in the city that
+  regeneration should be given first consideration' and ‘in fast urbanising
+  cities, how is the city appearance changing'. To address this issue, in the
+  present study, we present a computer vision method that contains three
+  machine learning models for the large-scale and automatic evaluation on the
+  qualities of the urban environment by leveraging state-of-the-art machine
+  learning techniques and wide-coverage street view images. From various
+  physical qualities that have been identified by previous research to be
+  important for the urban visual experience, we choose two key qualities, the
+  construction and maintenance quality of building facade and the continuity of
+  street wall, to be measured in this research. To test the validity of the
+  proposed method, we compare the machine scores with public rating scores
+  collected on-site from 752 passers-by at 56 locations in the city. We show
+  that the machine learning models can produce a medium-to-good estimation of
+  people's real experience, and the modelling results can be applied in many
+  ways by researchers, planners and local residents.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.compenvurbsys.2017.06.003
+    \endverb
+    \field{issn}{01989715}
+    \field{pages}{113\bibrangedash 125}
+    \field{title}{{A machine learning-based method for the large-scale
+  evaluation of the qualities of the urban environment}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.compenvurbsys.2017.06.003
+    \endverb
+    \field{volume}{65}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Liu et al. - 2017 - A machine learning-based method for the large-
+    \verb scale evaluation of the qualities of the urban environment.pdf:pdf
+    \endverb
+    \field{journaltitle}{Computers, Environment and Urban Systems}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Moorhouse1994}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MJC}{%
+         family={Moorhouse},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SMS}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Margaret\bibnamedelima Supplee},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJCSMS1}
+    \strng{fullhash}{MJCSMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1006/juec.1994.1016
+    \endverb
+    \field{number}{3}
+    \field{pages}{267\bibrangedash 277}
+    \field{title}{{The Market for Residential Architecture: 19th century Row
+  Houses in Boston's South End}}
+    \field{volume}{35}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Moorhouse, Smith - 1994 - The Market for Residential Architecture
+    \verb 19th century Row Houses in Boston's South End.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Urban Economics}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Naik2016AER}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NN}{%
+         family={Naik},
+         familyi={N\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Raskar},
+         familyi={R\bibinitperiod},
+         given={Ramesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HCA}{%
+         family={Hidalgo},
+         familyi={H\bibinitperiod},
+         given={C{\'{e}}sar\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NNRRHCA1}
+    \strng{fullhash}{NNRRHCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{doi}
+    \verb 10.1257/aer.p20161030
+    \endverb
+    \field{issn}{0002-8282}
+    \field{number}{5}
+    \field{pages}{128\bibrangedash 132}
+    \field{title}{{Cities Are Physical Too: Using Computer Vision to Measure
+  the Quality and Impact of Urban Appearance}}
+    \verb{url}
+    \verb http://pubs.aeaweb.org/doi/10.1257/aer.p20161030
+    \endverb
+    \field{volume}{106}
+    \field{journaltitle}{American Economic Review}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Naik2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=NN}{%
+         family={Naik},
+         familyi={N\bibinitperiod},
+         given={Nikhil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KSD}{%
+         family={Kominers},
+         familyi={K\bibinitperiod},
+         given={Scott\bibnamedelima Duke},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Raskar},
+         familyi={R\bibinitperiod},
+         given={Ramesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GEL}{%
+         family={Glaeser},
+         familyi={G\bibinitperiod},
+         given={Edward\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HCA}{%
+         family={Hidalgo},
+         familyi={H\bibinitperiod},
+         given={C{\'{e}}sar\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NN+1}
+    \strng{fullhash}{NNKSDRRGELHCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Which neighborhoods experience physical improvements? In this paper, we
+  introduce a computer vision method to measure changes in the physical
+  appearances of neighborhoods from time-series street-level imagery. We
+  connect changes in the physical appearance of five US cities with economic
+  and demographic data and find three factors that predict neighborhood
+  improvement. First, neighborhoods that are densely populated by
+  college-educated adults are more likely to experience physical
+  improvements—an observation that is compatible with the economic literature
+  linking human capital and local success. Second, neighborhoods with better
+  initial appearances experience, on average, larger positive improvements—an
+  observation that is consistent with “tipping” theories of urban change.
+  Third, neighborhood improvement correlates positively with physical proximity
+  to the central business district and to other physically attractive
+  neighborhoods—an observation that is consistent with the “invasion”
+  theories of urban sociology. Together, our results provide support for three
+  classical theories of urban change and illustrate the value of using computer
+  vision methods and street-level imagery to understand the physical dynamics
+  of cities.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.1619003114
+    \endverb
+    \field{isbn}{1091-6490 (Electronic) 0027-8424 (Linking)}
+    \field{issn}{0027-8424}
+    \field{number}{29}
+    \field{pages}{7571\bibrangedash 7576}
+    \field{title}{{Computer vision uncovers predictors of physical urban
+  change}}
+    \verb{url}
+    \verb http://www.pnas.org/lookup/doi/10.1073/pnas.1619003114
+    \endverb
+    \field{volume}{114}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Naik et al. - 2017 - Computer vision uncovers predictors of physic
+    \verb al urban change.pdf:pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ONS2017b}{report}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Office for National Statistics}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{isbn}{9780486782973}
+    \field{title}{{A Beginner's Guide to UK Geography}}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Office for National Statistics - 2017 - A Beginner's Guide to UK G
+    \verb eography.pdf:pdf
+    \endverb
+    \field{type}{techreport}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ONS2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Office for National Statistics}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{{Open Geography Portal -- 2011 Census Boundaries}}
+    \verb{url}
+    \verb https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeog
+    \verb raphy
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{OrdnanceSurvey2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Ordnance Survey}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O2}
+    \strng{fullhash}{O2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{{AddressBase}}
+    \verb{url}
+    \verb https://www.ordnancesurvey.co.uk/business-and-government/help-and-sup
+    \verb port/products/addressbase-premium.html
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{OrdnanceSurvey2017a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Ordnance Survey}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O2}
+    \strng{fullhash}{O2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{{OS Maps Local}}
+    \verb{url}
+    \verb https://www.ordnancesurvey.co.uk/business-and-government/products/os-
+    \verb open-map-local.html
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{Plaut2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PS}{%
+         family={Plaut},
+         familyi={P\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UE}{%
+         family={Uzulena},
+         familyi={U\bibinitperiod},
+         given={Egita},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Hedonic models,Riga,architecture,pricing,transitional economies}
+    \strng{namehash}{PSUE1}
+    \strng{fullhash}{PSUE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Architectural design has generally not been included in estimations of
+  hedonic pricing models and the reason is no doubt the difficulty in capturing
+  it in a usable measurement variable. It is usually too idiosyncratic and
+  heterogeneous to “sum up” easily and introduce as an explanatory
+  variable. However, in some housing markets, architectural design consists of
+  a limited number of standardized “prototypes”, which can then be used as
+  explanatory variables in hedonic estimations. Such is the case for Riga,
+  Latvia, where almost the entire housing stock fits into about a score of
+  fairly standardized architectural design types. This paper is an empirical
+  analysis of the Riga housing market, which only became a “market” in a
+  meaningful sense after the collapse of the Soviet regime in Latvia. The paper
+  analyzes a set of about 3500 transactions, all from recent years. We estimate
+  the elasticity of housing value with respect to size of housing units and
+  some other physical features, and the value of the different architectural
+  designs, controlling for location. This is one of the first hedonic or
+  microeconomic analyses of housing values in any post-Soviet transitional
+  economy.%
+    }
+    \field{number}{1}
+    \field{pages}{112\bibrangedash 131}
+    \field{title}{{Architectural Design and the Value of Housing in Riga,
+  Latvia}}
+    \field{volume}{9}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Plaut, Uzulena - 2006 - Architectural Design and the Value of Hous
+    \verb ing in Riga, Latvia.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Real Estate Review}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Ribeiro2016}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RMT}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Marco\bibnamedelima Tulio},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Sameer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guestrin},
+         familyi={G\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RMTSSGC1}
+    \strng{fullhash}{RMTSSGC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{22nd ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining}
+    \field{pages}{1135\bibrangedash 1144}
+    \field{title}{{"Why Should I Trust You?" Explaining the Predictions of Any
+  Classifier}}
+    \list{location}{1}{%
+      {San Francisco}%
+    }
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Ribeiro, Singh, Guestrin - 2016 - Why Should I Trust You Explainin
+    \verb g the Predictions of Any Classifier.pdf:pdf
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{scruton2018}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Scruton},
+         familyi={S\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{November}
+    \field{series}{Colin Amery Memorial Lecture}
+    \field{title}{{The Fabric of the City}}
+    \verb{url}
+    \verb https://policyexchange.org.uk/wp-content/uploads/2018/11/The-Fabric-o
+    \verb f-the-City.pdf
+    \endverb
+    \list{institution}{1}{%
+      {Policy Exchange}%
+    }
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Scruton - 2018 - The Fabric of the City.pdf:pdf
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{Szegedy2015}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vanhoucke},
+         familyi={V\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shlens},
+         familyi={S\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wojna},
+         familyi={W\bibinitperiod},
+         given={Zbigniew},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCVVISSJWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Convolutional networks are at the core of most state-of-the-art computer
+  vision solutions for a wide variety of tasks. Since 2014 very deep
+  convolutional networks started to become mainstream, yielding substantial
+  gains in various benchmarks. Although increased model size and computational
+  cost tend to translate to immediate quality gains for most tasks (as long as
+  enough labeled data is provided for training), computational efficiency and
+  low parameter count are still enabling factors for various use cases such as
+  mobile vision and big-data scenarios. Here we explore ways to scale up
+  networks in ways that aim at utilizing the added computation as efficiently
+  as possible by suitably factorized convolutions and aggressive
+  regularization. We benchmark our methods on the ILSVRC 2012 classification
+  challenge validation set demonstrate substantial gains over the state of the
+  art: 21.2% top-1 and 5.6% top-5 error for single frame evaluation using a
+  network with a computational cost of 5 billion multiply-adds per inference
+  and with using less than 25 million parameters. With an ensemble of 4 models
+  and multi-crop evaluation, we report 3.5% top-5 error on the validation set
+  (3.6% error on the test set) and 17.3% top-1 error on the validation set.%
+    }
+    \verb{doi}
+    \verb 10.1109/CVPR.2016.308
+    \endverb
+    \verb{eprint}
+    \verb 1512.00567
+    \endverb
+    \field{isbn}{978-1-4673-8851-1}
+    \field{issn}{08866236}
+    \field{title}{{Rethinking the Inception Architecture for Computer Vision}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1512.00567
+    \endverb
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Szegedy et al. - 2015 - Rethinking the Inception Architecture for
+    \verb Computer Vision.pdf:pdf
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{year}{2015}
+  \endentry
+
+  \entry{economistlineofbeauty2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{The Economist}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{{The line of beauty}}
+    \verb{url}
+    \verb https://www.economist.com/britain/2018/11/17/how-to-defeat-nimbyism-b
+    \verb uild-more-beautiful-houses
+    \endverb
+    \list{location}{1}{%
+      {London}%
+    }
+    \field{journaltitle}{The Economist}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Vandell1989}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VKD}{%
+         family={Vandell},
+         familyi={V\bibinitperiod},
+         given={Kerry\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lane},
+         familyi={L\bibinitperiod},
+         given={Jonathan\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VKDLJS1}
+    \strng{fullhash}{VKDLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1989}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{2}
+    \field{pages}{235\bibrangedash 260}
+    \field{title}{{The Economics of Architecture and Urban Design: Some
+  Preliminary Findings}}
+    \field{volume}{17}
+    \verb{file}
+    \verb :home/thies/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
+    \verb ed/Vandell, Lane - 1989 - The Economics of Architecture and Urban Des
+    \verb ign Some Preliminary Findings.pdf:pdf
+    \endverb
+    \field{journaltitle}{AREUEA Journal}
+    \field{year}{1989}
+  \endentry
+\enddatalist
+\endinput

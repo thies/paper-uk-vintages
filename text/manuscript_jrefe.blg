@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: manuscript_jrefe.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: manuscript_jrefe-blx.bib
+Database file #2: bibliography.bib
+Biblatex version: 3.11
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 33 entries,
+            6304 wiz_defined-function locations,
+            1481 strings with 33202 characters,
+and the built_in function-call counts, 210328 in all, are:
+= -- 14550
+> -- 3555
+< -- 917
++ -- 4649
+- -- 1559
+* -- 17106
+:= -- 22299
+add.period$ -- 0
+call.type$ -- 33
+change.case$ -- 411
+chr.to.int$ -- 41
+cite$ -- 64
+duplicate$ -- 21602
+empty$ -- 20025
+format.name$ -- 2280
+if$ -- 42704
+int.to.chr$ -- 0
+int.to.str$ -- 80
+missing$ -- 0
+newline$ -- 1402
+num.names$ -- 1423
+pop$ -- 11225
+preamble$ -- 1
+purify$ -- 600
+quote$ -- 0
+skip$ -- 5383
+stack$ -- 0
+substring$ -- 26279
+swap$ -- 5762
+text.length$ -- 909
+text.prefix$ -- 32
+top$ -- 1
+type$ -- 1109
+warning$ -- 0
+while$ -- 2957
+width$ -- 0
+write$ -- 1370
